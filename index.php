@@ -61,7 +61,7 @@ while($row=mysqli_fetch_assoc($result)){
   echo("</tr>"); } 
 echo('</table>');   
     
-      $sql ="select * from pracownicy,organizacja where id_org=dzial group by dzial having dzial=2 or dzial=3"; 
+      $sql ="select * from pracownicy,organizacja where id_org=dzial group by imie having dzial=2 or dzial=3"; 
 echo("<h3>zadanie4</h3>"); 
 $result = mysqli_query($conn, $sql);  
 echo('<table border="1" class="tabela"'); 
