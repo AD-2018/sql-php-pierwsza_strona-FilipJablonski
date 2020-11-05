@@ -4,6 +4,8 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-FilipJablonski/">github</a>
+    <h1>Filip Jabłoński</h1>
 <?php
 
 $conn = new mysqli("mysql-jablonski-filip.alwaysdata.net","217189","4CM@rD.M6Bvc3Bx","jablonski-filip_pbd");
