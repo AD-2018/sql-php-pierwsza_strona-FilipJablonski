@@ -5,10 +5,13 @@ body {
 table {
   border-collapse: collapse;
   width: 100%;
-  background-color: lightblue;
 }
 
 th {
   background-color:lightred;
   height: 70px;
+}
+
+tr {
+  background-color: lightblue;
 }
