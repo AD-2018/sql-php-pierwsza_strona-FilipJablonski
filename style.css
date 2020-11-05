@@ -1,7 +1,9 @@
 body {
-  background-color: lightblue;
+  background-color: lightorange;
 }
 
 table {
   border-collapse: collapse;
+  width: 100%;
+  background-color: lightblue;
 }
