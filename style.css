@@ -1,19 +1,20 @@
 body {
-  background-color: #8CFF26;
+  background-color: #FF20A7;
 }
 
 table {
   border-collapse: collapse;
-  width: 100%;
+  width: 50%;
 }
 
 th {
-  background-color:#EE7400;
+  background-color:#112DFF;
   height: 70px;
   text-align: center;
+  color: #FFFFFF;
 }
 
 tr {
-  background-color: #00FFEC;
+  background-color: #FFFFFF;
   text-align: center;
 }
