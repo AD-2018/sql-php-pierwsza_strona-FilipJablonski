@@ -47,6 +47,32 @@ while($row=mysqli_fetch_assoc($result)){
   echo("<tr>"); 
   echo("</tr>"); } 
 echo('</table>'); 
+    
+      $sql ="select imie, zarobki from pracownicy,organizacja where id_org=dzial and imie not like '%a' group by imie having zarobki<40"; 
+echo("<h3>zadanie3</h3>"); 
+$result = mysqli_query($conn, $sql);  
+echo('<table border="1" class="tabela"'); 
+echo ("<tr><th>imie</th><th>zarobki</th></tr>"); 
+while($row=mysqli_fetch_assoc($result)){ 
+  echo("<tr>");     
+  echo("<tr>");     
+  echo("<td>".$row['imie']."</td><td>".$row['zarobki']."</td>");     
+  echo("<tr>"); 
+  echo("</tr>"); } 
+echo('</table>');   
+    
+      $sql ="select * from pracownicy,organizacja where id_org=dzial group by dzial having dzial=2 or dzial=3"; 
+echo("<h3>zadanie4</h3>"); 
+$result = mysqli_query($conn, $sql);  
+echo('<table border="1" class="tabela"'); 
+echo ("<tr><th>id_pracownicy</th><th>imie</th><th>dzial</th><th>zarobki</th><th>data_urodzenia</th></tr>");
+while($row=mysqli_fetch_assoc($result)){ 
+  echo("<tr>");     
+  echo("<tr>");     
+  echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td><td>".$row['data_urodzenia']."</td>");    
+  echo("<tr>"); 
+  echo("</tr>"); } 
+echo('</table>'); 
 ?>
 </body>
 </html>
