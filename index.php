@@ -22,7 +22,7 @@ $result = mysqli_query($conn, $sql);
         }echo ('</table>');
     
     echo("<h3> ZADANIE 1 </h3>");
-$sql = "SELECT avg(zarobki), dzial FROM pracownicy where (avg(zarobki)<35) and imie not like '%a' group by 'dzial'";
+$sql = "SELECT * FROM pracownicy where (avg(zarobki)<35) and imie not like '%a' group by 'dzial'";
     echo ("<li>".$sql."</li><br><br>");
 $result = mysqli_query($conn, $sql);
     echo ('<table border = "1" class = "moja_tabelka">');
@@ -34,7 +34,7 @@ $result = mysqli_query($conn, $sql);
         }echo ('</table>');
     
         echo("<h3> ZADADANIE 2 </h3>");
-$sql = "SELECT avg(zarobki), dzial FROM pracownicy where (avg(zarobki)<40) group by 'dzial'";
+$sql = "SELECT * FROM pracownicy where (avg(zarobki)<40) group by 'dzial'";
     echo ("<li>".$sql."</li><br><br>");
 $result = mysqli_query($conn, $sql);
     echo ('<table border = "1" class = "moja_tabelka">');
@@ -46,7 +46,7 @@ $result = mysqli_query($conn, $sql);
         }echo ('</table>');
     
         echo("<h3> ZADANIE 3 </h3>");
-$sql = "SELECT imie, zarobki FROM pracownicy where (zarobki<40) and imie not like '%a'";
+$sql = "SELECT * FROM pracownicy where (zarobki<40) and imie not like '%a'";
     echo ("<li>".$sql."</li><br><br>");
 $result = mysqli_query($conn, $sql);
     echo ('<table border = "1" class = "moja_tabelka">');
@@ -68,6 +68,7 @@ $result = mysqli_query($conn, $sql);
                 echo ('<td>'.$row["imie"].'</td><td>'.$row["zarobki"].'</td><td>'.$row["data_urodzenia"].'</td><td>'.$row["dzial"].'</td>');
                 echo ('</tr>');
         }echo ('</table>');
+    
     
 </body>
 </html>
