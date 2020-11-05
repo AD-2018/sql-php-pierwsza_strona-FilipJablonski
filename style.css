@@ -1,5 +1,5 @@
 body {
-  background-color: 8CFF26;
+  background-color: #8CFF26;
 }
 
 table {
@@ -8,12 +8,12 @@ table {
 }
 
 th {
-  background-color:EE7400;
+  background-color:#EE7400;
   height: 70px;
   text-align: center;
 }
 
 tr {
-  background-color: 00FFEC;
+  background-color: #00FFEC;
   text-align: center;
 }
