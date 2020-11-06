@@ -210,7 +210,7 @@ if ( $result) {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
 echo('<table border="1" class="tabela"'); 
-echo ("<tr><th>Imie</th><th>Nazwa Dzialu</th><th>Zarobki</th></tr>"); 
+echo ("<tr><th>Imie</th><th>Nazwa Dzialu</th><th>Data Urodzenia</th></tr>"); 
 while($row=mysqli_fetch_assoc($result)){ 
   echo("<tr>");         
   echo("<td>".$row['imie']."</td><td>".$row['nazwa_dzial']."</td><td>".$row['data_urodzenia']."</td>");     
