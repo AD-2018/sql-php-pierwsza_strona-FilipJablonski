@@ -86,7 +86,87 @@ while($row=mysqli_fetch_assoc($result)){
   echo("</tr>"); } 
 echo('</table>'); 
     
-echo("<h2>Sortowanie</h2>");
+echo("<h2>Sortowanie</h2>");  
+    $sql ="select * from pracownicy,organizacja where id_org=dzial sort by imie desc"; 
+echo("<h3>Zadanie 1</h3>"); 
+$result = mysqli_query($conn, $sql);
+if ( $result) {
+        echo "<br>";
+    } else {
+      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    }
+echo('<table border="1" class="tabela"'); 
+echo ("<tr><th>Imie</th><th>Nazwa Dzialu</th></tr>"); 
+while($row=mysqli_fetch_assoc($result)){ 
+  echo("<tr>");         
+  echo("<td>".$row['imie']."</td><td>".$row['nazwa_dzial']."</td>");     
+  echo("</tr>"); } 
+echo('</table>'); 
+              
+    $sql ="select * from pracownicy,organizacja where id_org=dzial and dzial=3 sort by imie asc"; 
+echo("<h3>Zadanie 2</h3>"); 
+$result = mysqli_query($conn, $sql);
+if ( $result) {
+        echo "<br>";
+    } else {
+      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    }
+echo('<table border="1" class="tabela"'); 
+echo ("<tr><th>Imie</th><th>Nazwa Dzialu</th></tr>"); 
+while($row=mysqli_fetch_assoc($result)){ 
+  echo("<tr>");         
+  echo("<td>".$row['imie']."</td><td>".$row['nazwa_dzial']."</td>");     
+  echo("</tr>"); } 
+echo('</table>'); 
+              
+    $sql ="select * from pracownicy,organizacja where id_org=dzial and imie like '%a' sort by imie asc"; 
+echo("<h3>Zadanie 3</h3>"); 
+$result = mysqli_query($conn, $sql);
+if ( $result) {
+        echo "<br>";
+    } else {
+      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    }
+echo('<table border="1" class="tabela"'); 
+echo ("<tr><th>Imie</th><th>Nazwa Dzialu</th></tr>"); 
+while($row=mysqli_fetch_assoc($result)){ 
+  echo("<tr>");         
+  echo("<td>".$row['imie']."</td><td>".$row['nazwa_dzial']."</td>");     
+  echo("</tr>"); } 
+echo('</table>'); 
+              
+    $sql ="select * from pracownicy,organizacja where id_org=dzial and dzial=1 or dzial=3 imie like '%a' sort by imie asc"; 
+echo("<h3>Zadanie 4</h3>"); 
+$result = mysqli_query($conn, $sql);
+if ( $result) {
+        echo "<br>";
+    } else {
+      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    }
+echo('<table border="1" class="tabela"'); 
+echo ("<tr><th>Imie</th><th>Nazwa Dzialu</th><th>Zarobki</th></tr>"); 
+while($row=mysqli_fetch_assoc($result)){ 
+  echo("<tr>");         
+  echo("<td>".$row['imie']."</td><td>".$row['nazwa_dzial']."</td><td>".$row['zarobki']."</td>");     
+  echo("</tr>"); } 
+echo('</table>'); 
+                  
+    $sql ="select * from pracownicy,organizacja where id_org=dzial and imie not like '%a' group by dzial sort by zarobki desc"; 
+echo("<h3>Zadanie 1</h3>"); 
+$result = mysqli_query($conn, $sql);
+if ( $result) {
+        echo "<br>";
+    } else {
+      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    }
+echo('<table border="1" class="tabela"'); 
+echo ("<tr><th>Imie</th><th>Nazwa Dzialu</th><th>Zarobki</th></tr>"); 
+while($row=mysqli_fetch_assoc($result)){ 
+  echo("<tr>");         
+  echo("<td>".$row['imie']."</td><td>".$row['nazwa_dzial']."</td><td>".$row['zarobki']."</td>");       
+  echo("</tr>"); } 
+echo('</table>'); 
+            
 ?>
 </body>
 </html>
