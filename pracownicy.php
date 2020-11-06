@@ -31,7 +31,7 @@ if ( $result) {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
 echo('<table border="1" class="tabela"'); 
-echo ("<tr><th>imie</th><th>dzial</th></tr>"); 
+echo ("<tr><th>Imie</th><th>Dzial</th></tr>"); 
 while($row=mysqli_fetch_assoc($result)){ 
   echo("<tr>");        
   echo("<td>".$row['imie']."</td><td>".$row['dzial']."</td>");     
@@ -47,7 +47,7 @@ if ( $result) {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
 echo('<table border="1" class="tabela"'); 
-echo ("<tr><th>imie</th><th>dzial</th></tr>"); 
+echo ("<tr><th>Imie</th><th>Dzial</th></tr>"); 
 while($row=mysqli_fetch_assoc($result)){ 
   echo("<tr>");       
   echo("<td>".$row['imie']."</td><td>".$row['dzial']."</td>");     
@@ -63,7 +63,7 @@ if ( $result) {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
 echo('<table border="1" class="tabela"'); 
-echo ("<tr><th>imie</th><th>zarobki</th></tr>"); 
+echo ("<tr><th>Imie</th><th>Zarobki</th></tr>"); 
 while($row=mysqli_fetch_assoc($result)){ 
   echo("<tr>");         
   echo("<td>".$row['imie']."</td><td>".$row['zarobki']."</td>");     
