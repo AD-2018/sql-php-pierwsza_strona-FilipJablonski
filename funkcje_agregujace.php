@@ -187,7 +187,7 @@ while($row=mysqli_fetch_assoc($result)){
   echo("</tr>"); } 
 echo('</table>'); 
               
-    $sql ="select if(imie like '%a', 'woman', 'men') as 'plec', Sum(zarobki) from pracownicy,organizacja where dzial=id_org group by plec"; 
+    $sql ="select if(imie like '%a', 'kobiety', 'mezczyzni') as 'plec', Sum(zarobki) from pracownicy,organizacja where dzial=id_org group by plec"; 
 echo("<h3>Zadanie 4</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
@@ -202,7 +202,23 @@ while($row=mysqli_fetch_assoc($result)){
   echo("<td>".$row['plec']."</td><td>".$row['Sum(zarobki)']."</td>");     
   echo("</tr>"); } 
 echo('</table>'); 
-          
+                   
+    $sql ="select if(imie like '%a', 'kobiety', 'mezczyzni') as 'plec', Avg(zarobki) from pracownicy,organizacja where dzial=id_org group by plec"; 
+echo("<h3>Zadanie 5</h3>"); 
+$result = mysqli_query($conn, $sql);
+if ( $result) {
+        echo "<br>";
+    } else {
+      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    }
+echo('<table border="1" class="tabela"'); 
+echo ("<tr><th>Plec</th><th>Suma Zarobkow</th></tr>"); 
+while($row=mysqli_fetch_assoc($result)){ 
+  echo("<tr>");         
+  echo("<td>".$row['plec']."</td><td>".$row['Avg(zarobki)']."</td>");     
+  echo("</tr>"); } 
+echo('</table>'); 
+      
 ?>
 </body>
 </html>
