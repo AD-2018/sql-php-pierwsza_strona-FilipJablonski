@@ -169,7 +169,7 @@ while($row=mysqli_fetch_assoc($result)){
 echo('</table>'); 
             
 echo("<h2>LIMIT</h2>");  
-    $sql ="select * from pracownicy,organizacja where id_org=dzial and dzial=4 order by zarobki desc limit 1, 2"; 
+    $sql ="select * from pracownicy,organizacja where id_org=dzial and dzial=4 order by zarobki desc limit 0, 2"; 
 echo("<h3>Zadanie 1</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
