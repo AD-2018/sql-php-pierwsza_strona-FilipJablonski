@@ -22,7 +22,7 @@ require_once("connect.php");
 echo("<h3>Zadanie 1</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
-        echo "<li>ok";
+        echo "<br>";
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
@@ -40,7 +40,7 @@ echo('</table>');
 echo("<h3>Zadanie 2</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
-        echo "<li>ok";
+        echo "<br>";
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
@@ -58,7 +58,7 @@ echo('</table>');
 echo("<h3>Zadanie 3</h3>"); 
 $result = mysqli_query($conn, $sql); 
 if ( $result) {
-        echo "<li>ok";
+        echo "<br>";
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
