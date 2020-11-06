@@ -76,7 +76,7 @@ while($row=mysqli_fetch_assoc($result)){
 echo('</table>');   
     
 echo("<h2>Pracownicy i Organizacja</h2>")
-$sql ="select imie, nazwa_dzial from pracownicy"
+$sql ="select imie, nazwa_dzial from pracownicy,organizacja where id_org=dzial"
 $result = mysqli_query($conn, $sql);
     if ( $result) {
          echo "<br>";
