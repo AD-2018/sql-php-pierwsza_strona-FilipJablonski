@@ -38,7 +38,7 @@ while($row=mysqli_fetch_assoc($result)){
   echo("</tr>"); } 
 echo('</table>'); 
   
-    $sql ="select * from pracownicy,organizacja where id_org=dzial group by imie haveing dzial=1 or dzial=4"; 
+    $sql ="select * from pracownicy,organizacja where id_org=dzial group by imie having dzial=1 or dzial=4"; 
 echo("<h3>Zadanie 2</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
@@ -86,6 +86,7 @@ while($row=mysqli_fetch_assoc($result)){
   echo("</tr>"); } 
 echo('</table>'); 
     
+echo("<h2>Sortowanie</h2>");
 ?>
 </body>
 </html>
