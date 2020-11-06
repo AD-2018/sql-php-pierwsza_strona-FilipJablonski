@@ -24,7 +24,7 @@ $sql = "SELECT * FROM pracownicy, organizacja WHERE id_org = dzial";
 
     $result = mysqli_query($conn, $sql);
     if ( $result) {
-         echo "<li>ok";
+         echo "<br>";
      } else {
        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
      }
