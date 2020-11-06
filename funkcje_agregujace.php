@@ -100,7 +100,7 @@ echo('<table border="1" class="tabela"');
 echo ("<tr><th>Srednia Zarobkow Mezczyzn z Dzialu 1 i 2</th></tr>"); 
 while($row=mysqli_fetch_assoc($result)){ 
   echo("<tr>");         
-  echo("<td>".$row['Sum(zarobki)']."</td>");     
+  echo("<td>".$row['Avg(zarobki)']."</td>");     
   echo("</tr>"); } 
 echo('</table>'); 
       
@@ -132,7 +132,7 @@ echo('<table border="1" class="tabela"');
 echo ("<tr><th>Ilosc Kobiet z Dzialu 1 i 3</th></tr>"); 
 while($row=mysqli_fetch_assoc($result)){ 
   echo("<tr>");         
-  echo("<td>".$row['Sum(zarobki)']."</td>");     
+  echo("<td>".$row['Count(imie)']."</td>");     
   echo("</tr>"); } 
 echo('</table>'); 
   
