@@ -14,10 +14,11 @@
          <a href="index.php">Strona Główna</a>  
          <a href="pracownicy.php">Pracownicy</a>
          <a href="pracownicy_organizacja.php">Pracow. i Org.</a>   
-         <a href="funkcje_agregujace.php">Funkcje Agregujace</a>   
+         <a href="funkcje_agregujace.php">Funkcje Agregujace</a>  
+         <a href="data_czas.php">Data i Czas</a>
     </div>
     <br>
-</nav>   
+</nav>  
 <?php
 
 require_once("connect.php");
