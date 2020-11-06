@@ -23,7 +23,8 @@ a {
     margin-left: 1rem;
     font-weight: 500;
     text-decoration: none;
-    background-color: #00FF0F;
+    background-color: #FFFFFF;
+    border="1";
 }
 
 nav {
