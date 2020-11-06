@@ -56,7 +56,7 @@ while($row=mysqli_fetch_assoc($result)){
   echo("</tr>"); } 
 echo('</table>'); 
       
-    $sql ="select Sum(zarobki) from pracownicy where imie not like '%a' and dzial=2 or dzial=3"; 
+    $sql ="select Sum(zarobki) from pracownicy where imie not like '%a' and (dzial=2 or dzial=3)"; 
 echo("<h3>Zadanie 3</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
@@ -88,7 +88,7 @@ while($row=mysqli_fetch_assoc($result)){
   echo("</tr>"); } 
 echo('</table>'); 
       
-    $sql ="select Avg(zarobki) from pracownicy where imie not like '%a' and dzial=1 or dzial=2"; 
+    $sql ="select Avg(zarobki) from pracownicy where imie not like '%a' and (dzial=1 or dzial=2)"; 
 echo("<h3>Zadanie 5</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
@@ -120,7 +120,7 @@ while($row=mysqli_fetch_assoc($result)){
   echo("</tr>"); } 
 echo('</table>'); 
       
-    $sql ="select Count(imie) from pracownicy where imie like '%a' and dzial=1 or dzial=3"; 
+    $sql ="select Count(imie) from pracownicy where imie like '%a' and (dzial=1 or dzial=3)"; 
 echo("<h3>Zadanie 7</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
