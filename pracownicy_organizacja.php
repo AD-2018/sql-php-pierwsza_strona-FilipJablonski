@@ -18,30 +18,64 @@
     <br>
 </nav>    
 <?php
+
 require_once("connect.php");
-$sql = "SELECT * FROM pracownicy, organizacja WHERE id_org = dzial";
-
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-      }
-
-    $result = mysqli_query($conn, $sql);
-    if ( $result) {
-         echo "<br>";
-     } else {
-       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-     }
-
-    echo("<h1>Tabelka</h1>");
-
-    echo("<table border='1'>");
-    echo("<th>ID</th><th>Imie</th><th>Zarobki</th><th>Data Urodzenia</th><th>Dzial</th><th>Nazwa dzialu</th>");
-        while($row = mysqli_fetch_assoc($result)) {
-            echo("<tr>");
-            echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['zarobki']."</td><td>".$row['data_urodzenia']."</td><td>".$row['dzial']."</td><td>".$row['nazwa_dzial']."</td>");
-            echo("</tr>");
-        };
-    echo("</table>");
+echo("<h2>Pracownicy</h2>");
+    $sql ="select imie,dzial from pracownicy,organizacja where id_org=dzial and dzial=2 group by imie"; 
+echo("<h3>Zadanie 1</h3>"); 
+$result = mysqli_query($conn, $sql);
+if ( $result) {
+        echo "<br>";
+    } else {
+      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    }
+echo('<table border="1" class="tabela"'); 
+echo ("<tr><th>imie</th><th>dzial</th></tr>"); 
+while($row=mysqli_fetch_assoc($result)){ 
+  echo("<tr>");     
+  echo("<tr>");     
+  echo("<td>".$row['imie']."</td><td>".$row['dzial']."</td>");     
+  echo("<tr>"); 
+  echo("</tr>"); } 
+echo('</table>'); 
+  
+    $sql ="select imie,dzial from pracownicy,organizacja where id_org=dzial and dzial=2 or dzial=3 group by imie"; 
+echo("<h3>Zadanie 2</h3>"); 
+$result = mysqli_query($conn, $sql);
+if ( $result) {
+        echo "<br>";
+    } else {
+      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    }
+echo('<table border="1" class="tabela"'); 
+echo ("<tr><th>imie</th><th>dzial</th></tr>"); 
+while($row=mysqli_fetch_assoc($result)){ 
+  echo("<tr>");     
+  echo("<tr>");     
+  echo("<td>".$row['imie']."</td><td>".$row['dzial']."</td>");     
+  echo("<tr>"); 
+  echo("</tr>"); } 
+echo('</table>'); 
+    
+      $sql ="select imie, zarobki from pracownicy,organizacja where id_org=dzial group by imie having zarobki<30"; 
+echo("<h3>Zadanie 3</h3>"); 
+$result = mysqli_query($conn, $sql); 
+if ( $result) {
+        echo "<br>";
+    } else {
+      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    }
+echo('<table border="1" class="tabela"'); 
+echo ("<tr><th>imie</th><th>zarobki</th></tr>"); 
+while($row=mysqli_fetch_assoc($result)){ 
+  echo("<tr>");     
+  echo("<tr>");     
+  echo("<td>".$row['imie']."</td><td>".$row['zarobki']."</td>");     
+  echo("<tr>"); 
+  echo("</tr>"); } 
+echo('</table>');   
+    
+echo("<h2>Pracownicy i Organizacja</h2>")
 ?>
 </body>
 </html>
