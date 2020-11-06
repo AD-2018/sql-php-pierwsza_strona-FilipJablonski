@@ -219,6 +219,24 @@ while($row=mysqli_fetch_assoc($result)){
   echo("</tr>"); } 
 echo('</table>'); 
       
+echo("<h2>Klauzula HAVING</h2>");
+    
+    $sql ="select nazwa_dzial, Sum(zarobki) from pracownicy,organizacja where dzial=id_org group by nazwa_dzial having Sum(zarobki)<28"; 
+echo("<h3>Zadanie 1</h3>"); 
+$result = mysqli_query($conn, $sql);
+if ( $result) {
+        echo "<br>";
+    } else {
+      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    }
+echo('<table border="1" class="tabela"'); 
+echo ("<tr><th>Nazwa Dzialu</th><th>Suma Zarobkow</th></tr>"); 
+while($row=mysqli_fetch_assoc($result)){ 
+  echo("<tr>");         
+  echo("<td>".$row['nazwa_dzial']."</td><td>".$row['Sum(zarobki)']."</td>");     
+  echo("</tr>"); } 
+echo('</table>'); 
+    
 ?>
 </body>
 </html>
