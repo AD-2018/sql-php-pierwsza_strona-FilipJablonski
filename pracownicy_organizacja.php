@@ -76,7 +76,7 @@ while($row=mysqli_fetch_assoc($result)){
 echo('</table>');   
     
 echo("<h2>Pracownicy i Organizacja</h2>")
-      $sql ="select imie, zarobki from pracownicy,organizacja where id_org=dzial group by imie"; 
+      $sql ="select imie, nazwa_dzial from pracownicy,organizacja where id_org=dzial group by imie"; 
 echo("<h3>Zadanie 1</h3>"); 
 $result = mysqli_query($conn, $sql); 
 if ( $result) {
