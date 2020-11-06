@@ -11,12 +11,13 @@
     <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-FilipJablonski">Github</a>
     
     <div class="nav">
-         <a href="index.php">Strona Główna</a>   
+         <a href="index.php">Strona Główna</a>  
+         <a href="pracownicy.php">Pracownicy</a>
          <a href="pracownicy_organizacja.php">Pracow. i Org.</a>   
          <a href="funkcje_agregujace.php">Funkcje Agregujace</a>   
     </div>
     <br>
-</nav>    
+</nav>   
 <?php
 
 require_once("connect.php");
