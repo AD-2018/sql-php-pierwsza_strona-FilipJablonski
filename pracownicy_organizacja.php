@@ -31,13 +31,61 @@ if ( $result) {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
 echo('<table border="1" class="tabela"'); 
-echo ("<tr><th>imie</th><th>nazwa dzialu</th></tr>"); 
+echo ("<tr><th>Imie</th><th>Nazwa Dzialu</th></tr>"); 
 while($row=mysqli_fetch_assoc($result)){ 
   echo("<tr>");         
   echo("<td>".$row['imie']."</td><td>".$row['nazwa_dzial']."</td>");     
   echo("</tr>"); } 
 echo('</table>'); 
   
+    $sql ="select * from pracownicy,organizacja where id_org=dzial group by imie haveing dzial=1 or dzial=4"; 
+echo("<h3>Zadanie 2</h3>"); 
+$result = mysqli_query($conn, $sql);
+if ( $result) {
+        echo "<br>";
+    } else {
+      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    }
+echo('<table border="1" class="tabela"'); 
+echo ("<tr><th>Imie</th><th>Nazwa Dzialu</th></tr>"); 
+while($row=mysqli_fetch_assoc($result)){ 
+  echo("<tr>");         
+  echo("<td>".$row['imie']."</td><td>".$row['nazwa_dzial']."</td>");     
+  echo("</tr>"); } 
+echo('</table>'); 
+      
+    $sql ="select * from pracownicy,organizacja where id_org=dzial and imie like '%a' group by imie"; 
+echo("<h3>Zadanie 3</h3>"); 
+$result = mysqli_query($conn, $sql);
+if ( $result) {
+        echo "<br>";
+    } else {
+      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    }
+echo('<table border="1" class="tabela"'); 
+echo ("<tr><th>Imie</th><th>Nazwa Dzialu</th></tr>"); 
+while($row=mysqli_fetch_assoc($result)){ 
+  echo("<tr>");         
+  echo("<td>".$row['imie']."</td><td>".$row['nazwa_dzial']."</td>");     
+  echo("</tr>"); } 
+echo('</table>'); 
+          
+    $sql ="select * from pracownicy,organizacja where id_org=dzial and imie not like '%a' group by imie"; 
+echo("<h3>Zadanie 4</h3>"); 
+$result = mysqli_query($conn, $sql);
+if ( $result) {
+        echo "<br>";
+    } else {
+      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    }
+echo('<table border="1" class="tabela"'); 
+echo ("<tr><th>Imie</th><th>Nazwa Dzialu</th></tr>"); 
+while($row=mysqli_fetch_assoc($result)){ 
+  echo("<tr>");         
+  echo("<td>".$row['imie']."</td><td>".$row['nazwa_dzial']."</td>");     
+  echo("</tr>"); } 
+echo('</table>'); 
+    
 ?>
 </body>
 </html>
