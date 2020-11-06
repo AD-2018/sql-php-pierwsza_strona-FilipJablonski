@@ -12,7 +12,7 @@
     
     <div class="nav">
          <a href="index.php">Strona Główna</a>  
-         <a herf="pracownicy.php">Pracownicy</a>
+         <a href="pracownicy.php">Pracownicy</a>
          <a href="pracownicy_organizacja.php">Pracow. i Org.</a>   
          <a href="funkcje_agregujace.php">Funkcje Agregujace</a>   
     </div>
@@ -72,9 +72,8 @@ echo('<table border="1">');
         echo('<tr>');
         echo('<td>'.$row['imie'].'</td>'.'<td>'.$row['zarobki'].'</td><td>'.$row['dzial'].'</td>');
         echo('</tr>');
-    }
+    }    
+    echo('</table>');
 ?>
 </body>
 </html>
-    echo('</table>');
-?>
