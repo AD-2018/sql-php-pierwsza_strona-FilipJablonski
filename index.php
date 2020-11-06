@@ -12,7 +12,7 @@
     
     <div class="nav">
          <a href="index.php"> Strona Główna </a>  
-         <a herf="pracownicy.php"> Pracownicy </a>
+         <a href="pracownicy.php"> Pracownicy </a>
          <a href="pracownicy_organizacja.php"> Pracow. i Org. </a>   
          <a href="funkcje_agregujace.php"> Funkcje Agregujace </a>   
     </div>
