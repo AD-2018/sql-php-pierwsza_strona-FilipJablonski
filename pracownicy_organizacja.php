@@ -87,7 +87,7 @@ while($row=mysqli_fetch_assoc($result)){
 echo('</table>'); 
     
 echo("<h2>Sortowanie</h2>");  
-    $sql ="select * from pracownicy,organizacja where id_org=dzial sort by imie desc"; 
+    $sql ="select * from pracownicy,organizacja where id_org=dzial order by imie desc"; 
 echo("<h3>Zadanie 1</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
@@ -103,7 +103,7 @@ while($row=mysqli_fetch_assoc($result)){
   echo("</tr>"); } 
 echo('</table>'); 
               
-    $sql ="select * from pracownicy,organizacja where id_org=dzial and dzial=3 sort by imie asc"; 
+    $sql ="select * from pracownicy,organizacja where id_org=dzial and dzial=3 order by imie asc"; 
 echo("<h3>Zadanie 2</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
@@ -119,7 +119,7 @@ while($row=mysqli_fetch_assoc($result)){
   echo("</tr>"); } 
 echo('</table>'); 
               
-    $sql ="select * from pracownicy,organizacja where id_org=dzial and imie like '%a' sort by imie asc"; 
+    $sql ="select * from pracownicy,organizacja where id_org=dzial and imie like '%a' order by imie asc"; 
 echo("<h3>Zadanie 3</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
@@ -135,7 +135,7 @@ while($row=mysqli_fetch_assoc($result)){
   echo("</tr>"); } 
 echo('</table>'); 
               
-    $sql ="select * from pracownicy,organizacja where id_org=dzial and dzial=1 or dzial=3 imie like '%a' sort by imie asc"; 
+    $sql ="select * from pracownicy,organizacja where id_org=dzial and dzial=1 or dzial=3 imie like '%a' order by imie asc"; 
 echo("<h3>Zadanie 4</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
@@ -151,7 +151,7 @@ while($row=mysqli_fetch_assoc($result)){
   echo("</tr>"); } 
 echo('</table>'); 
                   
-    $sql ="select * from pracownicy,organizacja where id_org=dzial and imie not like '%a' group by dzial sort by zarobki desc"; 
+    $sql ="select * from pracownicy,organizacja where id_org=dzial and imie not like '%a' group by dzial order by zarobki desc"; 
 echo("<h3>Zadanie 1</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
