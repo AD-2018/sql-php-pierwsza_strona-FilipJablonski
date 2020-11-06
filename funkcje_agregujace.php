@@ -24,7 +24,7 @@
 require_once("connect.php");
 echo("<h2>Funkcje Agregujace</h2>");
     
-    $sql ="select Sum(zarobki) from pracownicy,organizacja where id_org=dzial"; 
+    $sql ="select Sum(zarobki) from pracownicy"; 
 echo("<h3>Zadanie 1</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
@@ -40,7 +40,7 @@ while($row=mysqli_fetch_assoc($result)){
   echo("</tr>"); } 
 echo('</table>'); 
       
-    $sql ="select Sum(zarobki) from pracownicy,organizacja where id_org=dzial and imie like '%a'"; 
+    $sql ="select Sum(zarobki) from pracownicy imie like '%a'"; 
 echo("<h3>Zadanie 2</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
@@ -56,7 +56,7 @@ while($row=mysqli_fetch_assoc($result)){
   echo("</tr>"); } 
 echo('</table>'); 
       
-    $sql ="select Sum(zarobki) from pracownicy,organizacja where id_org=dzial and imie not like '%a' and dzial=2 or dzial=3"; 
+    $sql ="select Sum(zarobki) from pracownicy imie not like '%a' and dzial=2 or dzial=3"; 
 echo("<h3>Zadanie 3</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
@@ -72,7 +72,7 @@ while($row=mysqli_fetch_assoc($result)){
   echo("</tr>"); } 
 echo('</table>'); 
       
-    $sql ="select Avg(zarobki) from pracownicy,organizacja where id_org=dzial and dzial=4"; 
+    $sql ="select Avg(zarobki) from pracownicy and dzial=4"; 
 echo("<h3>Zadanie 4</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
@@ -88,7 +88,7 @@ while($row=mysqli_fetch_assoc($result)){
   echo("</tr>"); } 
 echo('</table>'); 
       
-    $sql ="select Avg(zarobki) from pracownicy,organizacja where id_org=dzial and imie not like '%a' and dzial=1 or dzial=2"; 
+    $sql ="select Avg(zarobki) from pracownicy imie not like '%a' and dzial=1 or dzial=2"; 
 echo("<h3>Zadanie 5</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
@@ -104,7 +104,7 @@ while($row=mysqli_fetch_assoc($result)){
   echo("</tr>"); } 
 echo('</table>'); 
       
-    $sql ="select Count(imie) from pracownicy,organizacja where id_org=dzial"; 
+    $sql ="select Count(imie) from pracownicy"; 
 echo("<h3>Zadanie 6</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
@@ -120,7 +120,7 @@ while($row=mysqli_fetch_assoc($result)){
   echo("</tr>"); } 
 echo('</table>'); 
       
-    $sql ="select Count(imie) from pracownicy,organizacja where id_org=dzial and imie like '%a' and dzial=1 or dzial=3"; 
+    $sql ="select Count(imie) from pracownicy imie like '%a' and dzial=1 or dzial=3"; 
 echo("<h3>Zadanie 7</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
