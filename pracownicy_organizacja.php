@@ -135,7 +135,7 @@ while($row=mysqli_fetch_assoc($result)){
   echo("</tr>"); } 
 echo('</table>'); 
               
-    $sql ="select * from pracownicy,organizacja where id_org=dzial and dzial=1 or dzial=3 an imie like '%a' order by imie asc"; 
+    $sql ="select * from pracownicy,organizacja where id_org=dzial and dzial=1 or dzial=3 and imie like '%a' order by imie asc"; 
 echo("<h3>Zadanie 4</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
