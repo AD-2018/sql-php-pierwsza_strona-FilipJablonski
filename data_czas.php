@@ -20,6 +20,25 @@
     <br>
 </nav>  
 <?php
+require_once("connect.php");
+echo("<h2>Data i Czas</h2>");
+    
+    $sql ="select *,YEAR(curdate())-YEAR(data_urodzenia) AS wiek from pracownicy,organizacja where id_org=dzial"; 
+echo("<h3>Zadanie 1</h3>"); 
+$result = mysqli_query($conn, $sql);
+if ( $result) {
+        echo "<br>";
+    } else {
+      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    }
+echo('<table border="1" class="tabela"'); 
+echo ("<tr><th>Imie</th><th>Dzial</th><th>Wiek</th></tr>"); 
+while($row=mysqli_fetch_assoc($result)){ 
+  echo("<tr>");         
+  echo("<td>".$row['imie']."</td><td>".$row['nazwa_dzial']."</td><td>".$row['wiek']."</td>");     
+  echo("</tr>"); } 
+echo('</table>'); 
+      
 ?>
 </body>
 </html>
