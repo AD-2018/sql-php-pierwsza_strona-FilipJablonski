@@ -152,7 +152,7 @@ while($row=mysqli_fetch_assoc($result)){
 echo('</table>'); 
                   
     $sql ="select * from pracownicy,organizacja where id_org=dzial and imie not like '%a' order by dzial asc, zarobki asc"; 
-echo("<h3>Zadanie 1</h3>"); 
+echo("<h3>Zadanie 5</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
         echo "<br>";
