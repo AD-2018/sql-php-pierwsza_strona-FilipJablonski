@@ -6,14 +6,16 @@
 <body>
     
     <h1>Filip Jabłoński</h1>
+<nav>
+    <br>
     <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-FilipJablonski">Github</a>
     
     <div class="nav">
-        <nav>
          <a href="index.php">Strona Główna</a>   
          <a href="pracownicy_organizacja.php">Pracow. i Org.</a>   
          <a href="funkcje_agregujace.php">Funkcje Agregujace</a>   
-        </nav>
     </div>
+    <br>
+</nav>  
 </body>
 </html>
