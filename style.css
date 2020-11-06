@@ -18,3 +18,9 @@ tr {
   background-color: #FFFFFF;
   text-align: center;
 }
+
+a {
+    margin-left: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+}
