@@ -183,7 +183,7 @@ while($row=mysqli_fetch_assoc($result)){
   echo("</tr>"); } 
 echo('</table>'); 
                                                   
-    $sql ="select *,DATEDIFF((YEAR(CURDATE()), YEAR(data_urodzenia))) as wiek from pracownicy,organizacja where id_org=dzial"; 
+    $sql ="select *,DATEDIFF(CURDATE(),data_urodzenia) as wiek from pracownicy,organizacja where id_org=dzial"; 
 echo("<h3>Zadanie 11</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
