@@ -39,8 +39,8 @@ while($row=mysqli_fetch_assoc($result)){
   echo("</tr>"); } 
 echo('</table>'); 
           
-    $sql ="select *,YEAR(curdate())-YEAR(data_urodzenia) AS wiek from pracownicy,organizacja where id_org=dzial and dzial=1"; 
-echo("<h3>Zadanie 2</h3>"); 
+    $sql ="select *,YEAR(curdate())-YEAR(data_urodzenia) AS wiek,Sum(wiek) from pracownicy,organizacja where id_org=dzial and dzial=1"; 
+echo("<h3>Zadanie 3</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
         echo "<br>";
@@ -48,10 +48,10 @@ if ( $result) {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
 echo('<table border="1" class="tabela"'); 
-echo ("<tr><th>Imie</th><th>Dzial</th><th>Wiek</th></tr>"); 
+echo ("<tr><th>Suma Lat</th></tr>"); 
 while($row=mysqli_fetch_assoc($result)){ 
   echo("<tr>");         
-  echo("<td>".$row['imie']."</td><td>".$row['nazwa_dzial']."</td><td>".$row['wiek']."</td>");     
+  echo("<td>".$row['Sum(wiek)']."</td>");     
   echo("</tr>"); } 
 echo('</table>'); 
      
