@@ -22,11 +22,17 @@ tr {
 a {
     margin-left: 1rem;
     font-weight: 500;
-    padding: 1rem;
+    color: #000000;
+    padding: 1em;
     text-decoration: none;
     background-color: #FFFFFF;
+    border-radius: 4em;
 }
-
+a:hover{
+    background-color: #F9BC00;
+    color: #000000;
+    padding: 1em;
+}
 nav {
   background-color:#112DFF;
 }
