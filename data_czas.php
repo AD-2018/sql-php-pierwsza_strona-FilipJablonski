@@ -214,7 +214,8 @@ while($row=mysqli_fetch_assoc($result)){
   echo("<td>".$row['imie']."</td><td>".$row['wiek']."</td><td>".$row['nazwa_dzial']."</td>");     
   echo("</tr>"); } 
 echo('</table>'); 
-                
+      
+    echo("<h2>Formatowanie Dat</h2>");
 ?>
 </body>
 </html>
