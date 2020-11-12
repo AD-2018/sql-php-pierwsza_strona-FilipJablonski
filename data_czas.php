@@ -233,7 +233,7 @@ while($row=mysqli_fetch_assoc($result)){
   echo("</tr>"); } 
 echo('</table>'); 
                                       
-    $sql ="SET lc_time_names = 'pl_PL'; select *,DATE_FORMAT(data_urodzenia,'%W-%m-%Y') as wiek from pracownicy,organizacja where id_org=dzial"; 
+    $sql ="SET lc_time_names = 'pl_PL', select *,DATE_FORMAT(data_urodzenia,'%W-%m-%Y') as wiek from pracownicy,organizacja where id_org=dzial"; 
 echo("<h3>Zadanie 2</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
