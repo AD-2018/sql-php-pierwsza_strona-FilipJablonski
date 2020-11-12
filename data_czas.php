@@ -192,13 +192,29 @@ if ( $result) {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
 echo('<table border="1" class="tabela"'); 
-echo ("<tr><th>Imie</th><th>Wiek</th></tr>"); 
+echo ("<tr><th>Imie</th><th>Dlugosc Zycia w Dniach</th></tr>"); 
 while($row=mysqli_fetch_assoc($result)){ 
   echo("<tr>");         
   echo("<td>".$row['imie']."</td><td>".$row['wiek']."</td>");     
   echo("</tr>"); } 
 echo('</table>'); 
-         
+                             
+    $sql ="select *,MAX(YEAR(CURDATE()) - YEAR(data_urodzenia)) as wiek from pracownicy,organizacja where id_org=dzial and imie not like '%a'"; 
+echo("<h3>Zadanie 12</h3>"); 
+$result = mysqli_query($conn, $sql);
+if ( $result) {
+        echo "<br>";
+    } else {
+      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    }
+echo('<table border="1" class="tabela"'); 
+echo ("<tr><th>Najstarsz Pracownik</th><th>Wiek</th><th>Nazwa Dzialu</th></tr>"); 
+while($row=mysqli_fetch_assoc($result)){ 
+  echo("<tr>");         
+  echo("<td>".$row['imie']."</td><td>".$row['wiek']."</td><td>".$row['nazwa_dzial']."</td>");     
+  echo("</tr>"); } 
+echo('</table>'); 
+                
 ?>
 </body>
 </html>
