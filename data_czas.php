@@ -120,7 +120,7 @@ while($row=mysqli_fetch_assoc($result)){
 echo('</table>'); 
                
     $sql ="select *,SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) as Suma from pracownicy,organizacja where id_org=dzial group by dzial"; 
-echo("<h3>Zadanie 3</h3>"); 
+echo("<h3>Zadanie 7</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
         echo "<br>";
@@ -132,6 +132,22 @@ echo ("<tr><th>Suma Lat</th><th>Nazwa Dzialu</th></tr>");
 while($row=mysqli_fetch_assoc($result)){ 
   echo("<tr>");         
   echo("<td>".$row['Suma']."</td><td>".$row['nazwa_dzial']."</td>");     
+  echo("</tr>"); } 
+echo('</table>'); 
+                    
+    $sql ="select *,MAX(YEAR(CURDATE()) - YEAR(data_urodzenia)) as wiek from pracownicy,organizacja where id_org=dzial group by dzial"; 
+echo("<h3>Zadanie 8</h3>"); 
+$result = mysqli_query($conn, $sql);
+if ( $result) {
+        echo "<br>";
+    } else {
+      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    }
+echo('<table border="1" class="tabela"'); 
+echo ("<tr><th>Imie</th><th>Wiek</th><th>Nazwa Dzialu</th></tr>"); 
+while($row=mysqli_fetch_assoc($result)){ 
+  echo("<tr>");         
+  echo("<td>".$row['imie']."</td><td>".$row['wiek']."</td><td>".$row['nazwa_dzial']."</td>");     
   echo("</tr>"); } 
 echo('</table>'); 
                
