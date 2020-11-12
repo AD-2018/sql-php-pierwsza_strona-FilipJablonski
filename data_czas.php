@@ -9,7 +9,8 @@
 <nav>
     <br>
     <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-FilipJablonski">Github</a>
-    
+    <br>
+    <br>
     <div class="nav">
          <a href="index.php">Strona Główna</a>  
          <a href="pracownicy.php">Pracownicy</a>
