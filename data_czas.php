@@ -118,7 +118,23 @@ while($row=mysqli_fetch_assoc($result)){
   echo("<td>".$row['srednia']."</td><td>".$row['nazwa_dzial']."</td>");     
   echo("</tr>"); } 
 echo('</table>'); 
-     
+               
+    $sql ="select *,SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) as Suma from pracownicy,organizacja where id_org=dzial group by dzial"; 
+echo("<h3>Zadanie 3</h3>"); 
+$result = mysqli_query($conn, $sql);
+if ( $result) {
+        echo "<br>";
+    } else {
+      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    }
+echo('<table border="1" class="tabela"'); 
+echo ("<tr><th>Suma Lat</th><th>Nazwa Dzialu</th></tr>"); 
+while($row=mysqli_fetch_assoc($result)){ 
+  echo("<tr>");         
+  echo("<td>".$row['Suma']."</td><td>".$row['nazwa_dzial']."</td>");     
+  echo("</tr>"); } 
+echo('</table>'); 
+               
 ?>
 </body>
 </html>
