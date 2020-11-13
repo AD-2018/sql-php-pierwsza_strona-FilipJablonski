@@ -388,7 +388,7 @@ while($row=mysqli_fetch_assoc($result)){
   echo("</tr>"); } 
 echo('</table>'); 
                                                               
-    $sql ="select Count(DATE_FORMAT(data_urodzenia, '%W')) as ilosc, DATE_FORMAT(data_urodzenia, '%W') as dzien FROM pracownicy ORDER BY 
+    $sql ="select Count(DATE_FORMAT(data_urodzenia, '%W')) as ilosc, DATE_FORMAT(data_urodzenia, '%W') as dzien FROM pracownicy group by dzien ORDER BY 
      CASE 
           WHEN dzien = 'poniedziałek' THEN 1
           WHEN dzien = 'wtorek' THEN 2
