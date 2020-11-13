@@ -393,7 +393,7 @@ echo('<table border="1" class="tabela"');
 echo ("<tr><th>Ilosc Pracownikow Urodzonych w Tym Dniu</th></tr>"); 
 while($row=mysqli_fetch_assoc($result)){ 
   echo("<tr>");         
-  echo("<td>".$row['ilosc']."</td>");     
+  echo("<td>".$row['dzien']."</td>");     
   echo("</tr>"); } 
 echo('</table>'); 
         
