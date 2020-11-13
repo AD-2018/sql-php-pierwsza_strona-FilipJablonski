@@ -240,7 +240,7 @@ echo("<h3>Zadanie 2</h3>");
 $result1 = mysqli_query($conn, $sql1);
 $result2 = mysqli_query($conn, $sql2);
 if ( $result2||$result1) {
-        echo "<li>".$sql."</li>";
+        echo "<li>".$sql1."</li><br><li>".$sql2."</li>";
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
