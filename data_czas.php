@@ -355,7 +355,48 @@ while($row=mysqli_fetch_assoc($result)){
   echo("<td>".$row['imie']."</td><td>".$row['data_urodzenia']."</td><td>".$row['dzien']."</td>");     
   echo("</tr>"); } 
 echo('</table>'); 
-
+                                                      
+    $sql ="select Count(DATE_FORMAT(data_urodzenia, '%W')) as data FROM pracownicy where DATE_FORMAT(data_urodzenia, '%W')='poniedziałek'"; 
+echo("<h3>Zadanie 9</h3>"); 
+$result = mysqli_query($conn, $sql);
+if ( $result) {
+        echo "<li>".$sql."</li>";
+    } else {
+      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    }
+echo('<table border="1" class="tabela"'); 
+echo ("<tr><th>Ilosc Pracownikow Urodzonych w Poniedzialek</th></tr>"); 
+while($row=mysqli_fetch_assoc($result)){ 
+  echo("<tr>");         
+  echo("<td>".$row['data']."</td>");     
+  echo("</tr>"); } 
+echo('</table>'); 
+                                                              
+    $sql ="select Count(DATE_FORMAT(data_urodzenia, '%W')), DATE_FORMAT(data_urodzenia, '%W') as dzien FROM pracownicy ORDER BY 
+     CASE 
+          WHEN dzien = 'poniedziałek' THEN 1
+          WHEN dzien = 'wtorek' THEN 2
+          WHEN dzien = 'środa' THEN 3
+          WHEN dzien= 'czwartek' THEN 4
+          WHEN dzien = 'piątek' THEN 5
+          WHEN dzien = 'sobota' THEN 6
+          WHEN dzien = 'niedziela' THEN 7
+     END ASC"; 
+echo("<h3>Zadanie 10</h3>"); 
+$result = mysqli_query($conn, $sql);
+if ( $result) {
+        echo "<li>".$sql."</li>";
+    } else {
+      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    }
+echo('<table border="1" class="tabela"'); 
+echo ("<tr><th>Dzien Tygodnia</th><th>Ilosc Pracownikow Urodzonych w Tym Dniu</th></tr>"); 
+while($row=mysqli_fetch_assoc($result)){ 
+  echo("<tr>");         
+  echo("<td>".$row['data']."</td>");     
+  echo("</tr>"); } 
+echo('</table>'); 
+        
 ?>
 </body>
 </html>
