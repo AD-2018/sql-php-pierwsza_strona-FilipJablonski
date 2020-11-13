@@ -28,7 +28,7 @@ echo("<h2>Data i Czas</h2>");
 echo("<h3>Zadanie 1</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
-        echo "<br>";
+        echo "<li>".$sql."</li>";
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
@@ -44,7 +44,7 @@ echo('</table>');
 echo("<h3>Zadanie 2</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
-        echo "<br>";
+        echo "<li>".$sql."</li>";
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
@@ -60,7 +60,7 @@ echo('</table>');
 echo("<h3>Zadanie 3</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
-        echo "<br>";
+        echo "<li>".$sql."</li>";
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
@@ -76,7 +76,7 @@ echo('</table>');
 echo("<h3>Zadanie 4</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
-        echo "<br>";
+        echo "<li>".$sql."</li>";
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
@@ -92,7 +92,7 @@ echo('</table>');
 echo("<h3>Zadanie 5</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
-        echo "<br>";
+        echo "<li>".$sql."</li>";
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
@@ -108,7 +108,7 @@ echo('</table>');
 echo("<h3>Zadanie 6</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
-        echo "<br>";
+        echo "<li>".$sql."</li>";
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
@@ -124,7 +124,7 @@ echo('</table>');
 echo("<h3>Zadanie 7</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
-        echo "<br>";
+        echo "<li>".$sql."</li>";
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
@@ -140,7 +140,7 @@ echo('</table>');
 echo("<h3>Zadanie 8</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
-        echo "<br>";
+        echo "<li>".$sql."</li>";
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
@@ -156,7 +156,7 @@ echo('</table>');
 echo("<h3>Zadanie 9</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
-        echo "<br>";
+        echo "<li>".$sql."</li>";
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
@@ -172,7 +172,7 @@ echo('</table>');
 echo("<h3>Zadanie 10</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
-        echo "<br>";
+        echo "<li>".$sql."</li>";
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
@@ -188,7 +188,7 @@ echo('</table>');
 echo("<h3>Zadanie 11</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
-        echo "<br>";
+        echo "<li>".$sql."</li>";
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
@@ -204,7 +204,7 @@ echo('</table>');
 echo("<h3>Zadanie 12</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
-        echo "<br>";
+        echo "<li>".$sql."</li>";
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
@@ -222,7 +222,7 @@ echo('</table>');
 echo("<h3>Zadanie 1</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
-        echo "<br>";
+        echo "<li>".$sql."</li>";
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
@@ -238,7 +238,7 @@ echo('</table>');
 echo("<h3>Zadanie 2</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
-        echo "<br>";
+        echo "<li>".$sql."</li>";
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
