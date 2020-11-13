@@ -245,10 +245,10 @@ if ( $result2||$result1) {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
 echo('<table border="1" class="tabela"'); 
-echo ("<tr><th>Imie</th><th>Wiek</th></tr>"); 
+echo ("<tr><th>Dzien</th></tr>"); 
 while($row=mysqli_fetch_assoc($result2)){ 
   echo("<tr>");         
-  echo("<td>".$row['imie']."</td><td>".$row['wiek']."</td>");     
+  echo("<td>".$row['data']."</td>");     
   echo("</tr>"); } 
 echo('</table>'); 
      
