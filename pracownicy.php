@@ -28,7 +28,7 @@ echo("<h2>Pracownicy</h2>");
 echo("<h3>Zadanie 1</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
-        echo "<br>";
+        echo "<li>".$sql."</li>";
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
@@ -44,7 +44,7 @@ echo('</table>');
 echo("<h3>Zadanie 2</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
-        echo "<br>";
+        echo "<li>".$sql."</li>";
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
@@ -60,7 +60,7 @@ echo('</table>');
 echo("<h3>Zadanie 3</h3>"); 
 $result = mysqli_query($conn, $sql); 
 if ( $result) {
-        echo "<br>";
+        echo "<li>".$sql."</li>";
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
