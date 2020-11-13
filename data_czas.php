@@ -267,7 +267,22 @@ while($row=mysqli_fetch_assoc($result)){
   echo("<td>".$row['imie']."</td><td>".$row['data']."</td>");     
   echo("</tr>"); } 
 echo('</table>'); 
-     
+                                          
+    $sql ="select curtime(4) as data"; 
+echo("<h3>Zadanie 4</h3>"); 
+$result = mysqli_query($conn, $sql);
+if ( $result) {
+        echo "<li>".$sql."</li>";
+    } else {
+      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    }
+echo('<table border="1" class="tabela"'); 
+echo ("<tr><th>Aktualna Godzina</th></tr>"); 
+while($row=mysqli_fetch_assoc($result)){ 
+  echo("<tr>");         
+  echo("<td>".$row['data']."</td>");     
+  echo("</tr>"); } 
+echo('</table>'); 
 ?>
 </body>
 </html>
