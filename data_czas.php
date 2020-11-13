@@ -103,9 +103,25 @@ while($row=mysqli_fetch_assoc($result)){
   echo("<td>".$row['Suma']."</td>");     
   echo("</tr>"); } 
 echo('</table>'); 
+                              
+    $sql ="select *,SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) as Suma from pracownicy,organizacja where id_org=dzial and imie not like'%a'"; 
+echo("<h3>Zadanie 6</h3>"); 
+$result = mysqli_query($conn, $sql);
+if ( $result) {
+        echo "<li>".$sql."</li>";
+    } else {
+      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    }
+echo('<table border="1" class="tabela"'); 
+echo ("<tr><th>Suma Lat Mezczyzn</th></tr>"); 
+while($row=mysqli_fetch_assoc($result)){ 
+  echo("<tr>");         
+  echo("<td>".$row['Suma']."</td>");     
+  echo("</tr>"); } 
+echo('</table>'); 
                
     $sql ="select *,AVG(YEAR(CURDATE()) - YEAR(data_urodzenia)) as srednia from pracownicy,organizacja where id_org=dzial group by dzial"; 
-echo("<h3>Zadanie 6</h3>"); 
+echo("<h3>Zadanie 7</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
         echo "<li>".$sql."</li>";
@@ -121,7 +137,7 @@ while($row=mysqli_fetch_assoc($result)){
 echo('</table>'); 
                
     $sql ="select *,SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) as Suma from pracownicy,organizacja where id_org=dzial group by dzial"; 
-echo("<h3>Zadanie 7</h3>"); 
+echo("<h3>Zadanie 8</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
         echo "<li>".$sql."</li>";
@@ -137,7 +153,7 @@ while($row=mysqli_fetch_assoc($result)){
 echo('</table>'); 
                     
     $sql ="select *,MAX(YEAR(CURDATE()) - YEAR(data_urodzenia)) as wiek from pracownicy,organizacja where id_org=dzial group by dzial"; 
-echo("<h3>Zadanie 8</h3>"); 
+echo("<h3>Zadanie 9</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
         echo "<li>".$sql."</li>";
@@ -153,7 +169,7 @@ while($row=mysqli_fetch_assoc($result)){
 echo('</table>'); 
                                 
     $sql ="select *,MIN(YEAR(CURDATE()) - YEAR(data_urodzenia)) as wiek from pracownicy,organizacja where id_org=dzial and dzial=1 or dzial=2 group by dzial"; 
-echo("<h3>Zadanie 9</h3>"); 
+echo("<h3>Zadanie 10</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
         echo "<li>".$sql."</li>";
@@ -169,7 +185,7 @@ while($row=mysqli_fetch_assoc($result)){
 echo('</table>'); 
                                          
     $sql ="select *,MIN(YEAR(CURDATE()) - YEAR(data_urodzenia)) as wiek from pracownicy,organizacja where id_org=dzial and dzial=1 or dzial=2 group by dzial"; 
-echo("<h3>Zadanie 10</h3>"); 
+echo("<h3>Zadanie 11</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
         echo "<li>".$sql."</li>";
@@ -185,7 +201,7 @@ while($row=mysqli_fetch_assoc($result)){
 echo('</table>'); 
                                                   
     $sql ="select *,DATEDIFF(CURDATE(),data_urodzenia) as wiek from pracownicy,organizacja where id_org=dzial"; 
-echo("<h3>Zadanie 11</h3>"); 
+echo("<h3>Zadanie 12</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
         echo "<li>".$sql."</li>";
@@ -201,7 +217,7 @@ while($row=mysqli_fetch_assoc($result)){
 echo('</table>'); 
                              
     $sql ="select *,MAX(YEAR(CURDATE()) - YEAR(data_urodzenia)) as wiek from pracownicy,organizacja where id_org=dzial and imie not like '%a'"; 
-echo("<h3>Zadanie 12</h3>"); 
+echo("<h3>Zadanie 13</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
         echo "<li>".$sql."</li>";
@@ -372,7 +388,7 @@ while($row=mysqli_fetch_assoc($result)){
   echo("</tr>"); } 
 echo('</table>'); 
                                                               
-    $sql ="select Count(DATE_FORMAT(data_urodzenia, '%W')) as dzien FROM pracownicy ORDER BY 
+    $sql ="select Count(DATE_FORMAT(data_urodzenia, '%W')) as ilosc, DATE_FORMAT(data_urodzenia, '%W') as dzien FROM pracownicy ORDER BY 
      CASE 
           WHEN dzien = 'poniedziałek' THEN 1
           WHEN dzien = 'wtorek' THEN 2
@@ -390,10 +406,10 @@ if ( $result) {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
 echo('<table border="1" class="tabela"'); 
-echo ("<tr><th>Ilosc Pracownikow Urodzonych w Tym Dniu</th></tr>"); 
+echo ("<tr><th>Dzien Tygodnia</th><th>Ilosc Pracownikow Urodzonych w Tym Dniu</th></tr>"); 
 while($row=mysqli_fetch_assoc($result)){ 
   echo("<tr>");         
-  echo("<td>".$row['dzien']."</td>");     
+  echo("<td>".$row['dzien']."</td><td>".$row['ilosc']."</td>");     
   echo("</tr>"); } 
 echo('</table>'); 
         
