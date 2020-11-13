@@ -234,12 +234,12 @@ while($row=mysqli_fetch_assoc($result)){
   echo("</tr>"); } 
 echo('</table>'); 
                                       
-$sql1 =  "SET lc_time_names = 'pl_PL';"
-$sql2 =  "SELECT DATE_FORMAT(CURDATE(), '%W');"
+$sql1 = "SET lc_time_names = 'pl_PL'";
+$sql2 = "SELECT DATE_FORMAT(CURDATE(), '%W')as data";
 echo("<h3>Zadanie 2</h3>"); 
 $result1 = mysqli_query($conn, $sql1);
 $result2 = mysqli_query($conn, $sql2);
-if ( $result2) {
+if ( $result2||$result1) {
         echo "<li>".$sql."</li>";
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
