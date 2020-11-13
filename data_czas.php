@@ -372,7 +372,7 @@ while($row=mysqli_fetch_assoc($result)){
   echo("</tr>"); } 
 echo('</table>'); 
                                                               
-    $sql ="select Count(DATE_FORMAT(data_urodzenia, '%W')) as ilosc, DATE_FORMAT(data_urodzenia, '%W') as dzien FROM pracownicy ORDER BY 
+    $sql ="select Count(DATE_FORMAT(data_urodzenia, '%W')) as ilosc FROM pracownicy ORDER BY 
      CASE 
           WHEN dzien = 'poniedziałek' THEN 1
           WHEN dzien = 'wtorek' THEN 2
@@ -390,10 +390,10 @@ if ( $result) {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
 echo('<table border="1" class="tabela"'); 
-echo ("<tr><th>Dzien Tygodnia</th><th>Ilosc Pracownikow Urodzonych w Tym Dniu</th></tr>"); 
+echo ("<tr><th>Ilosc Pracownikow Urodzonych w Tym Dniu</th></tr>"); 
 while($row=mysqli_fetch_assoc($result)){ 
   echo("<tr>");         
-  echo("<td>".$row['dzien']."</td><td>".$row['ilosc']."</td>");     
+  echo("<td>".$row['ilosc']."</td>");     
   echo("</tr>"); } 
 echo('</table>'); 
         
