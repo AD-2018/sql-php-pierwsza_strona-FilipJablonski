@@ -234,18 +234,19 @@ while($row=mysqli_fetch_assoc($result)){
   echo("</tr>"); } 
 echo('</table>'); 
                                       
-$sql =  "SET lc_time_names = 'pl_PL';
-         SELECT DATE_FORMAT(CURDATE(), '%W');"
+$sql1 =  "SET lc_time_names = 'pl_PL';"
+$sql2 =  "SELECT DATE_FORMAT(CURDATE(), '%W');"
 echo("<h3>Zadanie 2</h3>"); 
-$result = mysqli_query($conn, $sql);
-if ( $result) {
+$result1 = mysqli_query($conn, $sql1);
+$result2 = mysqli_query($conn, $sql2);
+if ( $result2) {
         echo "<li>".$sql."</li>";
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
 echo('<table border="1" class="tabela"'); 
 echo ("<tr><th>Imie</th><th>Wiek</th></tr>"); 
-while($row=mysqli_fetch_assoc($result)){ 
+while($row=mysqli_fetch_assoc($result2)){ 
   echo("<tr>");         
   echo("<td>".$row['imie']."</td><td>".$row['wiek']."</td>");     
   echo("</tr>"); } 
