@@ -30,7 +30,7 @@ echo("<h2>Funkcje Agregujace</h2>");
 echo("<h3>Zadanie 1</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
-        echo "<br>";
+        echo "<li>".$sql."</li>";
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
@@ -46,7 +46,7 @@ echo('</table>');
 echo("<h3>Zadanie 2</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
-        echo "<br>";
+        echo "<li>".$sql."</li>";
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
@@ -62,7 +62,7 @@ echo('</table>');
 echo("<h3>Zadanie 3</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
-        echo "<br>";
+       echo "<li>".$sql."</li>";
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
@@ -78,7 +78,7 @@ echo('</table>');
 echo("<h3>Zadanie 4</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
-        echo "<br>";
+        echo "<li>".$sql."</li>";
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
@@ -94,7 +94,7 @@ echo('</table>');
 echo("<h3>Zadanie 5</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
-        echo "<br>";
+        echo "<li>".$sql."</li>";
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
@@ -110,7 +110,7 @@ echo('</table>');
 echo("<h3>Zadanie 6</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
-        echo "<br>";
+        echo "<li>".$sql."</li>";
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
@@ -126,7 +126,7 @@ echo('</table>');
 echo("<h3>Zadanie 7</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
-        echo "<br>";
+        echo "<li>".$sql."</li>";
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
@@ -142,7 +142,7 @@ echo('</table>');
 echo("<h3>Zadanie 8</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
-        echo "<br>";
+        echo "<li>".$sql."</li>";
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
@@ -160,7 +160,7 @@ echo("<h2>Group by</h2>");
 echo("<h3>Zadanie 1</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
-        echo "<br>";
+       echo "<li>".$sql."</li>";
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
@@ -176,7 +176,7 @@ echo('</table>');
 echo("<h3>Zadanie 2</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
-        echo "<br>";
+       echo "<li>".$sql."</li>";
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
@@ -192,7 +192,7 @@ echo('</table>');
 echo("<h3>Zadanie 3</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
-        echo "<br>";
+        echo "<li>".$sql."</li>";
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
@@ -208,7 +208,7 @@ echo('</table>');
 echo("<h3>Zadanie 4</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
-        echo "<br>";
+        echo "<li>".$sql."</li>";
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
@@ -224,7 +224,7 @@ echo('</table>');
 echo("<h3>Zadanie 5</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
-        echo "<br>";
+        echo "<li>".$sql."</li>";
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
@@ -242,7 +242,7 @@ echo("<h2>Klauzula HAVING</h2>");
 echo("<h3>Zadanie 1</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
-        echo "<br>";
+        echo "<li>".$sql."</li>";
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
@@ -258,7 +258,7 @@ echo('</table>');
 echo("<h3>Zadanie 2</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
-        echo "<br>";
+        echo "<li>".$sql."</li>";
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
@@ -274,7 +274,7 @@ echo('</table>');
 echo("<h3>Zadanie 3</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
-        echo "<br>";
+       echo "<li>".$sql."</li>";
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
