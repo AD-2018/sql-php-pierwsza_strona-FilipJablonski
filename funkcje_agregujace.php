@@ -17,10 +17,10 @@
          <a href="pracownicy_organizacja.php">Pracownicy i Organizacja</a>   
          <a href="funkcje_agregujace.php">Funkcje Agregujace</a>  
          <a href="data_czas.php">Data i Czas</a>
-         <a href="data_czas.php">Nieobecności Pracowników</a>
+         <a href="nieobecnosci.php">Nieobecności Pracowników</a>
     </div>
     <br>
-</nav>  
+</nav> 
     
 <?php
 
