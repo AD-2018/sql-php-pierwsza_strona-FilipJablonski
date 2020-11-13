@@ -316,7 +316,7 @@ while($row=mysqli_fetch_assoc($result)){
   echo("</tr>"); } 
 echo('</table>'); 
                                                       
-    $sql ="select DATE_FORMAT('2002-10-01', '%j') as data"; 
+    $sql ="select DATE_FORMAT('2002-10-30', '%j') as data"; 
 echo("<h3>Zadanie 7</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
@@ -325,10 +325,10 @@ if ( $result) {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
 echo('<table border="1" class="tabela"'); 
-echo ("<tr><th>Imie</th><th>Dzien Urodzin</th></tr>"); 
+echo ("<tr><th>Dzien Urodzin</th></tr>"); 
 while($row=mysqli_fetch_assoc($result)){ 
   echo("<tr>");         
-  echo("<td>".$row['imie']."</td><td>".$row['data']."</td>");     
+  echo("<td>".$row['data']."</td>");     
   echo("</tr>"); } 
 echo('</table>'); 
                                                       
