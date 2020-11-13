@@ -315,7 +315,48 @@ while($row=mysqli_fetch_assoc($result)){
   echo("<td>".$row['imie']."</td><td>".$row['godziny']."</td><td>".$row['minuty']."</td>");     
   echo("</tr>"); } 
 echo('</table>'); 
-    
+                                                      
+    $sql ="select DATE_FORMAT("2002-10-01", "%j") as data"; 
+echo("<h3>Zadanie 7</h3>"); 
+$result = mysqli_query($conn, $sql);
+if ( $result) {
+        echo "<li>".$sql."</li>";
+    } else {
+      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    }
+echo('<table border="1" class="tabela"'); 
+echo ("<tr><th>Imie</th><th>Dzien Urodzin</th></tr>"); 
+while($row=mysqli_fetch_assoc($result)){ 
+  echo("<tr>");         
+  echo("<td>".$row['imie']."</td><td>".$row['data']."</td>");     
+  echo("</tr>"); } 
+echo('</table>'); 
+                                                      
+    $sql ="select DATE_FORMAT(data_urodzenia,'%W') as dzien, imie, data_urodzenia FROM pracownicy ORDER BY
+     CASE 
+          WHEN dzien = 'poniedziałek' THEN 1
+          WHEN dzien = 'wtorek' THEN 2
+          WHEN dzien = 'środa' THEN 3
+          WHEN dzien= 'czwartek' THEN 4
+          WHEN dzien = 'piątek' THEN 5
+          WHEN dzien = 'sobota' THEN 6
+          WHEN dzien = 'niedziela' THEN 7
+     END ASC"; 
+echo("<h3>Zadanie 9</h3>"); 
+$result = mysqli_query($conn, $sql);
+if ( $result) {
+        echo "<li>".$sql."</li>";
+    } else {
+      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    }
+echo('<table border="1" class="tabela"'); 
+echo ("<tr><th>Imie</th><th>Data Urodzenia</th><th>Dzien</th></tr>"); 
+while($row=mysqli_fetch_assoc($result)){ 
+  echo("<tr>");         
+  echo("<td>".$row['imie']."</td><td>".$row['data_urodzenia']."</td><td>".$row['dzien']."</td>");     
+  echo("</tr>"); } 
+echo('</table>'); 
+
 ?>
 </body>
 </html>
