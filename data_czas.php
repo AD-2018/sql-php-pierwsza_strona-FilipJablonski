@@ -299,6 +299,22 @@ while($row=mysqli_fetch_assoc($result)){
   echo("<td>".$row['imie']."</td><td>".$row['data']."</td>");     
   echo("</tr>"); } 
 echo('</table>'); 
+                                                  
+    $sql ="select imie,DATEDIFF(CURDATE(),data_urodzenia)*24 as godziny, DATEDIFF(CURDATE(),data_urodzenia)*24*60 as minuty FROM pracownicy"; 
+echo("<h3>Zadanie 6</h3>"); 
+$result = mysqli_query($conn, $sql);
+if ( $result) {
+        echo "<li>".$sql."</li>";
+    } else {
+      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    }
+echo('<table border="1" class="tabela"'); 
+echo ("<tr><th>Imie</th><th>Ilosc Godzin</th><th>Ilosc Minut</th></tr>"); 
+while($row=mysqli_fetch_assoc($result)){ 
+  echo("<tr>");         
+  echo("<td>".$row['imie']."</td><td>".$row['godziny']."</td><td>".$row['minuty']."</td>");     
+  echo("</tr>"); } 
+echo('</table>'); 
     
 ?>
 </body>
