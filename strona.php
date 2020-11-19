@@ -33,7 +33,7 @@
 	echo("<ul>");
 	
 	echo("<li>".$_POST["imie"]);
-	echo("<li>"$_POST["nazwisko"]);
+	echo("<li>".$_POST["nazwisko"]);
 	
 	echo("<ul>");
 ?>
