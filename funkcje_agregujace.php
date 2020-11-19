@@ -18,6 +18,7 @@
          <a href="funkcje_agregujace.php">Funkcje Agregujace</a>  
          <a href="data_czas.php">Data i Czas</a>
          <a href="nieobecnosci.php">Nieobecności Pracowników</a>
+         <a href="strona.php">Strona</a>
     </div>
     <br>
 </nav> 
