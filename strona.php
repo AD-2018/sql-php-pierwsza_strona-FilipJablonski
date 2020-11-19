@@ -24,12 +24,14 @@
 </nav> 
 <form action="strona.php" method="POST">
    </br>
+	<tr><th>
    <input type="text" name="imie">
-   <input type="text" name="nazwisko"></br>
-   <input type="text" name="city"></br>
-   <input type="text" name="phone"></br>
+   <input type="text" name="nazwisko">
+   <input type="text" name="city">
+   <input type="text" name="phone">
    <input type="text" name="poscode"></br>
    <input type="submit" value="wyślij do strona.php">
+	</th></tr>
 </form>
 <?php
 	echo("jesteś na stronie.php");
