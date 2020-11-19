@@ -23,9 +23,12 @@
     <br>
 </nav> 
 <form action="strona.php" method="POST">
-   <br></br>
+   </br>
    <input type="text" name="imie">
    <input type="text" name="nazwisko"></br>
+   <input type="text" name="city"></br>
+   <input type="text" name="phone"></br>
+   <input type="text" name="poscode"></br>
    <input type="submit" value="wyślij do strona.php">
 </form>
 <?php
@@ -35,7 +38,9 @@
 	
 	echo("<li>".$_POST["imie"]);
 	echo("<li>".$_POST["nazwisko"]);
-	
+	echo("<li>".$_POST["city"]);
+	echo("<li>".$_POST["phone"]);
+	echo("<li>".$_POST["poscode"]);
 	echo("<ul>");
 ?>
 </body>
