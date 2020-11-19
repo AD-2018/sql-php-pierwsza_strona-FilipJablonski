@@ -23,6 +23,7 @@
     <br>
 </nav> 
 <form action="strona.php" method="POST">
+   <br></br>
    <input type="text" name="imie">
    <input type="text" name="nazwisko"></br>
    <input type="submit" value="wyślij do strona.php">
