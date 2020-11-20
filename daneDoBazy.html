@@ -23,12 +23,20 @@
     <br>
 </nav> 
 </br>
-	<form action="insert.php" method="POST">
+<h1>operacje CRUD</h1>
+<h3>dodawanie pracownika</h3>
+<form action="insert.php" method="POST">
 	    <input type="text" name="imie">
 			<input type="text" name="dzial"></br>
 			<input type="text" name="zarobki"></br>
 			<input type="text" name="data_urodzenia"></br>
 			<input type="submit" value="dodaj pracownika">
-	</form>
+</form>
+<h3>usuwanie pracownika</h3>
+<form action="delete.php" method="POST">
+   <input type="number" name="id"></br>
+   <input type="submit" value="Zapisz w zmiennej $_POST['id']">
+</form>
+
 </body>
 </html>
