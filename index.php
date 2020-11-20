@@ -19,9 +19,11 @@
          <a href="data_czas.php">Data i Czas</a>
          <a href="nieobecnosci.php">Nieobecności Pracowników</a>
          <a href="strona.php">Strona</a>
+         <a href="daneDoBazy.html">Dane Do Bazy</a>
+         <a href="insert.php">insert.php</a>
     </div>
     <br>
-</nav> 
+</nav>  
 <?php
 require_once("connect.php");
 $sql = "SELECT * FROM pracownicy, organizacja WHERE id_org = dzial";
