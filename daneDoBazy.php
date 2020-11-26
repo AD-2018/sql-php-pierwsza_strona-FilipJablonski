@@ -29,9 +29,9 @@
 <h3>dodawanie pracownika</h3>
 <form action="insert.php" method="POST">
 	<b>Imie:</b><input type="text" name="imie"><br>
-	<b>Dział:</b><input type="text" name="dzial"></br>
-	<b>Zarobki:</b><input type="text" name="zarobki"></br>
-	<b>Data Urodzenia:</b><input type="text" name="data_urodzenia"></br>
+	<b>Dział:</b><input type="number" name="dzial"></br>
+	<b>Zarobki:</b><input type="number" name="zarobki"></br>
+	<b>Data Urodzenia:</b><input type="date" name="data_urodzenia"></br>
 	<input type="submit" value="dodaj pracownika">
 </form>
 <h3>usuwanie pracownika po ID</h3>
