@@ -20,10 +20,9 @@
          <a href="nieobecnosci.php">Nieobecności Pracowników</a>
          <a href="strona.php">Strona</a>
          <a href="daneDoBazy.html">Dane Do Bazy</a>
-         <a href="insert.php">insert.php</a>
     </div>
     <br>
-</nav>  
+</nav> 
 <?php
 require_once("connect.php");
 echo("<h2>Data i Czas</h2>");
