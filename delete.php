@@ -3,7 +3,7 @@ require_once("connect.php");
 echo("Delete" . "<br>");
 echo $_POST['id'];
 
-$sql = "DELETE FROM Pracownik WHERE id= $_POST['id'];";
+$sql = "DELETE FROM Pracownik WHERE id=".$_POST['id'];
 
 echo $sql;
 
