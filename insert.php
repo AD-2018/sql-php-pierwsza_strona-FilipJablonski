@@ -8,4 +8,3 @@ $conn->query($sql);
 
 $conn->close();
 ?>
-require_once("connect.php");
