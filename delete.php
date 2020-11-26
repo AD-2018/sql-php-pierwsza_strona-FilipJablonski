@@ -5,8 +5,6 @@ echo $_POST['id'];
 
 $sql = "DELETE FROM Pracownik WHERE id=".$_POST['id'];
 
-echo $sql;
-
 if ($conn->query($sql) === TRUE) {
   echo $sql;
 } else {
