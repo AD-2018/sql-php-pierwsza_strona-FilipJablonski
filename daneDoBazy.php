@@ -20,10 +20,10 @@
          <a href="data_czas.php">Data i Czas</a>
          <a href="nieobecnosci.php">Nieobecności Pracowników</a>
          <a href="strona.php">Strona</a>
-         <a href="daneDoBazy.html">Dane Do Bazy</a>
+         <a href="daneDoBazy.php">Dane Do Bazy</a>
     </div>
     <br>
-</nav> 
+</nav>
 </br>
 <h1>Dodawanie i usuwanie</h1>
 <h3>dodawanie pracownika</h3>
