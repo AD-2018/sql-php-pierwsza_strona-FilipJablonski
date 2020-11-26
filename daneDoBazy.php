@@ -34,7 +34,7 @@
 	<b>Data Urodzenia:</b><input type="text" name="data_urodzenia"></br>
 	<input type="submit" value="dodaj pracownika">
 </form>
-<h3>usuwanie pracownika</h3>
+<h3>usuwanie pracownika po ID</h3>
 <form action="delete.php" method="POST">
    <input type="number" name="id"></br>
    <input type="submit" value="USUŃ">
