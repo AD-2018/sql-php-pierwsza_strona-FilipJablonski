@@ -28,10 +28,10 @@
 <h1>Dodawanie i usuwanie</h1>
 <h3>dodawanie pracownika</h3>
 <form action="insert.php" method="POST">
-	<b>Imie:</b><c><input type="text" name="imie"></c><br>
-	<b>Dział:</b><c><input type="number" name="dzial"></c></br>
-	<b>Zarobki:</b><c><input type="number" name="zarobki"></c></br>
-	<b>Data Urodzenia:</b><c><input class="myInput" type="date" name="data_urodzenia"></c></br>
+	<b>Imie:</b><input class="myInput" type="text" name="imie"><br>
+	<b>Dział:</b><input class="myInput" type="number" name="dzial"></br>
+	<b>Zarobki:</b><input class="myInput" type="number" name="zarobki"></br>
+	<b>Data Urodzenia:</b><input class="myInput" type="date" name="data_urodzenia"></br>
 	<input type="submit" value="dodaj pracownika">
 </form>
 <h3>usuwanie pracownika po ID</h3>
