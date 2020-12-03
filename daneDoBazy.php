@@ -61,12 +61,20 @@ $sql = "SELECT * FROM pracownicy, organizacja WHERE id_org = dzial";
     echo("<table border='1'>");
     echo("<th>ID</th><th>Imie</th><th>Zarobki</th><th>Data Urodzenia</th><th>Dzial</th><th>Nazwa dzialu</th><th>Usuń Pracownika</th>");
         while($row = mysqli_fetch_assoc($result)) {
-            echo("<tr>");
-            echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['zarobki']."</td><td>".$row['data_urodzenia']."</td><td>".$row['dzial']."</td><td>".$row['nazwa_dzial']."</td><td>".<form action="delete.php" method="POST"><input type="submit" value="USUŃ">
- </form>."</td>");
-            echo("</tr>");
-        };
-    echo("</table>");
+            echo('<tr>');
+            echo('<td>'.$row['id_pracownicy'].'</td><td>'.$row['imie'].'</td><td>'.$row['zarobki'].'</td><td>'.$row['data_urodzenia'].'</td><td>'.$row['dzial'].'</td><td>'.$row['nazwa_dzial'].'</td>'.
+	     '<td>
+	    
+	     <form action="delete.php" method="POST">
+  		<input type="hidden" name="id" value="'.$wiersz['id_pracownicy'].'">
+   		<input type="submit" value="Usuń pracownika">
+	     </form>
+	     
+	     </td>');
+        echo('</tr>');
+    }
+
+    echo('</table>');
 ?>
 </body>
 </html>
