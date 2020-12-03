@@ -28,11 +28,13 @@
 <h1>Dodawanie i usuwanie</h1>
 <h3>dodawanie pracownika</h3>
 <form action="insert.php" method="POST">
-	<b>Imie:</b><input class="myInput" type="text" name="imie"><br>
-	<b>Dział:</b><input class="myInput" type="number" name="dzial"></br>
-	<b>Zarobki:</b><input class="myInput" type="number" name="zarobki"></br>
-	<b>Data Urodzenia:</b><input class="myInput" type="date" name="data_urodzenia"></br>
-	<input type="submit" value="dodaj pracownika">
+	<th>
+		<tr><b>Imie:</b><input class="myInput" type="text" name="imie"></tr>
+		<tr><b>Dział:</b><input class="myInput" type="number" name="dzial"></tr>
+		<tr><b>Zarobki:</b><input class="myInput" type="number" name="zarobki"></tr>
+		<tr><b>Data Urodzenia:</b><input class="myInput" type="date" name="data_urodzenia"></tr>
+		<tr><input type="submit" value="dodaj pracownika"></tr>
+	<th>
 </form>
 <h3>usuwanie pracownika po ID</h3>
 <form action="delete.php" method="POST">
@@ -57,10 +59,13 @@ $sql = "SELECT * FROM pracownicy, organizacja WHERE id_org = dzial";
     echo("<h1>Tabelka</h1>");
 
     echo("<table border='1'>");
-    echo("<th>ID</th><th>Imie</th><th>Zarobki</th><th>Data Urodzenia</th><th>Dzial</th><th>Nazwa dzialu</th>");
+    echo("<th>ID</th><th>Imie</th><th>Zarobki</th><th>Data Urodzenia</th><th>Dzial</th><th>Nazwa dzialu</th><th>Usuń Pracownika</th>");
         while($row = mysqli_fetch_assoc($result)) {
             echo("<tr>");
-            echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['zarobki']."</td><td>".$row['data_urodzenia']."</td><td>".$row['dzial']."</td><td>".$row['nazwa_dzial']."</td>");
+            echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['zarobki']."</td><td>".$row['data_urodzenia']."</td><td>".$row['dzial']."</td><td>".$row['nazwa_dzial']."</td><td>".<form action="delete.php" method="POST">
+   <input type="number" name="id"></br>
+   <input type="submit" value="USUŃ">
+ </form>."</td>");
             echo("</tr>");
         };
     echo("</table>");
