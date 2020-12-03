@@ -67,7 +67,7 @@ $sql = "SELECT * FROM pracownicy, organizacja WHERE id_org = dzial";
 	    
 	     <form action="delete.php" method="POST">
   		<input name="id" value="'.$row['id_pracownicy'].'" hidden>
-   		<input type="submit" value="Usuń pracownika">
+   		<input type="submit" value="X">
 	     </form>
 	     
 	     </td>');
