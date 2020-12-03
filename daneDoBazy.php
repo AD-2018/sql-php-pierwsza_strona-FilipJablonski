@@ -29,10 +29,10 @@
 <h3>dodawanie pracownika</h3>
 <form action="insert.php" method="POST">
 	<th>
-		<tr><b>Imie:</b><input class="myInput" type="text" name="imie"></tr>
-		<tr><b>Dział:</b><input class="myInput" type="number" name="dzial"></tr>
-		<tr><b>Zarobki:</b><input class="myInput" type="number" name="zarobki"></tr>
-		<tr><b>Data Urodzenia:</b><input class="myInput" type="date" name="data_urodzenia"></tr>
+		<tr>Imie:<input class="myInput" type="text" name="imie"></tr>
+		<tr>Dział:<input class="myInput" type="number" name="dzial"></tr>
+		<tr>Zarobki:<input class="myInput" type="number" name="zarobki"></tr>
+		<tr>Data Urodzenia:<input class="myInput" type="date" name="data_urodzenia"></tr>
 		<tr><input type="submit" value="dodaj pracownika"></tr>
 	<th>
 </form>
