@@ -23,6 +23,14 @@
     </div>
     <br>
 </nav>
+<form action="pracownicy.php">
+  <label for="table">Choose a car:</label>
+  <select name="$_POST['imie']" id="$_POST['imie']">
+    <option value="$_POST['imie']">$_POST['imie']</option>
+  </select>
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
 <?php
 
 require_once("connect.php");
