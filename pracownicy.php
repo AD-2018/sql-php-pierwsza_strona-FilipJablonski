@@ -25,7 +25,7 @@
 </nav>
 <form action="pracownicy.php">
   <label for="table">Pracownik:</label>
-  <select name="'.$row['imie'].'" id=$_POST['imie']>
+  <select name="'.$row['imie'].'" id="'.$row['imie'].'">
     <option value="'.$row['imie'].'">"'.$row['imie'].'"</option>
   </select>
   <br><br>
