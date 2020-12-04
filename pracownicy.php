@@ -23,14 +23,6 @@
     </div>
     <br>
 </nav>
-<form action="pracownicy.php">
-  <label for="table">Pracownik:</label>
-  <select name=$row['imie'] id=$row['imie']>
-    <option value=$row['imie']>$row['imie']</option>
-  </select>
-  <br><br>
-  <input type="submit" value="Submit">
-</form>
 <?php
 
 require_once("connect.php");
