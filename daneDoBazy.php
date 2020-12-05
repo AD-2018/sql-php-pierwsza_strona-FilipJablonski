@@ -32,14 +32,15 @@
 		<tr>Dział:<input class="myInput" type="number" name="dzial"></tr>
 		<tr>Zarobki:<input class="myInput" type="number" name="zarobki"></tr>
 		<tr>Data Urodzenia:<input class="myInput" type="date" name="data_urodzenia"></tr>
-		<tr><input type="submit" value="dodaj pracownika"></tr>
+		<tr><input type="submit" value="Dodaj Pracownika"></tr>
 	</form>
 <h3 class="szare">Usuwanie pracownika po ID</h3>
 <form action="delete.php" method="POST">
    <input type="number" name="id">
    <input type="submit" value="USUŃ">
 </form>
-</div>	
+</div>
+<div class="Dane1">
 <?php
 require_once("connect.php");
 $sql = "SELECT * FROM pracownicy, organizacja WHERE id_org = dzial";
@@ -75,5 +76,6 @@ $sql = "SELECT * FROM pracownicy, organizacja WHERE id_org = dzial";
 
     echo('</table>');
 ?>
+</div>
 </body>
 </html>
