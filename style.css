@@ -6,12 +6,11 @@ body {
 table {
   border-collapse: collapse;
   width: 50%;
- padding: 1rem;
 }
 
 th {
-  background-color:#112DFF;
-  height: 70px;
+  background-color:#2AAD00;
+  height: 50px;
   text-align: center;
   color: #FFFFFF;
 }
