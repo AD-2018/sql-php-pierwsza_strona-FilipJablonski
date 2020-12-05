@@ -20,14 +20,13 @@ tr {
   color: #000000;
 }
 li a {
-	float:left;
-	display: block;
-    display: block;
+  float:left;
+  display: block;
   color: #ffffff;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-	background-color: #A9A9A9;
+  background-color: #A9A9A9;
 }
 a:hover{
     background-color: #ffffff;
