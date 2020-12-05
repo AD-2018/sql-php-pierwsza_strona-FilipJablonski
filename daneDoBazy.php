@@ -24,9 +24,10 @@
     </br>
 </nav>
 </br>
+<div class="Dane1">
 <h1>Dodawanie i usuwanie</h1>
 <h3>Dodawanie pracownika</h3>
-	<form action="insert.php" class="Dane1" method="POST">
+	<form action="insert.php" method="POST">
 		<tr>Imie:<input class="myInput" type="text" name="imie"></tr>
 		<tr>Dział:<input class="myInput" type="number" name="dzial"></tr>
 		<tr>Zarobki:<input class="myInput" type="number" name="zarobki"></tr>
@@ -37,7 +38,8 @@
 <form action="delete.php" method="POST">
    <input type="number" name="id">
    <input type="submit" value="USUŃ">
- </form>
+</form>
+</div>	
 <?php
 require_once("connect.php");
 $sql = "SELECT * FROM pracownicy, organizacja WHERE id_org = dzial";
