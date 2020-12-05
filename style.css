@@ -18,6 +18,7 @@ th {
 tr {
   background-color: #FFFFFF;
   text-align: center;
+  color: #000000;
 }
 li a {
 	float:left;
@@ -47,6 +48,7 @@ nav {
 background-color: #2AAD00;
 }
 .Dane1{
+	float:left;
 	padding:1rem;
 	background-color: #333;
 	color:#ffffff;
