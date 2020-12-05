@@ -40,6 +40,7 @@
    <input type="submit" value="USUŃ">
 </form>
 </div>
+</br>
 <div class="Dane1">
 <?php
 require_once("connect.php");
