@@ -21,7 +21,7 @@
          <li><a href="daneDoBazy.php">Dane Do Bazy</a></li>
     </strong>
     </div>
-    </br>
+	</br></br></br>
 </nav>
 </br>
 <div class="Dane1">
