@@ -25,7 +25,7 @@
 </nav>
 </br>
 <div class="Dane1">
-<h1 class="zielony">Dodawanie i usuwanie</h1>
+<h1 class="zielone">Dodawanie i usuwanie</h1>
 <h3>Dodawanie pracownika</h3>
 	<form action="insert.php" method="POST">
 		<tr>Imie:<input class="myInput" type="text" name="imie"></tr>
