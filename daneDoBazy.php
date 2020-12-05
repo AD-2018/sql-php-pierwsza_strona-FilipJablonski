@@ -25,19 +25,17 @@
 </nav>
 </br>
 <h1>Dodawanie i usuwanie</h1>
-<h3>dodawanie pracownika</h3>
-<th>
-	<form action="insert.php" method="POST">
+<h3>Dodawanie pracownika</h3>
+	<form action="insert.php" class="Dane1" method="POST">
 		<tr>Imie:<input class="myInput" type="text" name="imie"></tr>
 		<tr>Dział:<input class="myInput" type="number" name="dzial"></tr>
 		<tr>Zarobki:<input class="myInput" type="number" name="zarobki"></tr>
 		<tr>Data Urodzenia:<input class="myInput" type="date" name="data_urodzenia"></tr>
 		<tr><input type="submit" value="dodaj pracownika"></tr>
 	</form>
-</th>	
-<h3>usuwanie pracownika po ID</h3>
+<h3>Usuwanie pracownika po ID</h3>
 <form action="delete.php" method="POST">
-   <input type="number" name="id"></br>
+   <input type="number" name="id">
    <input type="submit" value="USUŃ">
  </form>
 <?php
