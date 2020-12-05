@@ -4,24 +4,22 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <h1>Filip Jabłoński</h1>
+
 <nav>
-    <br>
-    <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-FilipJablonski">Github</a>
-    <br>
-    <br>
     <div class="nav">
-         <a href="index.php">Strona Główna</a>  
-         <a href="pracownicy.php">Pracownicy</a>
-         <a href="pracownicy_organizacja.php">Pracownicy i Organizacja</a>   
-         <a href="funkcje_agregujace.php">Funkcje Agregujace</a>  
-         <a href="data_czas.php">Data i Czas</a>
-         <a href="nieobecnosci.php">Nieobecności Pracowników</a>
-         <a href="strona.php">Strona</a>
-         <a href="daneDoBazy.php">Dane Do Bazy</a>
+    <strong>
+    	 <li><a class="GitHub" href="https://github.com/AD-2018/sql-php-pierwsza_strona-FilipJablonski">Github</a></li>
+         <li><a href="index.php">Strona Główna</a></li>
+         <li><a href="pracownicy.php">Pracownicy</a></li>
+         <li><a href="pracownicy_organizacja.php">Pracownicy i Organizacja</a></li>   
+         <li><a href="funkcje_agregujace.php">Funkcje Agregujace</a></li>
+         <li><a href="data_czas.php">Data i Czas</a></li>
+         <li><a href="nieobecnosci.php">Nieobecności Pracowników</a></li>
+         <li><a href="strona.php">Strona</a></li>
+         <li><a href="daneDoBazy.php">Dane Do Bazy</a></li>
+    </strong>
     </div>
-    <br>
+    </br>
 </nav>
 <?php
 ?>
