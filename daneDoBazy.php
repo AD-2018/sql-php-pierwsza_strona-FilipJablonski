@@ -41,7 +41,6 @@
 </form>
 </div>
 </br>
-<div class="Dane1">
 <?php
 require_once("connect.php");
 $sql = "SELECT * FROM pracownicy, organizacja WHERE id_org = dzial";
@@ -77,6 +76,5 @@ $sql = "SELECT * FROM pracownicy, organizacja WHERE id_org = dzial";
 
     echo('</table>');
 ?>
-</div>
 </body>
 </html>
