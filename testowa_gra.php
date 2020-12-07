@@ -52,7 +52,7 @@ $sql = "SELECT * FROM gra_nr_1";
     echo('</table>');
 ?>
 <form action="testowa_gra_restart.php">
-   <input type="submit" class="button_kik value="Nowa Gra">
+   <input type="submit" class="button_kik" value="Nowa Gra">
 </form>
 </body>
 </html>
