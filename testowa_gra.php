@@ -42,10 +42,10 @@ $sql = "SELECT * FROM gra_nr_1";
     echo("<h1>Tabelka</h1>");
 
     echo("<table border='1'>");
-    echo("<th>Kolumna</th><th>Pole1</th><th>Pole2</th><th>Pole3</th>");
+    echo("<th>\</th><th>Kolumna 1</th><th>Kolumna 3</th><th>Kolumna 3</th>");
         while($row = mysqli_fetch_assoc($result)) {
             echo('<tr>');
-            echo('<td>'.$row[kolumna].'</td><td>'.$row['pole1'].'</td><td>'.$row['pole2'].'</td><td>'.$row['pole3'].'</td>');
+            echo('<td class='tlo_zielony'>'.$row[X].'</td><td>'.$row['Kolumna 1'].'</td><td>'.$row['Kolumna 2'].'</td><td>'.$row['Kolumna 3'].'</td>');
         echo('</tr>');
     }
 
