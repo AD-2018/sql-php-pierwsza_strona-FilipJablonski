@@ -7,7 +7,7 @@
 <?php
 require_once("connect.php");
 
-$sql = "UPDATE `jablonski-filip_pbd`.gra_nr_1 SET Kolumna1= ' ', Kolumna2= ' ', Kolumna3= ' ' WHERE X = 'Wiersz 1' or X = 'Wiersz 2' or X = 'Wiersz 3';"
+$sql = "UPDATE gra_nr_1 SET Kolumna1= ' ', Kolumna2= ' ', Kolumna3= ' ' WHERE X = 'Wiersz 1' or X = 'Wiersz 2' or X = 'Wiersz 3';"
 
 if ($conn->query($sql) === TRUE) {
   echo("</br>");
@@ -15,7 +15,7 @@ if ($conn->query($sql) === TRUE) {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
-$sql = "UPDATE `jablonski-filip_pbd`.gra_nr_1 SET tura= 'x' WHERE X = 'Wiersz 1';"
+$sql = "UPDATE gra_nr_1 SET tura= 'x' WHERE X = 'Wiersz 1';"
 
 if ($conn->query($sql) === TRUE) {
   header('Location: https://jablonski-filip.herokuapp.com/testowa_gra.php');
