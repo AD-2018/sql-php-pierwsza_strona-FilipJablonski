@@ -62,4 +62,12 @@ background-color: #2AAD00;
 }
 .tlo_zielony{
 	background-color: #2AAD00;
+	color:#ffffff;
+}
+.tabela_kik{
+  border-collapse: collapse;
+  width: 600px;
+}
+.tr_kik {
+	height: 150px;
 }
