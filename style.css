@@ -67,6 +67,7 @@ background-color: #2AAD00;
 .tabela_kik{
   border-collapse: collapse;
   width: 600px;
+  height: 150px;
 }
 .tr_kik {
 	height: 150px;
