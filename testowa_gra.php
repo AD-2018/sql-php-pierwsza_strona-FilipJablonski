@@ -45,7 +45,7 @@ $sql = "SELECT * FROM gra_nr_1";
     echo("<th>\</th><th>Kolumna 1</th><th>Kolumna 3</th><th>Kolumna 3</th>");
         while($row = mysqli_fetch_assoc($result)) {
             echo('<tr>');
-            echo('<td class='tlo_zielony'>'.$row[X].'</td><td>'.$row['Kolumna 1'].'</td><td>'.$row['Kolumna 2'].'</td><td>'.$row['Kolumna 3'].'</td>');
+            echo('<td class="tlo_zielony">'.$row[X].'</td><td>'.$row['Kolumna1'].'</td><td>'.$row['Kolumna2'].'</td><td>'.$row['Kolumna3'].'</td>');
         echo('</tr>');
     }
 
