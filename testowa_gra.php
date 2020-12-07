@@ -38,8 +38,8 @@ $sql = "SELECT * FROM gra_nr_1";
      } else {
        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
      }
-
-    echo("<h1>Tura Gracza: </h1>'.$row['tura'].'");
+$tura = mysqli_fetch_assoc($result)
+    echo("<h1>Tura Gracza: </h1>'.$tura['tura'].'");
 
     echo("<table border='1' class='tabela_kik'>");
     echo("<th class='tr_kik'>\</th><th class='tr_kik'>Kolumna 1</th><th class='tr_kik'>Kolumna 2</th><th class='tr_kik'>Kolumna 3</th>");
