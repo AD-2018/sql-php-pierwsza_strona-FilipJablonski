@@ -38,6 +38,7 @@ nav {
   padding: 1rem;
   overflow: hidden;
   background-color: #333;
+  width: 100%;
 }
 .myInput{
     margin: 2rem; 
