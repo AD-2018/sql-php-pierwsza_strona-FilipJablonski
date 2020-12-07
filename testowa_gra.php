@@ -41,7 +41,7 @@ $sql = "SELECT * FROM gra_nr_1";
 
     echo("<h1>Tabelka</h1>");
 
-    echo("<table border='1'>");
+    echo("<table border='1' class='tabela_kik'>");
     echo("<th class='tabela_kik'>\</th><th>Kolumna 1</th><th>Kolumna 3</th><th>Kolumna 3</th>");
         while($row = mysqli_fetch_assoc($result)) {
             echo('<tr class="tr_kik">');
