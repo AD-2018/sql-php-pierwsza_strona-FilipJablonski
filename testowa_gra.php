@@ -38,8 +38,7 @@ $sql = "SELECT * FROM gra_nr_1";
      } else {
        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
      }
-$tura = mysqli_fetch_assoc($result)
-    echo("<h1>Tura Gracza: </h1>'.$tura['tura'].'");
+    echo("<h1>Kółko i Krzyżyk</h1>");
 
     echo("<table border='1' class='tabela_kik'>");
     echo("<th class='tr_kik'>\</th><th class='tr_kik'>Kolumna 1</th><th class='tr_kik'>Kolumna 2</th><th class='tr_kik'>Kolumna 3</th>");
