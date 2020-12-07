@@ -39,7 +39,7 @@ $sql = "SELECT * FROM gra_nr_1";
        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
      }
 
-    echo("<h1>Tabelka</h1>");
+    echo("<h1>Tura Gracza: </h1>'.$row['tura'].'");
 
     echo("<table border='1' class='tabela_kik'>");
     echo("<th class='tr_kik'>\</th><th class='tr_kik'>Kolumna 1</th><th class='tr_kik'>Kolumna 2</th><th class='tr_kik'>Kolumna 3</th>");
@@ -51,6 +51,7 @@ $sql = "SELECT * FROM gra_nr_1";
 
     echo('</table>');
 ?>
+</br></br>
 <form action="testowa_gra_restart.php">
    <input type="submit" class="button_kik" value="Nowa Gra">
 </form>
