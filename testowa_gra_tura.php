@@ -6,7 +6,7 @@
 <?php
 require_once("connect.php");
 
-$sql = "UPDATE gra_nr_1 SET ".$_POST['Kolumna'].'= if (tura="X" , if('.$_POST['Kolumna'].'="O","O","X"),if('.$_POST['Kolumna'].'="O","O","X")) WHERE X = '.'"'.$_POST['Wiersz'].'"';
+$sql = "UPDATE gra_nr_1 SET ".$_POST['Kolumna'].'= if (tura="X" , if('.$_POST['Kolumna'].'="O","O","X"),if('.$_POST['Kolumna'].'="O","X","O")) WHERE X = '.'"'.$_POST['Wiersz'].'"';
 
 if ($conn->query($sql) === TRUE) {
   echo("</br>");
