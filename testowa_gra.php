@@ -29,6 +29,7 @@
    <br><br>
    <input type="submit" class="button_kik" value="Nowa Gra">
 </form>
+<div class="do_lewej">
 <?php
 require_once("connect.php");
 $sql = "SELECT * FROM gra_nr_1";
@@ -72,6 +73,7 @@ $sql = "SELECT * FROM gra_nr_1";
   <input type="radio" id="Wiersz 3" name="Wiersz" value="Wiersz 3">
   <label for="Wiersz 3">3</label><br><br>
   <input type="submit" value="Nowa Tura">
-</form>  
+</form>
+</div>
 </body>
 </html>
