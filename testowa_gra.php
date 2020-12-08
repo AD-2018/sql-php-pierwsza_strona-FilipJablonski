@@ -24,6 +24,9 @@
     </div>
 	</br></br></br>
 </nav>
+<form action="testowa_gra_restart.php">
+   <input type="submit" class="button_kik" value="Nowa Gra">
+</form>
 <?php
 require_once("connect.php");
 $sql = "SELECT * FROM gra_nr_1";
@@ -51,8 +54,22 @@ $sql = "SELECT * FROM gra_nr_1";
     echo('</table>');
 ?>
 </br></br>
-<form action="testowa_gra_restart.php">
-   <input type="submit" class="button_kik" value="Nowa Gra">
-</form>
+<form action="testowa_gra_tura.php" method="POST">
+  Kolumna<br>
+  <input type="radio" id="Kolumna1" name="Kolumna" value="Kolumna1">
+  <label for="Kolumna1">1</label>
+  <input type="radio" id="Kolumna2" name="Kolumna" value="Kolumna2">
+  <label for="Kolumna2">2</label>
+  <input type="radio" id="Kolumna3" name="Kolumna" value="Kolumna3">
+  <label for="Kolumna3">3</label><br><br>
+  Wiersz<br>
+  <input type="radio" id="Wiersz 1" name="Wiersz" value="Wiersz 1">
+  <label for="Wiersz 1">1</label>
+  <input type="radio" id="Wiersz 2" name="Wiersz" value="Wiersz 2">
+  <label for="Wiersz 2">2</label>
+  <input type="radio" id="Wiersz 3" name="Wiersz" value="Wiersz 3">
+  <label for="Wiersz 3">3</label><br><br>
+  <input type="submit" value="Nowa Tura">
+</form>  
 </body>
 </html>
