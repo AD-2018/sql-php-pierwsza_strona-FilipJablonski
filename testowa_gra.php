@@ -60,7 +60,6 @@ $sql = "SELECT * FROM gra_nr_1";
 
     $result = mysqli_query($conn, $sql);
     if ( $result) {
-         echo "<br>";
      } else {
        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
      }
