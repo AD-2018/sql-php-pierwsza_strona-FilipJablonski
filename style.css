@@ -94,5 +94,7 @@ background-color: #2AAD00;
 }
 .margin_left{
 	margin-left: 1rem;
+	border: none;
+	display: block;
 }
 	
