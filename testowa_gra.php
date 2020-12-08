@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <meta http-equiv="refresh" content="7,5;url=testowa_gra.php">
+  <meta http-equiv="refresh" content="8;url=testowa_gra.php">
   <link rel="stylesheet" href="style.css">
   <title>Gra</title>
 </head>
