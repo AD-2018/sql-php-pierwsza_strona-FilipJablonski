@@ -70,7 +70,7 @@ $sql = "SELECT * FROM gra_nr_1";
     echo("<th class='tr_kik'>\</th><th class='tr_kik'>Kolumna 1</th><th class='tr_kik'>Kolumna 2</th><th class='tr_kik'>Kolumna 3</th>");
         while($row = mysqli_fetch_assoc($result)) {
             echo('<tr class="tr_kik">');
-            echo('<td class="tlo_zielony">'.$row[X].'</td><td class="big_kik">'.$row['Kolumna1'].'</td><td class="big_kik">'.$row['Kolumna2'].'</td><td class="big_kik">'.$row['Kolumna3'].'</td>');
+            echo('<th class="tlo_zielony">'.$row[X].'</th><td class="big_kik">'.$row['Kolumna1'].'</td><td class="big_kik">'.$row['Kolumna2'].'</td><td class="big_kik">'.$row['Kolumna3'].'</td>');
         echo('</tr>');
     }
 
