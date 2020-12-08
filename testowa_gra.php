@@ -28,7 +28,6 @@
 <div class="do_lewej">
 <div class="Dane1">
 <form action="testowa_gra_restart.php">
-   <br><br>
    <input type="submit" class="button_kik" value="Nowa Gra">
 </form>
 <form action="testowa_gra_tura.php" method="POST">
