@@ -26,7 +26,7 @@
 	</br></br></br>
 </nav>
 <div class="do_lewej">
-<div class="Dane1">
+<div class="Dane2">
 <form action="testowa_gra_restart.php">
    <input type="submit" class="button_kik" value="Nowa Gra">
 </form>
@@ -49,7 +49,7 @@
 </form>
 </div>
 </div>
-<div class="margin_left">
+<div class="Dane2">
 <?php
 require_once("connect.php");
 $sql = "SELECT * FROM gra_nr_1";
