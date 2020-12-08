@@ -50,7 +50,6 @@ background-color: #2AAD00;
 	background-color: #333;
 	color:#ffffff;
 	margin-top: 1rem;
-	margin-right: 1rem;
 }
 .zielone{
 	padding: 0.75rem;
@@ -97,4 +96,11 @@ background-color: #2AAD00;
 	padding:1rem;
 	margin-left: 1rem;
 }
-	
+.Dane2{
+	padding:1rem;
+	background-color: #333;
+	color:#ffffff;
+	margin-top: 1rem;
+	margin-right: 1rem;
+	margin-bottom: 1rem;
+}
