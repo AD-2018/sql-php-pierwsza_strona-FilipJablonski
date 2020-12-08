@@ -56,7 +56,6 @@ $sql = "SELECT * FROM gra_nr_1";
 
     echo('</table>');
 ?>
-</br></br>
 <form action="testowa_gra_tura.php" method="POST">
   Kolumna<br>
   <input type="radio" id="Kolumna1" name="Kolumna" value="Kolumna1">
