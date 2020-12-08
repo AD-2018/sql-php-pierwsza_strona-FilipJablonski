@@ -49,6 +49,8 @@
 </form>
 </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
 </div>
+</div>
+<div class="do_lewej">
 <div class="Dane3">
 <?php
 require_once("connect.php");
