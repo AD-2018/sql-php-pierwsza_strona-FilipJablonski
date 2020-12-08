@@ -76,7 +76,7 @@ $sql = "SELECT * FROM gra_nr_1";
 
     echo('</table>');
 echo('</div>');
-echo('<div class"do_lewej">');
+echo('<div class="do_lewej">');
 echo('<h1>'.'Player 1: '.$_POST['player1'].'         '.'<h1>');
 echo('<h1>'.'Player 2: '.$_POST['player2'].'<h1>');
 ?>
