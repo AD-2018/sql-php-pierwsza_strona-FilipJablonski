@@ -26,6 +26,7 @@
 	</br></br></br>
 </nav>
 <div class="do_lewej">
+<div class="Dane1">
 <form action="testowa_gra_restart.php">
    <br><br>
    <input type="submit" class="button_kik" value="Nowa Gra">
@@ -47,6 +48,7 @@
   <label for="Wiersz 3">3</label><br><br>
   <input type="submit" value="Nowa Tura">
 </form>
+</div>
 </div>
 <?php
 require_once("connect.php");
