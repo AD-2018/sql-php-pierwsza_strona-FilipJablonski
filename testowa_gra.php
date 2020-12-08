@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <meta http-equiv="refresh" content="15;url=testowa_gra.php">
+  <meta http-equiv="refresh" content="5;url=testowa_gra.php">
   <link rel="stylesheet" href="style.css">
   <title>Gra</title>
 </head>
@@ -49,6 +49,7 @@
 </form>
 </div>
 </div>
+<div class="margin_left">
 <?php
 require_once("connect.php");
 $sql = "SELECT * FROM gra_nr_1";
@@ -75,5 +76,6 @@ $sql = "SELECT * FROM gra_nr_1";
 
     echo('</table>');
 ?>
+</div>
 </body>
 </html>
