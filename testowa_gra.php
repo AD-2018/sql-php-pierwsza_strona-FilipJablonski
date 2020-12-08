@@ -50,8 +50,8 @@
 </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
 </div>
 </div>
-<div class="do_lewej">
 <div class="Dane3">
+<div class="do_lewej">
 <?php
 require_once("connect.php");
 $sql = "SELECT * FROM gra_nr_1";
