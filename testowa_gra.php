@@ -47,7 +47,7 @@
   <label for="Wiersz 3">3</label><br><br>
   <input type="submit" value="Nowa Tura">
 </form>
-</br></br></br></br></br></br></br></br></br></br></br>
+</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
 </div>
 </div>
 <div class="Dane3">
