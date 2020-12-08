@@ -76,13 +76,13 @@ $sql = "SELECT * FROM gra_nr_1";
 
     echo('</table>');
 echo('</div>');
-echo('<div>');
+echo('<div class"do_lewej">');
 echo('<h1>'.'Player 1: '.$_POST['player1'].'         '.'<h1>');
 echo('<h1>'.'Player 2: '.$_POST['player2'].'<h1>');
 ?>
 <form action="testowa_gra.php" method="POST">
    <input type="text" name="player1">
-   <input type="submit" value="Player1">
+   <input type="submit" value="Player 1">
 </form>
 <form action="testowa_gra.php" method="POST">
    <input type="text" name="player2">
