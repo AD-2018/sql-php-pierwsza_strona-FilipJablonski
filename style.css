@@ -90,6 +90,13 @@ background-color: #2AAD00;
 .do_lewej{
 	float:left;
 	display: inline-block;
+	padding:1rem;
+	background-color: #333;
+	color:#ffffff;
+	margin-top: 0.5rem;
+	margin-right: 0.5rem;
+	margin-bottom: 0.5rem;
+	margin-left: 0.5rem;
 }
 .margin_left{
 	padding:1rem;
