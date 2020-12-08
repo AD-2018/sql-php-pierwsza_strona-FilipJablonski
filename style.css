@@ -79,10 +79,15 @@ background-color: #2AAD00;
   background-color: #2AAD00;
   border: none;
   color: #FFFFFF;
-  padding: 1rem;;
+  padding: 1rem;
   text-align: center;
   display: block;
   font-size: 25px;
   cursor: pointer;
   border-radius: 5rem;
 }
+.do_lewej{
+	float:left;
+	display: block;
+}
+	
