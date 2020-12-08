@@ -77,8 +77,8 @@ $sql = "SELECT * FROM gra_nr_1";
     echo('</table>');
 echo("</div>");
 echo("<div>");
-echo("<h1>.'Player 1: '.$_POST['player1'].'         '.<h1>")
-echo("<h1>.'Player 2: '.$_POST['player2'].<h1>")
+echo("'<h1>'.'Player 1: '.$_POST['player1'].'         '.'<h1>'")
+echo("'<h1>'.'Player 2: '.$_POST['player2'].'<h1>'")
 ?>
 <form action="testowa_gra.php" method="POST">
    <input type="text" name="player1">
