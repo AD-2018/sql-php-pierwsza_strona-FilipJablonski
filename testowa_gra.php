@@ -49,7 +49,7 @@
 </form>
 </div>
 </div>
-<div class="Dane2">
+<div class="Dane3">
 <?php
 require_once("connect.php");
 $sql = "SELECT * FROM gra_nr_1";
