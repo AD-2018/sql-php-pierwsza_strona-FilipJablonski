@@ -15,7 +15,7 @@ if ($conn->query($sql) === TRUE) {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
     
-$sql = "UPDATE gra_nr_1 SET tura= 'X' WHERE X = 'Wiersz 1'";
+$sql = "UPDATE gra_nr_1 SET tura= 'X'  WHERE X = 'Wiersz 1' or X = 'Wiersz 2' or X = 'Wiersz 3'";
 
 if ($conn->query($sql) === TRUE) {
   header('Location: https://jablonski-filip.herokuapp.com/testowa_gra.php');
