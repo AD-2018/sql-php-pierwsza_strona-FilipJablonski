@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width">
   <meta http-equiv="refresh" content="15;url=testowa_gra.php">
   <link rel="stylesheet" href="style.css">
-  <title>Dane do Bazy</title>
+  <title>Gra</title>
 </head>
 <body>
 <nav>
