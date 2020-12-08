@@ -26,7 +26,6 @@
 	</br></br></br>
 </nav>
 <div class="do_lewej">
-<div class="do_lewej">
 <div class="Dane2">
 <form action="testowa_gra_restart.php">
    <input type="submit" class="button_kik" value="Nowa Gra">
@@ -89,7 +88,6 @@ echo('<h1>'.'Player 2: '.$_POST['player2'].'<h1>');
    <input type="text" name="player2">
    <input type="submit" value="Player 2">
 </form>
-</div>
 </div>
 </body>
 </html>
