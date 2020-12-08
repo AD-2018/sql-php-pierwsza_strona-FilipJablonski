@@ -25,6 +25,7 @@
 	</br></br></br>
 </nav>
 <form action="testowa_gra_restart.php">
+   <br><br>
    <input type="submit" class="button_kik" value="Nowa Gra">
 </form>
 <?php
