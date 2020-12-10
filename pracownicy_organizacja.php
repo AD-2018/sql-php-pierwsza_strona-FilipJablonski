@@ -25,7 +25,8 @@
 
 require_once("connect.php");
 echo ('<h2>Lista<h2>');
-	$sql ="select * from pracownicy,organizacja";
+	$sql ="select * from pracownicy";
+$result = mysqli_query($conn, $sql);
 if ( $result) {
         echo ('<br>');
     } else {
