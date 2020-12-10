@@ -24,6 +24,19 @@
 <?php
 
 require_once("connect.php");
+echo ('<h2>Lista<h2>');
+	$sql ="select * from pracownicy,organizacja";
+if ( $result) {
+        echo ('<br>');
+    } else {
+      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    }
+echo('<select name="kolor">');
+	while($row = mysqli_fetch_assoc($result)) {
+            echo("<option>$row['id_pracownicy'].' '.$row['imie'].' '.$row['zarobki'].' '.$row['data_urodzenia'].' '.$row['dzial'].' '.$row['nazwa_dzial']</option>");
+	};
+echo('</select>)');
+echo ('<br>')
 echo("<h2>Pracownicy i Organizacja</h2>");
     $sql ="select * from pracownicy,organizacja where id_org=dzial group by imie"; 
 echo("<h3>Zadanie 1</h3>"); 
