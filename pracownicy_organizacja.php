@@ -31,9 +31,9 @@ if ( $result) {
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
-echo('<select name="kolor">');
+echo('<select name="pracownik">');
 	while($row = mysqli_fetch_assoc($result)) {
-            echo("<option>.$row['id_pracownicy'].' '.$row['imie'].' '.$row['zarobki'].' '.$row['data_urodzenia'].' '.$row['dzial'].' '.$row['nazwa_dzial'].</option>");
+            echo("'<option value='.'.$row['id_pracownicy'].'.'>'.$row['id_pracownicy'].' '.$row['imie'].' '.$row['zarobki'].' '.$row['data_urodzenia'].' '.$row['dzial'].' '.$row['nazwa_dzial'].'</option>'");
 	};
 echo('</select>)');
 echo ('<br>')
