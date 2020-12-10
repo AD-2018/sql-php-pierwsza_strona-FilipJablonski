@@ -31,14 +31,14 @@ if ( $result) {
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
-echo('<select name="pracownik">');
-	while($row = mysqli_fetch_assoc($result)) {
+//echo('<select name="pracownik">');
+	//while($row = mysqli_fetch_assoc($result)) {
             //echo("'<option value='.$row['id_pracownicy'].'>'");
 	   // echo(".$row['id_pracownicy'].' '.$row['imie'].' '.$row['zarobki'].' '.$row['data_urodzenia'].' '.$row['dzial'].' '.$row['nazwa_dzial'].");
  	   // echo("</option>");
-	};
-echo('</select>)');
-echo ('<br>')
+	//};
+//echo('</select>)');
+echo ('<br>');
 echo("<h2>Pracownicy i Organizacja</h2>");
     $sql ="select * from pracownicy,organizacja where id_org=dzial group by imie"; 
 echo("<h3>Zadanie 1</h3>"); 
