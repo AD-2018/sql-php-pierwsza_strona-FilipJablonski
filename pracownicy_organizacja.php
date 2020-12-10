@@ -34,7 +34,7 @@ if ( $result) {
 echo('<select name="pracownik">');
 	while($row = mysqli_fetch_assoc($result)) {
             echo '<option value="'.$row['id_pracownicy'].'">';
-	    echo(".$row['imie'].' '.$row['zarobki'].' '.$row['data_urodzenia'].' '.$row['dzial'].");
+	    echo($row['imie'].' '.$row['zarobki'].' '.$row['data_urodzenia'].' '.$row['dzial']);
  	    echo "</option>";
 	};
 echo('</select>');
