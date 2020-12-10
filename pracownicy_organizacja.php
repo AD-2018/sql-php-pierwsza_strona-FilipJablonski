@@ -32,10 +32,10 @@ if ( $result) {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
 echo('<select name="pracownik">');
-	while($row = mysqli_fetch_assoc($result) {
-            echo ('<option value="'.$row['id_pracownicy'].'">');
+	while($row = mysqli_fetch_assoc($result)) {
+            echo '<option value="'.$row['id_pracownicy'].'">';
 	    //echo("'.$row['id_pracownicy'].' '.$row['imie'].' '.$row['zarobki'].' '.$row['data_urodzenia'].' '.$row['dzial'].'");
- 	    echo("</option>");
+ 	    echo "</option>";
 	};
 echo('</select>)');
 echo ('<br>');
