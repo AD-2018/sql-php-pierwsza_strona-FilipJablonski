@@ -28,14 +28,13 @@ echo ('<h2>Lista<h2>');
 	$sql ="select * from pracownicy";
 $result = mysqli_query($conn, $sql);
 if ( $result) {
-        echo ('<br>');
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
 echo('<select name="pracownik">');
-	while($row = mysqli_fetch_assoc($result)) {
-            echo '<option value="'.$row['id_pracownicy'].'">';
-	    //echo(".$row['id_pracownicy'].' '.$row['imie'].' '.$row['zarobki'].' '.$row['data_urodzenia'].' '.$row['dzial'].");
+	while($row = mysqli_fetch_assoc($result) {
+            echo ('<option value="'.$row['id_pracownicy'].'">');
+	    echo(".$row['id_pracownicy'].' '.$row['imie'].' '.$row['zarobki'].' '.$row['data_urodzenia'].' '.$row['dzial'].");
  	    echo("</option>");
 	};
 echo('</select>)');
