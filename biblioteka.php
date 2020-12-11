@@ -31,6 +31,10 @@
 // Jeśli nie potrafisz tego zrobić to zrób to tak jak w innych plikach.
 require_once("connect.php");
 echo ('<div class="do_lewej">');
+echo ('</div>');
+echo ('</div>');
+echo ('<div class="Dane4">');
+echo ('<div class="do_lewej">');
 echo ('<div class="Dane4">');
 echo ('<h3 class="zielone">Dodawanie Książki</h3>');
 echo ('<form action="biblioteka_ksiazka.php" method="POST">');
