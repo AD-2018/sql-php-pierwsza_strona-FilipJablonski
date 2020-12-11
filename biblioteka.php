@@ -49,7 +49,7 @@ echo ('</div>');
 echo ('</div>');
 echo ('<div class="do_lewej">');
 echo ('<div class="Dane4">');
-$sql ="select id,tytul from biblTytul";
+$sql ="select * from biblTytul";
 $result = mysqli_query($conn, $sql);
 if ( $result) {
     } else {
@@ -66,7 +66,7 @@ echo ('<div>Tytuł Książki: <select name="tytul">');
 echo ('</select>');
 echo ('</div>');
 echo ('</br>');
-$sql ="select id as ida,autor from biblAutor";
+$sql ="select * from biblAutor";
 $result = mysqli_query($conn, $sql);
 if ( $result) {
     } else {
@@ -74,7 +74,7 @@ if ( $result) {
     };
 echo ('<div>Autor: <select name="autor" class="do_prawej">');
 	while($row = mysqli_fetch_assoc($result)) {
-            echo ('<option value="'.$row['ida'].'">');
+            echo ('<option value="'.$row['id'].'">');
 	    echo ($row['autor']);
  	    echo ("</option>");
 	};
@@ -87,7 +87,7 @@ echo ('</div>');
 echo ('</div>');
 echo ('<div class="do_lewej">');
 echo ('<div class="Dane4">');
-$sql ="select id as idt,tytul from biblTytul";
+$sql ="select * from biblTytul";
 $result = mysqli_query($conn, $sql);
 if ( $result) {
     } else {
@@ -97,14 +97,14 @@ echo ('<h3 class="szare">Wypożyczenie Książki</h3>');
 echo ('<form action="biblioteka_tab.php" method="POST">');
 echo ('<div>Tytuł Książki: <select name="tytul">');
 	while($row = mysqli_fetch_assoc($result)) {
-            echo ('<option value="'.$row['idt'].'">');
+            echo ('<option value="'.$row['id'].'">');
 	    echo ($row['tytul']);
  	    echo ("</option>");
 	};
 echo ('</select>');
 echo ('</div>');
 echo ('</br>');
-$sql ="select id as ida,autor from biblAutor";
+$sql ="select * from biblAutor";
 $result = mysqli_query($conn, $sql);
 if ( $result) {
     } else {
@@ -113,7 +113,7 @@ if ( $result) {
 echo ('<form action="biblioteka_tab.php" method="POST">');
 echo ('<div>Autor: <select name="autor" class="do_prawej">');
 	while($row = mysqli_fetch_assoc($result)) {
-            echo ('<option value="'.$row['ida'].'">');
+            echo ('<option value="'.$row['id'].'">');
 	    echo ($row['autor']);
  	    echo ("</option>");
 	};
