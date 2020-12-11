@@ -27,7 +27,6 @@
 </nav>
 <?php
 require_once("connect.php");
-echo ('</br>');
 echo ('<div class="do_lewej">');
 echo ('<div class="Dane4">');
 echo ('<h3 class="szare">Dodawanie Książki</h3>');
