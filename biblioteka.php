@@ -148,10 +148,10 @@ $sql = "select (`biblAutor_biblTytul`.id) as ID_TAB, autor, tytul, biblWypoz fro
             echo("<tr>");
             echo("<td>".$row['ID_TAB']."</td><td>".$row['autor']."</td><td>".$row['tytul']."</td><td>");$row['biblWypoz']."</td>");
 	    if ($row['biblWypoz']==0){
-		    echo("NIE</td>")
+		    echo("NIE</td>");
 	    };
 	    else{
-		    echo("TAK</td>")
+		    echo("TAK</td>");
 	    };
             echo("</tr>");
         };
