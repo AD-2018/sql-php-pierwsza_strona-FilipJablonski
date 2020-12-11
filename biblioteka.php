@@ -66,6 +66,7 @@ echo ('Tytuł Książki: <select name="tytul">');
  	    echo ("</option>");
 	};
 echo ('</select>');
+echo ('</br>');
 $sql ="select * from biblAutor";
 $result = mysqli_query($conn, $sql);
 if ( $result) {
