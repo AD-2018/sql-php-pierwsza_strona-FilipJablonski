@@ -31,11 +31,12 @@ echo ('<div class="do_lewej">');
 echo ('<div class="Dane1">');
 echo ('<h1 class="zielone">Dodawanie Danych:</h1>');
 echo ('<div>');
-echo ('<h3 class="szare">Dodawanie Książki</h3>')
-echo ('<form action="biblioteka_ksiazka.php" method="POST">
-		<div>Tytuł Książki: <input type="text" name="tytul"></div>
-		<div><input type="submit" value="Dodaj Książkę"></div>
-	</form>');
+echo ('<h3 class="szare">Dodawanie Książki</h3>');
+echo ('<form action="biblioteka_ksiazka.php" method="POST">');
+echo ('<div>Tytuł Książki: <input type="text" name="tytul"></div>');
+echo ('<div><input type="submit" value="Dodaj Książkę"></div>');
+echo ('</form>');
+echo ('</div>')
 ?>
 </div>
 </div>
