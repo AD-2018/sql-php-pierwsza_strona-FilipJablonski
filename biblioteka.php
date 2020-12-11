@@ -147,7 +147,7 @@ $sql = "select `biblAutor_biblTytul.id`, `autor`, `tytul`,`biblWypoz` from biblA
      } else {
        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
      }
-    echo("<table border='1'>");
+    echo("<table border='1' class='tab_bibl'>");
     echo("<th>ID</th><th>Autor</th><th>Tytuł</th><th>Wypożyczona</th>");
         while($row = mysqli_fetch_assoc($result)) {
             echo("<tr>");
