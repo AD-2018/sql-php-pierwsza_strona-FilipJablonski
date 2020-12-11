@@ -28,9 +28,9 @@
 <?php
 require_once("connect.php");
 echo ('</br>');
-echo ('<div class="do_lewej">');
 echo ('<div class="Dane1">');
 echo ('<h1 class="zielone">Dodawanie Danych:</h1>');
+echo ('<div class="do_lewej">');
 echo ('<div>');
 echo ('<h3 class="szare">Dodawanie Książki</h3>');
 echo ('<form action="biblioteka_ksiazka.php" method="POST">');
