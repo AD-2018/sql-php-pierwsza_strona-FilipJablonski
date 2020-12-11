@@ -18,6 +18,7 @@
          <li><a href="strona.php">Strona</a></li>
          <li><a href="daneDoBazy.php">Dane Do Bazy</a></li>
          <li><a href="testowa_gra.php">Testowa Gra</a></li>
+	 <li><a href="biblioteka.php">Biblioteka | Książki</a></li>
     </strong>
     </div>
 	</br></br></br>
