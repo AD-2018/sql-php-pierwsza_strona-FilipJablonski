@@ -35,7 +35,7 @@ echo ('<h3 class="szare">Dodawanie Książki</h3>')
 echo ('<form action="biblioteka_ksiazka.php" method="POST">
 		<div>Tytuł Książki: <input type="text" name="tytul"></div>
 		<div><input type="submit" value="Dodaj Książkę"></div>
-	</form>);
+	</form>');
 ?>
 </div>
 </div>
