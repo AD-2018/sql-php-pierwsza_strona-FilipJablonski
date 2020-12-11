@@ -129,7 +129,7 @@ echo ('</div>');
 echo ('<div class="Dane4">');
 echo ('<h3 class="szare">  Wypożyczenie Książki po ID</h3>');
 echo ('<form action="biblioteka_tab3.php" method="POST">');
-echo ('<div>Autor: <input type="text" name="autor" class="do_prawej"></div>');
+echo ('<div>Autor: <input type="number" name="id" class="do_prawej"></div>');
 echo ('<br><br><br>');
 echo ('<div><input type="submit" value="Wypożycz Książkę"></div>');
 echo ('</form>');
