@@ -25,6 +25,7 @@
     </div>
 	</br></br></br>
 </nav>
+</br></br></br>
 <?php
 // Kradnąc ten kod spisujesz swoją stronę na straty.
 // Spędziłem nad tym dużo czasu i jeśli chcesz mieć coś podobnego to zrób to po swojemu.                                     <-------- Dla tych co chcą coś zabrać C:
