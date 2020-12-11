@@ -146,12 +146,12 @@ $sql = "select (`biblAutor_biblTytul`.id) as ID_TAB, autor, tytul, biblWypoz fro
     echo("<th>ID</th><th>Autor</th><th>Tytuł</th><th>Wypożyczona</th>");
         while($row = mysqli_fetch_assoc($result)) {
             echo("<tr>");
-            echo("<td>".$row['ID_TAB']."</td><td>".$row['autor']."</td><td>".$row['tytul']."</td><td>");$row['biblWypoz']."</td>");
-	    if ( $row['biblWypoz'] == "0") {
-		    echo("<td>NIE</td>");
-	    } else {
-		    echo("<td>TAK</td>");
-	    };
+            echo("<td>".$row['ID_TAB']."</td><td>".$row['autor']."</td><td>".$row['tytul']."</td><td>");$row['biblWypoz']."</td><td>".$row['biblWypoz']."</td>");
+//	    if ( $row['biblWypoz'] == "0") {
+//		    echo("<td>NIE</td>");
+//	    } else {
+//		    echo("<td>TAK</td>");
+//	    };
             echo("</tr>");
         };
     echo("</table>");
