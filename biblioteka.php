@@ -31,6 +31,7 @@ echo ('</br>');
 echo ('<div class="Dane1">');
 echo ('<h1 class="zielone">Dodawanie Danych:</h1>');
 echo ('</div>');
+echo ('<div class="Dane1">');
 echo ('<div class="do_lewej">');
 echo ('<div class="Dane1">');
 echo ('<h3 class="szare">Dodawanie Książki</h3>');
@@ -70,7 +71,8 @@ echo ('<form action="biblioteka_tab.php" method="POST">');
 echo ('<div><input type="submit" value="Dodaj Do Tabelki"></div>');
 echo ('</form>');
 echo ('</div>');
-echo ('</div>');	
+echo ('</div>');
+echo ('</div>');
 ?>
 </body>
 </html>
