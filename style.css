@@ -91,6 +91,10 @@ background-color: #2AAD00;
 	float:left;
 	display: inline-block;
 }
+.do_prawej{
+	float:right;
+	display: inline-block;
+}
 .margin_left{
 	padding:1rem;
 	margin-left: 1rem;
