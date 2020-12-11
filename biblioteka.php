@@ -59,14 +59,13 @@ if ( $result) {
     };
 echo ('<h3 class="szare">Dodawanie Do Tabelki</h3>');
 echo ('<form action="biblioteka_tab.php" method="POST">');
-echo ('<div>Tytuł Książki: <select name="tytul">');
+echo ('Tytuł Książki: <select name="tytul">');
 	while($row = mysqli_fetch_assoc($result)) {
             echo ('<option value="'.$row['id'].'">');
 	    echo ("$row['tytul']");
  	    echo ("</option>");
 	};
 echo ('</select>');
-echo ('</div>');
 echo ('<div><input type="submit" value="Dodaj Do Tabelki"></div>');
 echo ('</form>');
 echo ('</div>');
