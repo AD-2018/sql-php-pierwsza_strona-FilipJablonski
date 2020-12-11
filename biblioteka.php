@@ -62,7 +62,7 @@ echo ('<form action="biblioteka_tab.php" method="POST">');
 echo ('Tytuł Książki: <select name="tytul">');
 	while($row = mysqli_fetch_assoc($result)) {
             echo ('<option value="'.$row['id'].'">');
-	    echo ("$row['tytul']");
+	    echo ($row['tytul']);
  	    echo ("</option>");
 	};
 echo ('</select>');
