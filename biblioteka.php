@@ -59,7 +59,7 @@ echo ('<h3 class="szare">Dodawanie Do Tabelki</h3>');
 echo ('<form action="biblioteka_tab.php" method="POST">');
 echo ('<div>Tytuł Książki: <select name="tytul">');
 	while($row = mysqli_fetch_assoc($result)) {
-            echo ('<option value="'.$row['idt'].'" hidden>');
+            echo ('<option value="'.$row['idt'].'">');
 	    echo ($row['tytul']);
  	    echo ("</option>");
 	};
@@ -74,7 +74,7 @@ if ( $result) {
     };
 echo ('<div>Autor: <select name="autor" class="do_prawej">');
 	while($row = mysqli_fetch_assoc($result)) {
-            echo ('<option value="'.$row['ida'].'" hidden>');
+            echo ('<option value="'.$row['ida'].'">');
 	    echo ($row['autor']);
  	    echo ("</option>");
 	};
