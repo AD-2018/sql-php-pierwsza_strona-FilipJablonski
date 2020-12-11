@@ -109,6 +109,10 @@ echo ('<div>Tytuł Książki: <select name="tytul">');
 echo ('</select>');
 echo ('</div>');
 echo ('</br>');
+echo ('</div>');
+echo ('</div>');
+echo ('<div class="do_lewej">');
+echo ('<div class="Dane4">');
 $sql ="select * from biblAutor";
 $result = mysqli_query($conn, $sql);
 if ( $result) {
