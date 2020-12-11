@@ -138,7 +138,7 @@ echo ('<div><input type="submit" value="Wypożycz Książkę"></div>');
 echo ('</form>');
 echo ('</div>');
 echo ('<div class="Dane5">');
-$sql = "select `biblAutor_biblTytul.id`, `autor`, `tytul`,`biblWypoz` from biblAutor_biblTytul,biblAutor,biblTytul where biblAutor.id=biblAutor_id and biblTytul.id=biblTytul_id order by autor,id asc";
+$sql = "select 'biblAutor_biblTytul.id', autor, tytul, biblWypoz from biblAutor_biblTytul,biblAutor,biblTytul where biblAutor.id=biblAutor_id and biblTytul.id=biblTytul_id order by autor,id asc";
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
       }
