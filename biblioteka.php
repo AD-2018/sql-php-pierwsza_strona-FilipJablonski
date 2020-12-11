@@ -23,7 +23,7 @@
 	 <li><a href="biblioteka.php">Biblioteka | Książki</a></li>
     </strong>
     </div>
-	</br></br></br>
+	</br>
 </nav>
 </br></br></br>
 <?php
