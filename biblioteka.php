@@ -28,9 +28,6 @@
 <?php
 require_once("connect.php");
 echo ('</br>');
-echo ('<div class="Dane1">');
-echo ('<h1 class="zielone">Dodawanie Danych:</h1>');
-echo ('</div>');
 echo ('<div class="do_lewej">');
 echo ('<div class="Dane4">');
 echo ('<h3 class="szare">Dodawanie Książki</h3>');
