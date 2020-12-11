@@ -137,3 +137,14 @@ background-color: #2AAD00;
 	text-align: center;
 	width: 50%;
 }
+.button_bibl {
+  background-color: #A9A9A9;
+  border: none;
+  color: #FFFFFF;
+  padding: 1rem;
+  text-align: center;
+  display: block;
+  font-size: 10px;
+  cursor: pointer;
+  border-radius: 5rem;
+}
