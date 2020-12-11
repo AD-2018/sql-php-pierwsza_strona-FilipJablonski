@@ -32,21 +32,21 @@
 require_once("connect.php");
 echo ('<div class="do_lewej">');
 echo ('<div class="Dane4">');
-echo ('<h3 class="szare">Dodawanie Książki</h3>');
+echo ('<h3 class="zielone">Dodawanie Książki</h3>');
 echo ('<form action="biblioteka_ksiazka.php" method="POST">');
 echo ('<div>Tytuł Książki: <input type="text" name="tytul"></div>');
 echo ('</br><br><br>');
-echo ('<div><input type="submit" value="Dodaj Książkę"></div>');
+echo ('<div><input type="submit" class="button_bibl" value="Dodaj Książkę"></div>');
 echo ('</form>');
 echo ('</div>');
 echo ('</div>');
 echo ('<div class="do_lewej">');
 echo ('<div class="Dane4">');
-echo ('<h3 class="szare">Dodawanie Autora</h3>');
+echo ('<h3 class="zielone">Dodawanie Autora</h3>');
 echo ('<form action="biblioteka_autor.php" method="POST">');
 echo ('<div>Autor: <input type="text" name="autor"></div>');
 echo ('</br><br><br>');
-echo ('<div><input type="submit" value="Dodaj Autora"></div>');
+echo ('<div><input type="submit" class="button_bibl" value="Dodaj Autora"></div>');
 echo ('</form>');
 echo ('</div>');
 echo ('</div>');
@@ -58,7 +58,7 @@ if ( $result) {
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     };
-echo ('<h3 class="szare">Dodawanie Do Tabelki</h3>');
+echo ('<h3 class="zielone">Dodawanie Do Tabelki</h3>');
 echo ('<form action="biblioteka_tab.php" method="POST">');
 echo ('<div>Tytuł Książki: <select name="tytul">');
 	while($row = mysqli_fetch_assoc($result)) {
@@ -84,7 +84,7 @@ echo ('<div>Autor: <select name="autor" class="do_prawej">');
 echo ('</select>');
 echo ('</div>');
 echo ('</br>');
-echo ('<div><input type="submit" value="Dodaj Do Tabelki"></div>');
+echo ('<div><input type="submit" class="button_bibl" value="Dodaj Do Tabelki"></div>');
 echo ('</form>');
 echo ('</div>');
 echo ('</div>');
@@ -96,7 +96,7 @@ if ( $result) {
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     };
-echo ('<h3 class="szare">Wypożyczenie Książki</h3>');
+echo ('<h3 class="zielone">Wypożyczenie Książki</h3>');
 echo ('<form action="biblioteka_tab2.php" method="POST">');
 echo ('<div>Tytuł Książki: <select name="tytul">');
 	while($row = mysqli_fetch_assoc($result)) {
@@ -122,16 +122,16 @@ echo ('<div>Autor: <select name="autor" class="do_prawej">');
 echo ('</select>');
 echo ('</div>');
 echo ('</br>');
-echo ('<div><input type="submit" value="Wypożycz Książkę"></div>');
+echo ('<div><input type="submit" class="button_bibl" value="Wypożycz Książkę"></div>');
 echo ('</form>');
 echo ('</div>');
 echo ('</div>');
 echo ('<div class="Dane4">');
-echo ('<h3 class="szare">  Wypożyczenie Książki po ID</h3>');
+echo ('<h3 class="zielone">  Wypożyczenie Książki po ID</h3>');
 echo ('<form action="biblioteka_tab3.php" method="POST">');
 echo ('<div>Autor: <input type="number" name="id" class="do_prawej"></div>');
 echo ('<br><br><br>');
-echo ('<div><input type="submit" value="Wypożycz Książkę"></div>');
+echo ('<div><input type="submit" class="button_bibl" value="Wypożycz Książkę"></div>');
 echo ('</form>');
 echo ('</div>');
 echo ('<div class="Dane5">');
