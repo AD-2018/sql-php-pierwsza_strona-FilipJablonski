@@ -59,7 +59,7 @@ echo ('<h3 class="szare">Dodawanie Do Tabelki</h3>');
 echo ('<form action="biblioteka_tab.php" method="POST">');
 echo ('<div>Tytuł Książki: <select name="tytul">');
 	while($row = mysqli_fetch_assoc($result)) {
-            echo ('<option value="'.$row['tytul'].'">');
+            echo ('<option value="'.$row['idt'].'">');
 	    echo ($row['tytul']);
  	    echo ("</option>");
 	};
@@ -72,10 +72,9 @@ if ( $result) {
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     };
-echo ('<form action="biblioteka_tab.php" method="POST">');
 echo ('<div>Autor: <select name="autor" class="do_prawej">');
 	while($row = mysqli_fetch_assoc($result)) {
-            echo ('<option value="'.$row['autor'].'">');
+            echo ('<option value="'.$row['ida'].'">');
 	    echo ($row['autor']);
  	    echo ("</option>");
 	};
@@ -98,7 +97,7 @@ echo ('<h3 class="szare">Wypożyczenie Książki</h3>');
 echo ('<form action="biblioteka_tab.php" method="POST">');
 echo ('<div>Tytuł Książki: <select name="tytul">');
 	while($row = mysqli_fetch_assoc($result)) {
-            echo ('<option value="'.$row['tytul'].'">');
+            echo ('<option value="'.$row['idt'].'">');
 	    echo ($row['tytul']);
  	    echo ("</option>");
 	};
@@ -114,7 +113,7 @@ if ( $result) {
 echo ('<form action="biblioteka_tab.php" method="POST">');
 echo ('<div>Autor: <select name="autor" class="do_prawej">');
 	while($row = mysqli_fetch_assoc($result)) {
-            echo ('<option value="'.$row['autor'].'">');
+            echo ('<option value="'.$row['ida'].'">');
 	    echo ($row['autor']);
  	    echo ("</option>");
 	};
