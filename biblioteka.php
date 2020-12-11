@@ -77,13 +77,14 @@ if ( $result) {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     };
 echo ('<form action="biblioteka_tab.php" method="POST">');
-echo ('Autor: <select name="autor">');
+echo ('<div>Autor: <select name="autor" class="do_prawej">');
 	while($row = mysqli_fetch_assoc($result)) {
             echo ('<option value="'.$row['autor'].'">');
 	    echo ($row['autor']);
  	    echo ("</option>");
 	};
 echo ('</select>');
+echo ('</div>');
 echo ('</br>');
 echo ('<div><input type="submit" value="Dodaj Do Tabelki"></div>');
 echo ('</form>');
@@ -99,13 +100,14 @@ if ( $result) {
     };
 echo ('<h3 class="szare">Wypożyczenie Książki</h3>');
 echo ('<form action="biblioteka_tab.php" method="POST">');
-echo ('Tytuł Książki: <select name="tytul">');
+echo ('<div>Tytuł Książki: <select name="tytul">');
 	while($row = mysqli_fetch_assoc($result)) {
             echo ('<option value="'.$row['tytul'].'">');
 	    echo ($row['tytul']);
  	    echo ("</option>");
 	};
 echo ('</select>');
+echo ('</div>');
 echo ('</br>');
 $sql ="select * from biblAutor";
 $result = mysqli_query($conn, $sql);
@@ -114,19 +116,21 @@ if ( $result) {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     };
 echo ('<form action="biblioteka_tab.php" method="POST">');
-echo ('Autor: <select name="autor">');
+echo ('<div>Autor: <select name="autor" class="do_prawej">');
 	while($row = mysqli_fetch_assoc($result)) {
             echo ('<option value="'.$row['autor'].'">');
 	    echo ($row['autor']);
  	    echo ("</option>");
 	};
 echo ('</select>');
+echo ('</div>');
 echo ('</br>');
 echo ('<div><input type="submit" value="Wypożycz Książkę"></div>');
 echo ('</form>');
 echo ('<h3 class="szare">Wypożyczenie Książki po ID</h3>');
 echo ('<form action="biblioteka_autor.php" method="POST">');
 echo ('<div>Autor: <input type="text" name="autor"></div>');
+echo ('<br>');
 echo ('<div><input type="submit" value="Wypożycz Książkę"></div>');
 echo ('</form>');
 echo ('</div>');
