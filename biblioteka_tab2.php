@@ -6,7 +6,7 @@
 <?php
 require_once("connect.php");
 
-$sql = "UPDATE biblAutor_biblTytul SET biblWypoz= if (biblWypoz='0' , '1','0') WHERE  autor=".'"'.$_POST['autor'].'"'.' and tytul='.'"'.$_POST['tytul'];
+$sql = "UPDATE biblAutor_biblTytul SET biblWypoz= if (biblWypoz='0' , '1','0') WHERE  autor=".'"'.$_POST['autor'].'"'.' and tytul='.'"'.$_POST['tytul'].'"';
 
 
 if ($conn->query($sql) === TRUE) {
