@@ -7,7 +7,7 @@
 require_once("connect.php");
 
 $sql = "INSERT INTO biblAutor_biblTytul (id,biblAutor,biblTytul,biblWypoz) 
-       VALUES (null,".'"'.$_POST['ida'].'"'.'"'.$_POST['idt'].'"'."0".')';
+       VALUES (null,".'"'.$_POST['ida'].'"'.','.$_POST['idt'].','.'0'.','.')';
 
 
 if ($conn->query($sql) === TRUE) {
