@@ -6,7 +6,7 @@
 <?php
 require_once("connect.php");
 
-$sql = "INSERT INTO biblAutor_biblTytul (id,biblAutor_id,biblTytul_id,biblWypoz) 
+$sql = "INSERT INTO biblAutor_biblTytul (id,biblAutor_id,biblTytul,biblWypoz) 
        VALUES (null,".'"'.$_POST['ida'].'"'.','.'"'.$_POST['idt'].'"'.','.'0'.')';
 
 
