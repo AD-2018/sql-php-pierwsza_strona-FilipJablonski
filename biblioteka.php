@@ -26,7 +26,7 @@
 	</br></br></br>
 </nav>
 <?php
-</br>
+echo ('</br>');
 echo ('<div class="do_lewej">');
 echo ('<div class="Dane1">');
 echo ('<h1 class="zielone">Dodawanie Danych:</h1>');
