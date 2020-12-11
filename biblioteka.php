@@ -127,7 +127,7 @@ echo ('</form>');
 echo ('</div>');
 echo ('</div>');
 echo ('<div class="Dane4">');
-echo ('<h3 class="szare">Wypożyczenie Książki po ID</h3>');
+echo ('<h3 class="szare">  Wypożyczenie Książki po ID</h3>');
 echo ('<form action="biblioteka_autor.php" method="POST">');
 echo ('<div>Autor: <input type="text" name="autor" class="do_prawej"></div>');
 echo ('<br>');
@@ -135,7 +135,7 @@ echo ('<div><input type="submit" value="Wypożycz Książkę"></div>');
 echo ('</form>');
 echo ('</div>');
 echo ('<div class="Dane5">');
-$sql = "select `biblAutor_biblTytul`.id, autor, tytul, biblWypoz from biblAutor_biblTytul,biblAutor,biblTytul where biblAutor.id=biblAutor_id and biblTytul.id=biblTytul_id order by autor,id asc";
+$sql = "select (`biblAutor_biblTytul`.id) as ID_TAB, autor, tytul, biblWypoz from biblAutor_biblTytul,biblAutor,biblTytul where biblAutor.id=biblAutor_id and biblTytul.id=biblTytul_id order by autor,id asc";
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
       }
@@ -148,7 +148,7 @@ $sql = "select `biblAutor_biblTytul`.id, autor, tytul, biblWypoz from biblAutor_
     echo("<th>ID</th><th>Autor</th><th>Tytuł</th><th>Wypożyczona</th>");
         while($row = mysqli_fetch_assoc($result)) {
             echo("<tr>");
-            echo("<td>".$row['`biblAutor_biblTytul`.id']."</td><td>".$row['autor']."</td><td>".$row['tytul']."</td><td>".$row['biblWypoz']."</td>");
+            echo("<td>".$row['ID_TAB']."</td><td>".$row['autor']."</td><td>".$row['tytul']."</td><td>".$row['biblWypoz']."</td>");
             echo("</tr>");
         };
     echo("</table>");
