@@ -66,6 +66,12 @@ echo ('Tytuł Książki: <select name="tytul">');
  	    echo ("</option>");
 	};
 echo ('</select>');
+$sql ="select * from biblAutor";
+$result = mysqli_query($conn, $sql);
+if ( $result) {
+    } else {
+      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    };
 echo ('<form action="biblioteka_tab.php" method="POST">');
 echo ('Autor: <select name="autor">');
 	while($row = mysqli_fetch_assoc($result)) {
