@@ -61,6 +61,7 @@ echo ('<div>Tytuł Książki: <select name="tytul">');
  	    echo ("</option>");
 	};
 echo ('</select>');
+echo ('</div>');
 echo ('<div><input type="submit" value="Dodaj Do Tabelki"></div>');
 echo ('</form>');
 echo ('</div>');
