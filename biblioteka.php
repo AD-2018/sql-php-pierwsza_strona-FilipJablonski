@@ -49,7 +49,7 @@ echo ('</div>');
 echo ('</div>');
 echo ('<div class="do_lewej">');
 echo ('<div class="Dane4">');
-$sql ="select id as idt,tytul from biblTytul";
+$sql ="select id,tytul from biblTytul";
 $result = mysqli_query($conn, $sql);
 if ( $result) {
     } else {
@@ -59,7 +59,7 @@ echo ('<h3 class="szare">Dodawanie Do Tabelki</h3>');
 echo ('<form action="biblioteka_tab.php" method="POST">');
 echo ('<div>Tytuł Książki: <select name="tytul">');
 	while($row = mysqli_fetch_assoc($result)) {
-            echo ('<option value="'.$row['idt'].'">');
+            echo ('<option value="'.$row['id'].'">');
 	    echo ($row['tytul']);
  	    echo ("</option>");
 	};
