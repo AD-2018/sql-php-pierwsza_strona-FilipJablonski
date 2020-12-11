@@ -94,7 +94,7 @@ if ( $result) {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     };
 echo ('<h3 class="szare">Wypożyczenie Książki</h3>');
-echo ('<form action="biblioteka_tab.php" method="POST">');
+echo ('<form action="biblioteka_tab2.php" method="POST">');
 echo ('<div>Tytuł Książki: <select name="tytul">');
 	while($row = mysqli_fetch_assoc($result)) {
             echo ('<option value="'.$row['id'].'">');
@@ -110,7 +110,6 @@ if ( $result) {
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     };
-echo ('<form action="biblioteka_tab.php" method="POST">');
 echo ('<div>Autor: <select name="autor" class="do_prawej">');
 	while($row = mysqli_fetch_assoc($result)) {
             echo ('<option value="'.$row['id'].'">');
