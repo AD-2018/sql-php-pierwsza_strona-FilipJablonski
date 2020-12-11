@@ -31,14 +31,13 @@ echo ('</br>');
 echo ('<div class="Dane1">');
 echo ('<h1 class="zielone">Dodawanie Danych:</h1>');
 echo ('<div class="do_lewej">');
-echo ('<div>');
 echo ('<h3 class="szare">Dodawanie Książki</h3>');
 echo ('<form action="biblioteka_ksiazka.php" method="POST">');
 echo ('<div>Tytuł Książki: <input type="text" name="tytul">');
 echo ('<input type="submit" value="Dodaj Książkę"></div>');
 echo ('</form>');
 echo ('</div>');
-echo ('<div>');
+echo ('<div class="do_lewej">');
 echo ('<h3 class="szare">Dodawanie Autora</h3>');
 echo ('<form action="biblioteka_autor.php" method="POST">');
 echo ('<div>Autor: <input type="text" name="autor">');
@@ -51,7 +50,7 @@ if ( $result) {
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     };
-echo ('<div>');
+    echo ('<div class="do_lewej">');
 echo ('<h3 class="szare">Dodawanie Do Tabelki</h3>');
 echo ('<form action="biblioteka_tab.php" method="POST">');
 //echo ('<div>Tytuł Książki: <select name="tytul">');
@@ -68,6 +67,6 @@ echo ('</div>');
 	
 ?>
 </div>
-</div>
 </body>
+</html>
 </html>
