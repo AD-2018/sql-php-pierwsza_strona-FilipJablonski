@@ -50,7 +50,7 @@ if ( $result) {
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     };
-    echo ('<div class="do_lewej">');
+echo ('<div class="do_lewej">');
 echo ('<h3 class="szare">Dodawanie Do Tabelki</h3>');
 echo ('<form action="biblioteka_tab.php" method="POST">');
 //echo ('<div>Tytuł Książki: <select name="tytul">');
@@ -64,9 +64,7 @@ echo ('<form action="biblioteka_tab.php" method="POST">');
 echo ('<div><input type="submit" value="Dodaj Do Tabelki"></div>');
 echo ('</form>');
 echo ('</div>');
-	
+echo ('</div>');	
 ?>
-</div>
 </body>
-</html>
 </html>
