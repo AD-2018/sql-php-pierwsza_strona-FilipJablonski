@@ -26,6 +26,7 @@
 	</br></br></br>
 </nav>
 <?php
+require_once("connect.php");
 echo ('</br>');
 echo ('<div class="do_lewej">');
 echo ('<div class="Dane1">');
@@ -36,7 +37,34 @@ echo ('<form action="biblioteka_ksiazka.php" method="POST">');
 echo ('<div>Tytuł Książki: <input type="text" name="tytul">');
 echo ('<input type="submit" value="Dodaj Książkę"></div>');
 echo ('</form>');
-echo ('</div>')
+echo ('</div>');
+echo ('<div>');
+echo ('<h3 class="szare">Dodawanie Autora</h3>');
+echo ('<form action="biblioteka_autor.php" method="POST">');
+echo ('<div>Autor: <input type="text" name="autor">');
+echo ('<input type="submit" value="Dodaj Autora"></div>');
+echo ('</form>');
+echo ('</div>');
+$sql ="select * from biblTytul";
+$result = mysqli_query($conn, $sql);
+if ( $result) {
+    } else {
+      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    };
+echo ('<div>');
+echo ('<h3 class="szare">Dodawanie Do Tabelki</h3>');
+echo ('<form action="biblioteka_tab.php" method="POST">');
+echo ('<div>Tytuł Książki: <select name="tytul">');
+	while($row = mysqli_fetch_assoc($result)) {
+            echo ('<option value="'.$row['id'].'">');
+	    echo ("$row['tytul']");
+ 	    echo ("</option>");
+	};
+echo ('</select>');
+echo ('<div><input type="submit" value="Dodaj Do Tabelki"></div>');
+echo ('</form>');
+echo ('</div>');
+	
 ?>
 </div>
 </div>
