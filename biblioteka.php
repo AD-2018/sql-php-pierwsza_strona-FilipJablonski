@@ -49,7 +49,7 @@ echo ('</div>');
 echo ('</div>');
 echo ('<div class="do_lewej">');
 echo ('<div class="Dane4">');
-$sql ="select * from biblTytul";
+$sql ="select id as idt,tytul from biblTytul";
 $result = mysqli_query($conn, $sql);
 if ( $result) {
     } else {
@@ -66,7 +66,7 @@ echo ('<div>Tytuł Książki: <select name="tytul">');
 echo ('</select>');
 echo ('</div>');
 echo ('</br>');
-$sql ="select * from biblAutor";
+$sql ="select id as ida,autor from biblAutor";
 $result = mysqli_query($conn, $sql);
 if ( $result) {
     } else {
@@ -87,7 +87,7 @@ echo ('</div>');
 echo ('</div>');
 echo ('<div class="do_lewej">');
 echo ('<div class="Dane4">');
-$sql ="select * from biblTytul";
+$sql ="select id as idt,tytul from biblTytul";
 $result = mysqli_query($conn, $sql);
 if ( $result) {
     } else {
@@ -104,7 +104,7 @@ echo ('<div>Tytuł Książki: <select name="tytul">');
 echo ('</select>');
 echo ('</div>');
 echo ('</br>');
-$sql ="select * from biblAutor";
+$sql ="select id as ida,autor from biblAutor";
 $result = mysqli_query($conn, $sql);
 if ( $result) {
     } else {
