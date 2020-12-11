@@ -33,8 +33,8 @@ echo ('<h1 class="zielone">Dodawanie Danych:</h1>');
 echo ('<div>');
 echo ('<h3 class="szare">Dodawanie Książki</h3>');
 echo ('<form action="biblioteka_ksiazka.php" method="POST">');
-echo ('<div>Tytuł Książki: <input type="text" name="tytul"></div>');
-echo ('<div><input type="submit" value="Dodaj Książkę"></div>');
+echo ('<div>Tytuł Książki: <input type="text" name="tytul">');
+echo ('<input type="submit" value="Dodaj Książkę"></div>');
 echo ('</form>');
 echo ('</div>')
 ?>
