@@ -135,7 +135,7 @@ echo ('<div class="do_lewej">');
 echo ('<div class="Dane4">');
 echo ('<h3 class="zielone">Wypożyczenie Książki po ID</h3>');
 echo ('<form action="biblioteka_tab3.php" method="POST">');
-echo ('<div>Autor: <input type="number" name="id" class="do_prawej"></div>');
+echo ('<div class="do_lewej">Autor: <input type="number" name="id" class="do_prawej"></div>');
 echo ('<br><br><br>');
 echo ('<div><input type="submit" class="button_bibl" value="Wypożycz Książkę"></div>');
 echo ('</form>');
