@@ -126,13 +126,17 @@ echo ('<div><input type="submit" class="button_bibl" value="Wypożycz Książkę
 echo ('</form>');
 echo ('</div>');
 echo ('</div>');
+echo ('<div class="do_lewej">');
 echo ('<div class="Dane4">');
-echo ('<h3 class="zielone">  Wypożyczenie Książki po ID</h3>');
+echo ('<h3 class="zielone">Wypożyczenie Książki po ID</h3>');
 echo ('<form action="biblioteka_tab3.php" method="POST">');
 echo ('<div>Autor: <input type="number" name="id" class="do_prawej"></div>');
 echo ('<br><br><br>');
 echo ('<div><input type="submit" class="button_bibl" value="Wypożycz Książkę"></div>');
 echo ('</form>');
+echo ('</div>');
+echo ('</div>');
+echo ('<div>');
 echo ('</div>');
 echo ('<div class="Dane5">');
 $sql = "select (`biblAutor_biblTytul`.id) as ID_TAB, autor, tytul, biblWypoz from biblAutor_biblTytul,biblAutor,biblTytul where biblAutor.id=biblAutor_id and biblTytul.id=biblTytul_id order by autor,ID_TAB asc";
