@@ -118,11 +118,11 @@ $sql = "SELECT * FROM czat";
        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
      }
 echo ("<h2>Czat:</h2>")
-    echo("<table border='1' class='txt_lewo'");
-echo("<th></th>");
+    echo("<table border='1'");
+	echo("<th>tak</th>");
         while($row = mysqli_fetch_assoc($result)) {
             echo('<tr>');
-            echo('<td>'.$row['gracz'].' :'.$row['wiadomosc'].'</td>');
+            echo('<td class="txt_lewo">'.$row['gracz'].' :'.$row['wiadomosc'].'</td>');
         echo('</tr>');
     }
     echo('</table>');
