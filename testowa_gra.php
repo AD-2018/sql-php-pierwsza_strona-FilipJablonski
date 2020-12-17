@@ -105,7 +105,6 @@ echo ('</div>');
 echo ('<div></div>');
 echo ('<div class="Dane6">');
 echo ('</div>');
-echo ('</div>');
 ?>
 </body>
 </html>
