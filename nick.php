@@ -6,7 +6,7 @@
 <?php
 require_once("connect.php");
 
-$sql = "UPDATE gracze SET ".'"'.$_POST['nick'].'"'.'=gracz WHERE id='.$_POST['id'];
+$sql = "UPDATE gracze SET gracz=".'"'.$_POST['nick'].'"'.' WHERE id='.$_POST['id'];
 
 if ($conn->query($sql) === TRUE) {
   header('Location: https://jablonski-filip.herokuapp.com/testowa_gra.php');
