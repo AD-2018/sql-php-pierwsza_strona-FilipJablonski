@@ -101,11 +101,10 @@ $sql = "SELECT * FROM gracze";
 echo('</div>');
 echo('</div>');
 echo ('<div class="do_lewej">');
-echo ('<div class="Dane3">');
+echo ('<div class="Dane5">');
 echo ('</div>');
 echo ('</div>');
 echo ('<div></div>');
-echo ('Miłej Gry!');
 ?>
 </body>
 </html>
