@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <meta http-equiv="refresh" content="8;url=testowa_gra.php">
+  <meta http-equiv="refresh" content="10;url=testowa_gra.php">
   <link rel="stylesheet" href="style.css">
   <title>Gra</title>
 </head>
@@ -27,6 +27,9 @@
 	</br></br></br>
 </nav>
 <div class="do_lewej">
+</div>
+<div class="Dane6">
+<div class="do_lewej">
 <div class="Dane2">
 <form action="testowa_gra_restart.php">
    <input type="submit" class="button_kik" value="Nowa Gra">
@@ -48,7 +51,6 @@
   <label for="Wiersz 3">3</label><br><br>
   <input type="submit" value="Nowa Tura">
 </form>
-</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
 </div>
 </div>
 <div class="Dane3">
@@ -76,6 +78,7 @@ $sql = "SELECT * FROM gra_nr_1";
     }
 
     echo('</table>');
+echo('</div>');
 echo('</div>');
 ?>
 </body>
