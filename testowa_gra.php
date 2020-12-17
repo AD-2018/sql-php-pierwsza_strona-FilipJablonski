@@ -117,14 +117,37 @@ $sql = "SELECT * FROM czat";
      } else {
        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
      }
+
     echo("<table border='1'");
-    echo("<h2>Czat</h2>");
+    echo("<th>Wiadomości:</th>");
         while($row = mysqli_fetch_assoc($result)) {
             echo('<tr>');
             echo('<td>'.$row['gracz'].' :'.$row['wiadomosc'].'</td>');
         echo('</tr>');
     }
     echo('</table>');
+echo('</br>');
+$sql ="select * from gracze";
+$result = mysqli_query($conn, $sql);
+if ( $result) {
+    } else {
+      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    };
+echo ('<form action="czat.php" method="POST">');
+echo ('<div><select name="gracz">');
+	while($row = mysqli_fetch_assoc($result)) {
+            echo ('<option value="'.$row['gracz'].'">');
+	    echo ($row['gracz']);
+ 	    echo ("</option>");
+	};
+echo ('</select>');
+echo ('</div>');
+echo ('<div><input type="text" name="wiadomosc"></div>');
+echo ('<div><input type="submit" value="Wyślij Wiadomość"></div>');
+echo ('</div>');
+echo ('<div><input type="submit" class="button_bibl" value="Wypożycz Książkę"></div>');
+echo ('</form>');
+echo ('<br>');
 echo('</div>');
 echo('</div>');
 echo ('<div class="do_lewej">');
