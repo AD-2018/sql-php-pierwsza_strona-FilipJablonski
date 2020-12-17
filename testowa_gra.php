@@ -101,9 +101,9 @@ $sql = "SELECT * FROM gracze";
      };
 echo('</div>');
 echo('</div>');
+echo ('<div class="do_lewej">');
+echo ('</div>');
+echo ('</div>');
 ?>
-<div class="do_lewej">
-</div>
-</div>
 </body>
 </html>
