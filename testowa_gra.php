@@ -106,7 +106,6 @@ echo ('</div>');
 echo ('</div>');
 echo ('<div></div>');
 echo ('Miłej Gry!');
-echo ('</div>');
 ?>
 </body>
 </html>
