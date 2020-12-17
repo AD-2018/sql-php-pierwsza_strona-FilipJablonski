@@ -30,7 +30,7 @@
 <?php
 require_once("connect.php");
 echo ('<div class="do_lewej"></div>');
-echo ('<div class="Dane6">');
+echo ('<ul class="Dane6">');
 echo ('<div class="do_lewej">');
 echo ('<div class="Dane2">');
 echo ('<form action="testowa_gra_restart.php">');
@@ -96,7 +96,7 @@ $sql = "SELECT * FROM gracze";
      };
 echo('</div>');
 echo('</div>');
-echo('</div>');
+echo('</ul>');
 ?>
 </body>
 </html>
