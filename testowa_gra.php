@@ -29,7 +29,8 @@
 </br></br>
 <?php
 require_once("connect.php");
-echo ('<ul class="Dane6">');
+echo ('<div class="Dane6">');
+echo ('<ul class="Dane7">');
 echo ('<div class="do_lewej">');
 echo ('<div class="Dane2">');
 echo ('<form action="testowa_gra_restart.php">');
@@ -98,6 +99,7 @@ echo ('<div class="Dane3">');
 echo('</div>');
 echo('</div>');
 echo('</ul>');
+echo('</div>');
 ?>
 </body>
 </html>
