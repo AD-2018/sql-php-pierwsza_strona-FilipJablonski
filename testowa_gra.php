@@ -117,9 +117,8 @@ $sql = "SELECT * FROM czat";
      } else {
        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
      }
-
-    echo("<table border='1'");
-    echo("<th>Wiadomości:</th>");
+echo ("<h2>Czat:</h2>")
+    echo("<table border='1' class='txt_lewo'");
         while($row = mysqli_fetch_assoc($result)) {
             echo('<tr>');
             echo('<td>'.$row['gracz'].' :'.$row['wiadomosc'].'</td>');
