@@ -30,7 +30,7 @@
 <div class="do_lewej"></div>
 <div class="Dane6">
 <div class="do_lewej">
-<div class="Dane2">
+<div class="Dane3">
 <form action="testowa_gra_restart.php">
    <input type="submit" class="button_kik" value="Nowa Gra">
 </form>
