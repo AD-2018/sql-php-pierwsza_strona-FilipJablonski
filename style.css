@@ -106,6 +106,10 @@ background-color: #2AAD00;
 	float:right;
 	display: inline-block;
 }
+.do_gory{
+	float:top;
+	display: inline-block;
+}
 .margin_left{
 	padding:1rem;
 	margin-left: 1rem;
