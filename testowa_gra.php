@@ -96,8 +96,9 @@ $sql = "SELECT * FROM gracze";
      }
      while($row = mysqli_fetch_assoc($result)) {
 	     echo("<h2>Gracz ".$row[id].": ".$row[gracz]."<h1>");
-	     echo ('<form action="nick'.$row[id].'php" method="POST">');
+	     echo ('<form action="nick.php" method="POST">');
 	     echo ('<div><input type="text" name="nick"></div>');
+	     echo ('<div><input type="number" name="id" value="'.$row[id]'" hidden></div>');
 	     echo ('<div><input type="submit" value="Zmień Nick"></div>');
 	     echo ('</form>');
      };
