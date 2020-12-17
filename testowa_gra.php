@@ -103,7 +103,6 @@ echo('</div>');
 echo ('<div class="do_lewej">');
 echo ('</div>');
 echo ('<div></div>');
-echo ('<div class="Dane6">');
 echo ('Miłej Gry!');
 echo ('</div>');
 ?>
