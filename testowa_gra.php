@@ -26,6 +26,7 @@
     </div>
 	</br></br></br>
 </nav>
+</br></br>
 <div class="do_lewej">
 </div>
 <div class="Dane6">
