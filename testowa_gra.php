@@ -104,7 +104,7 @@ echo('</div>');
 echo ('<div class="do_lewej">');
 echo ('</div>');
 echo ('</div>');
-echo ('<div class="Dane6'>);
+echo ('<div class="Dane6">');
 echo ('</div>');
 ?>
 </body>
