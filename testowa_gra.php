@@ -53,6 +53,7 @@ echo ('  <label for="Wiersz 3">3</label><br><br>');
 echo ('  <input type="submit" value="Nowa Tura">');
 echo ('</form>');
 echo ('</div>');
+echo('</br>');
 echo ('<div class="Dane3">');
 $sql = "SELECT * FROM gra_nr_1";
 
@@ -77,6 +78,7 @@ $sql = "SELECT * FROM gra_nr_1";
 
     echo('</table>');
 echo('</div>');
+echo('</br>');
 echo ('<div class="Dane3">');
 $sql = "SELECT * FROM gracze";
 
@@ -94,6 +96,7 @@ $sql = "SELECT * FROM gracze";
 	     echo('</br>');
      };
 echo('</div>');
+echo('</br>');
 echo('</div>');
 echo('</ul>');
 ?>
