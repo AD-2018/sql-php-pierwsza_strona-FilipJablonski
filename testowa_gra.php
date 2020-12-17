@@ -27,9 +27,9 @@
 	</br></br></br>
 </nav>
 </br></br>
+<div class="Dane6">
 <div class="do_lewej">
 </div>
-<div class="Dane6">
 <div class="do_lewej">
 <div class="Dane2">
 <form action="testowa_gra_restart.php">
