@@ -104,8 +104,7 @@ echo ('<div class="do_lewej">');
 echo ('</div>');
 echo ('<div></div>');
 echo ('<div class="Dane6">');
-	    echo('<table>');
-	    echo('</table>');
+echo ('Miłej Gry!');
 echo ('</div>');
 ?>
 </body>
