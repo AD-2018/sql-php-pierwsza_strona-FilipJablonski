@@ -80,7 +80,9 @@ $sql = "SELECT * FROM gra_nr_1";
 
     echo('</table>');
 echo('</div>');
-echo('</div>');
 ?>
+<div class="do_lewej">
+</div>
+</div>
 </body>
 </html>
