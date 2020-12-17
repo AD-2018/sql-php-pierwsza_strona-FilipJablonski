@@ -27,6 +27,7 @@
 	</br></br></br>
 </nav>
 </br></br>
+<div class="do_lewej"></div>
 <div class="Dane6">
 <div class="do_lewej">
 <div class="Dane2">
@@ -94,7 +95,7 @@ $sql = "SELECT * FROM gracze";
        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
      }
      while($row = mysqli_fetch_assoc($result)) {
-	     echo("<h2>Gacz ".$row[id].": ".$row[gracz]."<h1>");
+	     echo("<h2>Gracz ".$row[id].": ".$row[gracz]."<h1>");
 	     echo('</br>');
      };
 echo('</div>');
