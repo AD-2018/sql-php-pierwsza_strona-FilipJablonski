@@ -29,7 +29,6 @@
 </br></br>
 <?php
 require_once("connect.php");
-echo ('<div class="do_lewej"></div>');
 echo ('<ul class="Dane6">');
 echo ('<div class="do_lewej">');
 echo ('<div class="Dane2">');
