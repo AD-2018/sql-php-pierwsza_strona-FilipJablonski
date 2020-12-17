@@ -97,6 +97,8 @@ $sql = "SELECT * FROM gracze";
      };
 echo('</div>');
 echo('</br>');
+echo ('<div class="Dane3">');
+echo('</div>');
 echo('</div>');
 echo('</ul>');
 ?>
