@@ -27,40 +27,36 @@
 	</br></br></br>
 </nav>
 </br></br>
-<div class="do_lewej"></div>
-<div class="Dane6">
-<div class="do_lewej">
-<div class="Dane3">
-</div>
-</div>
-<div class="do_lewej">
-<div class="Dane2">
-<form action="testowa_gra_restart.php">
-   <input type="submit" class="button_kik" value="Nowa Gra">
-</form>
-<form action="testowa_gra_tura.php" method="POST">
-  <h3>Kolumna</h3><br>
-  <input type="radio" id="Kolumna1" name="Kolumna" value="Kolumna1">
-  <label for="Kolumna1">1</label>
-  <input type="radio" id="Kolumna2" name="Kolumna" value="Kolumna2">
-  <label for="Kolumna2">2</label>
-  <input type="radio" id="Kolumna3" name="Kolumna" value="Kolumna3">
-  <label for="Kolumna3">3</label><br><br>
-  <h3>Wiersz</h3><br>
-  <input type="radio" id="Wiersz 1" name="Wiersz" value="Wiersz 1">
-  <label for="Wiersz 1">1</label>
-  <input type="radio" id="Wiersz 2" name="Wiersz" value="Wiersz 2">
-  <label for="Wiersz 2">2</label>
-  <input type="radio" id="Wiersz 3" name="Wiersz" value="Wiersz 3">
-  <label for="Wiersz 3">3</label><br><br>
-  <input type="submit" value="Nowa Tura">
-</form>
-</div>
-</div>
-<div class="do_lewej">
-<div class="Dane3">
 <?php
 require_once("connect.php");
+echo ('<div class="do_lewej"></div>');
+echo ('<div class="Dane6">');
+echo ('<div class="do_lewej">');
+echo ('<div class="Dane2">');
+echo ('<form action="testowa_gra_restart.php">');
+echo ('   <input type="submit" class="button_kik" value="Nowa Gra">');
+echo ('</form>');
+echo ('<form action="testowa_gra_tura.php" method="POST">');
+echo ('  <h3>Kolumna</h3><br>');
+echo ('  <input type="radio" id="Kolumna1" name="Kolumna" value="Kolumna1">');
+echo ('  <label for="Kolumna1">1</label>');
+echo ('  <input type="radio" id="Kolumna2" name="Kolumna" value="Kolumna2">');
+echo ('  <label for="Kolumna2">2</label>');
+echo ('  <input type="radio" id="Kolumna3" name="Kolumna" value="Kolumna3">');
+echo ('  <label for="Kolumna3">3</label><br><br>');
+echo ('  <h3>Wiersz</h3><br>');
+echo ('  <input type="radio" id="Wiersz 1" name="Wiersz" value="Wiersz 1">');
+echo ('  <label for="Wiersz 1">1</label>');
+echo ('  <input type="radio" id="Wiersz 2" name="Wiersz" value="Wiersz 2">');
+echo ('  <label for="Wiersz 2">2</label>');
+echo ('  <input type="radio" id="Wiersz 3" name="Wiersz" value="Wiersz 3">');
+echo ('  <label for="Wiersz 3">3</label><br><br>');
+echo ('  <input type="submit" value="Nowa Tura">');
+echo ('</form>');
+echo ('</div>');
+echo ('</div>');
+echo ('<div class="do_lewej">');
+echo ('<div class="Dane3">');
 $sql = "SELECT * FROM gra_nr_1";
 
     if ($conn->connect_error) {
