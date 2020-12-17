@@ -106,6 +106,29 @@ echo('</div>');
 echo ('</div>');
 echo ('<div class="do_lewej">');
 echo ('<div class="Dane3">');
+$sql = "SELECT * FROM czat";
+
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+      }
+
+    $result = mysqli_query($conn, $sql);
+    if ( $result) {
+     } else {
+       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+     }
+    echo("<table border='1'");
+    echo("<th>Czat</th>");
+        while($row = mysqli_fetch_assoc($result)) {
+            echo('<tr>');
+            echo('<td>'.$row['gracz'].' :'.$row['wiadomosc'].'</td>');
+        echo('</tr>');
+    }
+    echo('</table>');
+echo('</div>');
+echo('</div>');
+echo ('<div class="do_lewej">');
+echo ('<div class="Dane3">');
 echo('</div>');
 echo('</div>');
 echo('</ul>');
