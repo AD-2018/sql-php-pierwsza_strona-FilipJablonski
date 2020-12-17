@@ -106,10 +106,6 @@ background-color: #2AAD00;
 	float:right;
 	display: inline-block;
 }
-.do_gory{
-	float:top;
-	display: inline-block;
-}
 .margin_left{
 	padding:1rem;
 	margin-left: 1rem;
@@ -123,6 +119,7 @@ background-color: #2AAD00;
 	margin-right: 0.5rem;
 	margin-bottom: 0.5rem;
 	margin-left: 0.5rem;
+	display: inline-block;
 }
 .Dane3{
 	padding:1rem;
@@ -133,6 +130,7 @@ background-color: #2AAD00;
 	margin-bottom: 0.5rem;
 	margin-left: 0.5rem;
 	height: 700px;
+	display: inline-block;
 }
 .Dane4{
 	padding:1rem;
