@@ -54,6 +54,7 @@
 </form>
 </div>
 </div>
+<div class="do_lewej">
 <div class="Dane3">
 <?php
 require_once("connect.php");
@@ -79,6 +80,26 @@ $sql = "SELECT * FROM gra_nr_1";
     }
 
     echo('</table>');
+echo('</div>');
+echo('</div>');
+echo ('<div class="do_lewej">');
+echo ('<div class="Dane3">');
+$sql = "SELECT * FROM gracze";
+
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+      }
+
+    $result = mysqli_query($conn, $sql);
+    if ( $result) {
+     } else {
+       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+     }
+     while($row = mysqli_fetch_assoc($result)) {
+	     echo('"<h2>Gacz ".$row[id].": ".$row[gracz]."<h1>"');
+	     echo('</br>');
+     };
+echo('</div>');
 echo('</div>');
 ?>
 <div class="do_lewej">
