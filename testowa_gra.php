@@ -26,7 +26,7 @@
     </div>
 	</br></br></br>
 </nav>
-</br></br>
+</br>
 <?php
 require_once("connect.php");
 echo ('<div class="Dane6">');
