@@ -5,7 +5,7 @@
 <body>
 <?php
 require_once("connect.php");
-$sql = "SELECT * FROM czat,czat2";
+$sql = "SELECT * FROM czat,czat2 where id=idczat";
 
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
@@ -32,6 +32,18 @@ $sql = "SELECT * FROM czat,czat2";
        }
        $conn->close();
         };
+    $sql = "SELECT * FROM czat,czat2 where is2=idczat+1";
+
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+      }
+
+    $result = mysqli_query($conn, $sql);
+    if ( $result) {
+     } else {
+       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+     }
+    
          while($row = mysqli_fetch_assoc($result)) {
       $sql = "UPDATE czat2 SET nowy_gracz=".'"'.$row[gracz].'"'.' WHERE idczat='.$row['id'].'+1';
       if ($conn->query($sql) === TRUE) {
