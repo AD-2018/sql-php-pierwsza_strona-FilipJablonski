@@ -62,7 +62,7 @@ $sql = "SELECT * FROM czat,czat2 where id=idczat";
           echo "Error: " . $sql . "<br>" . $conn->error;
        }
        $conn->close();
-          sleep(0.05);
+          sleep(0.5);
         };
 ?>
 </body>
