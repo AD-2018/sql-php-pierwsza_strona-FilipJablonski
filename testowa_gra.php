@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <meta http-equiv="refresh" content="10000;url=testowa_gra.php">
+  <meta http-equiv="refresh" content="10;url=testowa_gra.php">
   <link rel="stylesheet" href="style.css">
   <title>Gra</title>
 </head>
@@ -117,7 +117,7 @@ $sql = "SELECT * FROM czat";
      } else {
        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
      };
-echo ("<h2>Czat:</h2>");
+echo ("<h2>Czat: (nie działa)</h2>");
     echo("<table border='1'");
         while($row = mysqli_fetch_assoc($result)) {
             echo('<tr>');
