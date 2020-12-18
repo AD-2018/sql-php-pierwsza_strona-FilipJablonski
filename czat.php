@@ -17,7 +17,7 @@ $sql = "SELECT * FROM czat,czat2";
        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
      }
      while($row = mysqli_fetch_assoc($result)) {
-      $sql = "UPDATE gracze SET gracz=".'"'.$row[nowy_gracz].'"'.' WHERE id='.$row['id']." and idczat=".$row['id'];
+      $sql = "UPDATE czat SET gracz=".'"'.$row[nowy_gracz].'"'.' WHERE id='.$row['id'];
       if ($conn->query($sql) === TRUE) {
        } else {
           echo "Error: " . $sql . "<br>" . $conn->error;
@@ -25,7 +25,7 @@ $sql = "SELECT * FROM czat,czat2";
        $conn->close();
         };
       while($row = mysqli_fetch_assoc($result)) {
-      $sql = "UPDATE gracze SET wiadomosc=".'"'.$row[nowa_wiadomosc].'"'.' WHERE id='.$row['id']." and idczat=".$row['id'];
+      $sql = "UPDATE czat SET wiadomosc=".'"'.$row[nowa_wiadomosc].'"'.' WHERE id='.$row['id'];
       if ($conn->query($sql) === TRUE) {
        } else {
           echo "Error: " . $sql . "<br>" . $conn->error;
@@ -33,7 +33,7 @@ $sql = "SELECT * FROM czat,czat2";
        $conn->close();
         };
          while($row = mysqli_fetch_assoc($result)) {
-      $sql = "UPDATE gracze SET nowy_gracz=".'"'.$row[gracz].'"'.' WHERE id2='.$row['id2']." and idczat=".$row['id'];
+      $sql = "UPDATE czat2 SET nowy_gracz=".'"'.$row[gracz].'"'.' WHERE idczat='.$row['id'].'+1';
       if ($conn->query($sql) === TRUE) {
        } else {
           echo "Error: " . $sql . "<br>" . $conn->error;
@@ -41,7 +41,7 @@ $sql = "SELECT * FROM czat,czat2";
        $conn->close();
         };
       while($row = mysqli_fetch_assoc($result)) {
-      $sql = "UPDATE gracze SET nowa_wiadomosc=".'"'.$row[wiadomosc].'"'.' WHERE id2='.$row['id2']." and idczat=".$row['id'];
+      $sql = "UPDATE czat2 SET nowa_wiadomosc=".'"'.$row[wiadomosc].'"'.' WHERE idczat='.$row['id'].'+1';
       if ($conn->query($sql) === TRUE) {
        } else {
           echo "Error: " . $sql . "<br>" . $conn->error;
