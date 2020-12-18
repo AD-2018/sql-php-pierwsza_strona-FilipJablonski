@@ -110,16 +110,16 @@ $sql = "SELECT * FROM czat";
 
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
-      }
+      };
 
     $result = mysqli_query($conn, $sql);
     if ( $result) {
      } else {
        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-     }
+     };
 echo ("<h2>Czat:</h2>");
     echo("<table border='1'");
- echo("<th>Wiadomości:</th>");
+    echo("<th>Wiadomości:</th>");
         while($row = mysqli_fetch_assoc($result)) {
             echo('<tr>');
             echo('<td class="txt_lewo">'.$row['gracz'].' :'.$row['wiadomosc'].'</td>');
