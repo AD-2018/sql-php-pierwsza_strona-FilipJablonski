@@ -5,7 +5,7 @@
 <body>
 <?php
 require_once("connect.php");
-$sql = "SELECT * FROM czat,cza2";
+$sql = "SELECT * FROM czat,czat2";
 
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
