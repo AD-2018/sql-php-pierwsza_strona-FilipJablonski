@@ -17,13 +17,8 @@ $sql = "SELECT * FROM czat,czat2 where id=idczat";
        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
      }
      while($row = mysqli_fetch_assoc($result)) {
-      $sql = "UPDATE czat SET gracz=".'"'.$row[nowy_gracz].'"'.' WHERE id='.$row['id'];
-      if ($conn->query($sql) === TRUE) {
-       } else {
-          echo "Error: " . $sql . "<br>" . $conn->error;
-       }
-       $conn->close();
-        };
+        mysql_query("UPDATE czat SET wiadomosc=".'"'.$row[nowa_wiadomosc].'"'.' WHERE id='.$row['id']);
+     };
     $sql = "SELECT * FROM czat,czat2 where id=idczat";
 
     if ($conn->connect_error) {
