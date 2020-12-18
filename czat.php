@@ -5,7 +5,7 @@
 <body>
 <?php
 require_once("connect.php");
-$sql = "SELECT * FROM czat";
+$sql = "SELECT * FROM czat,cza2";
 
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
@@ -17,22 +17,37 @@ $sql = "SELECT * FROM czat";
        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
      }
      while($row = mysqli_fetch_assoc($result)) {
-      $gracz = $row[gracz];
-      $wiadomosc = $row[wiadomosc];
-      $gracz1 = $row[gracz1];
-      $wiadomosc1 = $row[wiadomosc1];
-      $sql = "UPDATE gracze SET gracz=".'"'.$gracz1.'"'.' WHERE id='.$row['id'];
+      $sql = "UPDATE gracze SET gracz=".'"'.$row[nowy_gracz].'"'.' WHERE id='.$row['id']." and idczat=".$row['id'];
       if ($conn->query($sql) === TRUE) {
        } else {
           echo "Error: " . $sql . "<br>" . $conn->error;
        }
        $conn->close();
-      $sql = "UPDATE gracze SET gracz=".'"'.$wiadomosc1.'"'.' WHERE id='.$row['id'];
+        };
+      while($row = mysqli_fetch_assoc($result)) {
+      $sql = "UPDATE gracze SET wiadomosc=".'"'.$row[nowa_wiadomosc].'"'.' WHERE id='.$row['id']." and idczat=".$row['id'];
       if ($conn->query($sql) === TRUE) {
        } else {
           echo "Error: " . $sql . "<br>" . $conn->error;
        }
        $conn->close();
+        };
+         while($row = mysqli_fetch_assoc($result)) {
+      $sql = "UPDATE gracze SET nowy_gracz=".'"'.$row[gracz].'"'.' WHERE id2='.$row['id2']." and idczat=".$row['id'];
+      if ($conn->query($sql) === TRUE) {
+       } else {
+          echo "Error: " . $sql . "<br>" . $conn->error;
+       }
+       $conn->close();
+        };
+      while($row = mysqli_fetch_assoc($result)) {
+      $sql = "UPDATE gracze SET nowa_wiadomosc=".'"'.$row[wiadomosc].'"'.' WHERE id2='.$row['id2']." and idczat=".$row['id'];
+      if ($conn->query($sql) === TRUE) {
+       } else {
+          echo "Error: " . $sql . "<br>" . $conn->error;
+       }
+       $conn->close();
+        };
          header('Location: https://jablonski-filip.herokuapp.com/testowa_gra.php');
 ?>
 </body>
