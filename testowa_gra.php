@@ -119,7 +119,6 @@ $sql = "SELECT * FROM czat";
      };
 echo ("<h2>Czat:</h2>");
     echo("<table border='1'");
-    echo("<th>Wiadomości:</th>");
         while($row = mysqli_fetch_assoc($result)) {
             echo('<tr>');
             echo('<td class="txt_lewo">'.$row['gracz'].' :'.$row['wiadomosc'].'</td>');
