@@ -48,7 +48,6 @@ $sql = "SELECT * FROM czat,cza2";
        }
        $conn->close();
         };
-         header('Location: https://jablonski-filip.herokuapp.com/testowa_gra.php');
 ?>
 </body>
 </html>
