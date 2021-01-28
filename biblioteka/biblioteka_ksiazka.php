@@ -11,7 +11,7 @@ $sql = "INSERT INTO biblTytul (id,tytul)
 
 
 if ($conn->query($sql) === TRUE) {
-  header('Location: https://jablonski-filip.herokuapp.com/biblioteka.php');
+  header('Location: https://jablonski-filip.herokuapp.com/biblioteka/biblioteka.php');
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }

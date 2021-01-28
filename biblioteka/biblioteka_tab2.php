@@ -10,7 +10,7 @@ $sql = "UPDATE biblAutor_biblTytul SET biblWypoz= if (biblWypoz='0' , '1','0') W
 
 
 if ($conn->query($sql) === TRUE) {
-  header('Location: https://jablonski-filip.herokuapp.com/biblioteka.php');
+  header('Location: https://jablonski-filip.herokuapp.com/biblioteka/biblioteka.php');
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }

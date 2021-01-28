@@ -11,7 +11,7 @@ $sql = "INSERT INTO pracownicy (id_pracownicy,imie, dzial, zarobki,data_urodzeni
 
 
 if ($conn->query($sql) === TRUE) {
-  header('Location: https://jablonski-filip.herokuapp.com/daneDoBazy.php');
+  header('Location: https://jablonski-filip.herokuapp.com/pracownicy_organizacja_czas/daneDoBazy.php');
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
