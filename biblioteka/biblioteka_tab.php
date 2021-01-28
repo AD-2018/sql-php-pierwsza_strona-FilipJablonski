@@ -1,12 +1,13 @@
 <html>
 <head>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../style.css">
 </head>
 <body>
 <?php
-require_once("connect.php");
+require_once("../connect.php");
 
-$sql = "UPDATE biblAutor_biblTytul SET biblWypoz= if (biblWypoz='0' , '1','0') WHERE  biblAutor_id=".'"'.$_POST['autor'].'"'.' and biblTytul_id='.'"'.$_POST['tytul'].'"';
+$sql = "INSERT INTO biblAutor_biblTytul (id,biblAutor_id,biblTytul_id,biblWypoz) 
+       VALUES (null,".'"'.$_POST['autor'].'"'.','.'"'.$_POST['tytul'].'"'.','.'0'.')';
 
 
 if ($conn->query($sql) === TRUE) {

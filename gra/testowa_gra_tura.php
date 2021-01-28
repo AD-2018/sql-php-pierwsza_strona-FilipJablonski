@@ -1,10 +1,10 @@
 <html>
 <head>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../style.css">
 </head>
 <body>
 <?php
-require_once("connect.php");
+require_once("../connect.php");
 
 $sql = "UPDATE gra_nr_1 SET ".$_POST['Kolumna'].'= if (tura="X" , if('.$_POST['Kolumna'].'="O","O","X"),if('.$_POST['Kolumna'].'="O","X","O")) WHERE X = '.'"'.$_POST['Wiersz'].'"';
 

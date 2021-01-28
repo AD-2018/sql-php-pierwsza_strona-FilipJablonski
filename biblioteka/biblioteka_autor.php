@@ -1,13 +1,13 @@
 <html>
 <head>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../style.css">
 </head>
 <body>
 <?php
-require_once("connect.php");
+require_once("../connect.php");
 
-$sql = "INSERT INTO biblAutor_biblTytul (id,biblAutor_id,biblTytul_id,biblWypoz) 
-       VALUES (null,".'"'.$_POST['autor'].'"'.','.'"'.$_POST['tytul'].'"'.','.'0'.')';
+$sql = "INSERT INTO biblAutor (id,autor) 
+       VALUES (null,".'"'.$_POST['autor'].'"'.')';
 
 
 if ($conn->query($sql) === TRUE) {

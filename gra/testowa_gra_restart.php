@@ -1,11 +1,11 @@
     
 <html>
 <head>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../style.css">
 </head>
 <body>
 <?php
-require_once("connect.php");
+require_once("../connect.php");
 
 $sql = "UPDATE gra_nr_1 SET Kolumna1= ' ',Kolumna2= ' ',Kolumna3= ' ' WHERE X = 'Wiersz 1' or X = 'Wiersz 2' or X = 'Wiersz 3'";
 

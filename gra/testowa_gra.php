@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <meta http-equiv="refresh" content="20;url=testowa_gra.php">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../style.css">
   <title>Gra</title>
 </head>
 <body>
@@ -12,23 +12,23 @@
     <div class="nav">
     <strong>
     	 <li><a class="GitHub" href="https://github.com/AD-2018/sql-php-pierwsza_strona-FilipJablonski">Github</a></li>
-         <li><a href="index.php">Strona Główna</a></li>
-         <li><a href="pracownicy.php">Pracownicy</a></li>
-         <li><a href="pracownicy_organizacja.php">Pracownicy i Organizacja</a></li>   
-         <li><a href="funkcje_agregujace.php">Funkcje Agregujace</a></li>
-         <li><a href="data_czas.php">Data i Czas</a></li>
-         <li><a href="nieobecnosci.php">Nieobecności Pracowników</a></li>
-         <li><a href="strona.php">Strona</a></li>
-         <li><a href="daneDoBazy.php">Dane Do Bazy</a></li>
+         <li><a href="../index.php">Strona Główna</a></li>
+         <li><a href="../pracownicy_organizacja_czas/pracownicy.php">Pracownicy</a></li>
+         <li><a href="../pracownicy_organizacja_czas/pracownicy_organizacja.php">Pracownicy i Organizacja</a></li>   
+         <li><a href="../pracownicy_organizacja_czas/funkcje_agregujace.php">Funkcje Agregujace</a></li>
+         <li><a href="../pracownicy_organizacja_czas/data_czas.php">Data i Czas</a></li>
+         <li><a href="../pracownicy_organizacja_czas/nieobecnosci.php">Nieobecności Pracowników</a></li>
+         <li><a href="../strona.php">Strona</a></li>
+         <li><a href="../pracownicy_organizacja_czas/daneDoBazy.php">Dane Do Bazy</a></li>
          <li><a href="testowa_gra.php">Testowa Gra</a></li>
-	 <li><a href="biblioteka.php">Biblioteka | Książki</a></li>
+	 <li><a href="../biblioteka/biblioteka.php">Biblioteka | Książki</a></li>
     </strong>
     </div>
 	</br></br></br>
 </nav>
 </br>
 <?php
-require_once("connect.php");
+require_once("../connect.php");
 echo ('<div class="Dane6">');
 echo ('<ul class="Dane7">');
 echo ('<div class="do_lewej">');

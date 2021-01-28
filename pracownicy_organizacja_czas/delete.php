@@ -1,10 +1,10 @@
 <html>
 <head>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../style.css">
 </head>
 <body>
 <?php
-require_once("connect.php");
+require_once("../connect.php");
 echo("Delete" . "<br>");
 echo $_POST['id'];
 echo "<br>";
