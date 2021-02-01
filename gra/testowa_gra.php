@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width">
   <meta http-equiv="refresh" content="20;url=testowa_gra.php">
   <link rel="stylesheet" href="../style.css">
-  <title>Gra</title>
+  <title>Filip Jabłoński 3Ti</title>
 </head>
 <body>
 <nav>
