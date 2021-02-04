@@ -94,29 +94,14 @@ echo ('</div>');
 echo ('</div>');
 echo ('<div class="do_lewej">');
 echo ('<div class="Dane4">');
-$sql ="select * from biblTytul";
-$result = mysqli_query($conn, $sql);
-if ( $result) {
-    } else {
-      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-    };
 echo ('<h3 class="zielone">Wypożyczenie Książki</h3>');
-echo ('<form action="biblioteka_tab2.php" method="POST">');
-echo ('<div>Tytuł Książki: <select name="tytul">');
-	while($row = mysqli_fetch_assoc($result)) {
-            echo ('<option value="'.$row['id'].'">');
-	    echo ($row['tytul']);
- 	    echo ("</option>");
-	};
-echo ('</select>');
-echo ('</div>');
-echo ('</br>');
 $sql ="select * from biblAutor";
 $result = mysqli_query($conn, $sql);
 if ( $result) {
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     };
+echo ('<form action="biblioteka.php" method="POST">');
 echo ('<div>Autor: <select name="autor" class="do_prawej">');
 	while($row = mysqli_fetch_assoc($result)) {
             echo ('<option value="'.$row['id'].'">');
@@ -126,6 +111,27 @@ echo ('<div>Autor: <select name="autor" class="do_prawej">');
 echo ('</select>');
 echo ('</div>');
 echo ('</br>');
+echo ('Wybrany Autor:'.$_POST['autor'])
+echo ('</br>');
+echo ('<div><input type="submit" class="button_bibl2" value="Sprawdź Książki"></div>');
+echo ('</form>');
+echo ('<form action="biblioteka_tab2.php" method="POST">');
+$sql = "select (`biblAutor_biblTytul`.id) as ID_TAB, autor, tytul from biblAutor_biblTytul,biblAutor,biblTytul where biblAutor.id=biblAutor_id and biblTytul.id=biblTytul_id and autor=".$_POST['autor'];
+$result = mysqli_query($conn, $sql);
+if ( $result) {
+    } else {
+      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    };
+echo ('<div>Tytuł Książki: <select name="tytul">');
+	while($row = mysqli_fetch_assoc($result)) {
+            echo ('<option value="'.$row['id'].'">');
+	    echo ($row['tytul']);
+ 	    echo ("</option>");
+	};
+echo ('</select>');
+echo ('</div>');
+echo ('</br>');
+echo ('<input name="autor" value="'.$_POST['autor'].'" hidden>');
 echo ('<div><input type="submit" class="button_bibl" value="Wypożycz Książkę"></div>');
 echo ('</form>');
 echo ('</div>');
