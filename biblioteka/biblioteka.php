@@ -113,10 +113,11 @@ if ( $result) {
 	};
 echo ('</select>');
 echo ('</div>');
-echo ('<div>Autor: </div><div class="do_prawej">'.$_POST['autor'].'</div>');
-
+echo ('<div>Autor: <div class="do_prawej">'.$_POST['autor'].'</div></div>');
+echo ('</br>');
 echo ('<div><input type="submit" class="button_bibl" value="Pokaż Książki"></div>');
 echo ('</form>');
+echo ('</br>');
 
 echo ('<form action="biblioteka_tab2.php" method="POST">');
 
