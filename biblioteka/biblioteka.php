@@ -97,7 +97,7 @@ echo ('</div>');
 echo ('<div class="do_lewej">');
 echo ('<div class="Dane4">');
 echo ('<h3 class="zielone">Wypożyczenie Książki</h3>');
-echo ('<form action="biblioteka_tab2.php" method="POST">');
+echo ('<form action="biblioteka.php" method="POST">');
 
 echo ('<div>Autor: <select name="autor" class="do_prawej">');
 $sql ="select * from biblAutor";
@@ -114,6 +114,11 @@ if ( $result) {
 echo ('</select>');
 echo ('</div>');
 echo ('</br>');
+
+echo ('<div><input type="submit" class="button_bibl" value="Pokaż Książki"></div>');
+echo ('</form>');
+
+echo ('<form action="biblioteka_tab2.php" method="POST">');
 
 echo ('<div>Tytuł Książki: <select name="tytul">');
 $sql ="select * from biblTytul";
