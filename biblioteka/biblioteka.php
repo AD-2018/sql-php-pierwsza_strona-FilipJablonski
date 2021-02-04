@@ -134,7 +134,7 @@ if ( $result) {
 	};
 echo ('</select>');
 echo ('</div>');
-echo ('<div><input name="autor" value="'.$_POST['autor'].'" hidden></div>')
+echo ('<div><input name="autor" value="'.$_POST['autor'].'" hidden></div>');
 echo ('</br>');
 
 echo ('<div><input type="submit" class="button_bibl" value="Wypożycz Książkę"></div>');
