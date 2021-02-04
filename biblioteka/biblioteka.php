@@ -98,15 +98,14 @@ echo ('<div class="do_lewej">');
 echo ('<div class="Dane4">');
 echo ('<h3 class="zielone">Wypożyczenie Książki</h3>');
 echo ('<form action="biblioteka_tab2.php" method="POST">');
-echo ('<div>Tytuł Książki: <select name="tytul">');
 
+echo ('<div>Autor: <select name="autor" class="do_prawej">');
 $sql ="select * from biblAutor";
 $result = mysqli_query($conn, $sql);
 if ( $result) {
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     };
-echo ('<div>Autor: <select name="autor" class="do_prawej">');
 	while($row = mysqli_fetch_assoc($result)) {
             echo ('<option value="'.$row['id'].'">');
 	    echo ($row['autor']);
@@ -116,14 +115,13 @@ echo ('</select>');
 echo ('</div>');
 echo ('</br>');
 
+echo ('<div>Tytuł Książki: <select name="tytul">');
 $sql ="select * from biblTytul";
 $result = mysqli_query($conn, $sql);
 if ( $result) {
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     };
-
-
 	while($row = mysqli_fetch_assoc($result)) {
             echo ('<option value="'.$row['id'].'">');
 	    echo ($row['tytul']);
