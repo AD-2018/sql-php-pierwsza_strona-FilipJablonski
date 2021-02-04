@@ -113,7 +113,7 @@ if ( $result) {
 	};
 echo ('</select>');
 echo ('</div>');
-echo ('</br>');
+echo ('<div>Autor: '.$_POST['autor'].'</div>');
 
 echo ('<div><input type="submit" class="button_bibl" value="Pokaż Książki"></div>');
 echo ('</form>');
