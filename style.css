@@ -1,176 +1,225 @@
 body {
-  font-family: sans-serif;
-  background-color:#FFB0B0;
-  animation: tlo 80s infinite;
+    font-family: sans-serif;
+    background-color: #FFB0B0;
+    animation: tlo 80s infinite;
 }
+
 @keyframes tlo {
-  0%   {background-color:#FFB0B0;}
-  12,5%  {background-color:#FFD5B0;}
-  25%  {background-color:#FFFEB0;}
-  37,5%  {background-color:#C6FFB0;}
-  50% {background-color:#B0FFF1;}
-  62,5% {background-color:#B0C2FF;}
-  75% {background-color:#EEB0FF;}
-  87,5% {background-color:#FFB0E7;}
-  100% {background-color:#FFB0B0;}
+    0% {
+        background-color: #FFB0B0;
+    }
+    12,
+    5% {
+        background-color: #FFD5B0;
+    }
+    25% {
+        background-color: #FFFEB0;
+    }
+    37,
+    5% {
+        background-color: #C6FFB0;
+    }
+    50% {
+        background-color: #B0FFF1;
+    }
+    62,
+    5% {
+        background-color: #B0C2FF;
+    }
+    75% {
+        background-color: #EEB0FF;
+    }
+    87,
+    5% {
+        background-color: #FFB0E7;
+    }
+    100% {
+        background-color: #FFB0B0;
+    }
 }
+
 table {
-  border-collapse: collapse;
+    border-collapse: collapse;
 }
 
 th {
-  background-color:#2AAD00;
-  height: 50px;
-  text-align: center;
-  color: #FFFFFF;
+    background-color: #2AAD00;
+    height: 50px;
+    text-align: center;
+    color: #FFFFFF;
 }
 
 tr {
-  background-color: #FFFFFF;
-  text-align: center;
-  color: #000000;
+    background-color: #FFFFFF;
+    text-align: center;
+    color: #000000;
 }
+
 .txt_lewo {
-  background-color: #FFFFFF;
-  text-align: left;
-  color: #000000;
-  width: 650px;
+    background-color: #FFFFFF;
+    text-align: left;
+    color: #000000;
+    width: 650px;
 }
+
 li a {
-  float:left;
-  display: block;
-  color: #ffffff;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  background-color: #A9A9A9;
+    float: left;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #A9A9A9;
 }
-a:hover{
+
+a:hover {
     background-color: #ffffff;
     color: #000000;
 }
+
 nav {
-  list-style-type: none;
-  margin: 0;
-  padding: 1rem;
-  overflow: hidden;
-  background-color: #333;
+    list-style-type: none;
+    margin: 0;
+    padding: 1rem;
+    overflow: hidden;
+    background-color: #333;
 }
-.myInput{
-    margin: 2rem; 
+
+.myInput {
+    margin: 2rem;
 }
-.GitHub{
-background-color: #2AAD00;
+
+.GitHub {
+    background-color: #2AAD00;
 }
-.Dane1{
-	padding:1rem;
-	background-color: #333;
-	color:#ffffff;
-	margin-top: 1rem;
+
+.Dane1 {
+    padding: 1rem;
+    background-color: #333;
+    color: #ffffff;
+    margin-top: 1rem;
 }
-.zielone{
-	padding: 0.75rem;
-	color:#ffffff;
-	background-color: #2AAD00;
+
+.zielone {
+    padding: 0.75rem;
+    color: #ffffff;
+    background-color: #2AAD00;
 }
-.szare{
-	padding: 0.75rem;
-	color:#ffffff;
-	background-color: #A9A9A9;
+
+.szare {
+    padding: 0.75rem;
+    color: #ffffff;
+    background-color: #A9A9A9;
 }
-.tlo_zielony{
-	background-color: #2AAD00;
-	color:#ffffff;
+
+.tlo_zielony {
+    background-color: #2AAD00;
+    color: #ffffff;
 }
-.tabela_kik{
-  border-collapse: collapse;
-  width: 600px;
-  height: 150px;
+
+.tabela_kik {
+    border-collapse: collapse;
+    width: 600px;
+    height: 150px;
 }
+
 .tr_kik {
-	height: 150px;
+    height: 150px;
 }
-.big_kik{
-	font-size: 500%;
+
+.big_kik {
+    font-size: 500%;
 }
+
 .button_kik {
-  background-color: #2AAD00;
-  border: none;
-  color: #FFFFFF;
-  padding: 1rem;
-  text-align: center;
-  display: block;
-  font-size: 25px;
-  cursor: pointer;
-  border-radius: 5rem;
+    background-color: #2AAD00;
+    border: none;
+    color: #FFFFFF;
+    padding: 1rem;
+    text-align: center;
+    display: block;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 5rem;
 }
-.do_lewej{
-	float:left;
-	display: inline-block;
+
+.do_lewej {
+    float: left;
+    display: inline-block;
 }
-.do_prawej{
-	float:right;
-	display: inline-block;
+
+.do_prawej {
+    float: right;
+    display: inline-block;
 }
-.margin_left{
-	padding:1rem;
-	margin-left: 1rem;
+
+.margin_left {
+    padding: 1rem;
+    margin-left: 1rem;
 }
-.Dane2{
-	padding:1rem;
-	background-color: #1B1B1B;
-	color:#ffffff;
-	height: 700px;
-	margin-top: 0.5rem;
-	margin-right: 0.5rem;
-	display: inline-block;
+
+.Dane2 {
+    padding: 1rem;
+    background-color: #1B1B1B;
+    color: #ffffff;
+    height: 700px;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+    display: inline-block;
 }
-.Dane3{
-	padding:1rem;
-	background-color: #333;
-	color:#ffffff;
-	margin-top: 0.5rem;
-	margin-right: 0.5rem;
-	height: 700px;
-	display: inline-block;
+
+.Dane3 {
+    padding: 1rem;
+    background-color: #333;
+    color: #ffffff;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+    height: 700px;
+    display: inline-block;
 }
-.Dane4{
-	padding:1rem;
-	background-color: #333;
-	color:#ffffff;
-	margin-top: 1rem;
-	height: 225px;
+
+.Dane4 {
+    padding: 1rem;
+    background-color: #333;
+    color: #ffffff;
+    margin-top: 1rem;
+    height: 300px;
 }
-.Dane5{
-	padding:1rem;
-	background-color: #333;
-	color:#ffffff;
-	text-align: center;
+
+.Dane5 {
+    padding: 1rem;
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
 }
-.tab_bibl{
-	margin-left: auto;
-    	margin-right: auto;
-	text-align: center;
-	width: 50%;
+
+.tab_bibl {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 50%;
 }
+
 .button_bibl {
-  background-color: #A9A9A9;
-  border: none;
-  color: #FFFFFF;
-  padding: 1rem;
-  text-align: center;
-  display: block;
-  font-size: 15px;
-  cursor: pointer;
-  border-radius: 5rem;
-  margin-left: auto;
-  margin-right: auto;
+    background-color: #A9A9A9;
+    border: none;
+    color: #FFFFFF;
+    padding: 1rem;
+    text-align: center;
+    display: block;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5rem;
+    margin-left: auto;
+    margin-right: auto;
 }
-.Dane6{
-	padding:1rem;
-	background-color: #333;
-	color:#ffffff;
+
+.Dane6 {
+    padding: 1rem;
+    background-color: #333;
+    color: #ffffff;
 }
-.Dane7{
-	display: inline-block;
+
+.Dane7 {
+    display: inline-block;
 }
