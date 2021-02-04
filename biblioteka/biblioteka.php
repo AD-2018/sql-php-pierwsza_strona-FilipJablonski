@@ -113,7 +113,7 @@ if ( $result) {
 	};
 echo ('</select>');
 echo ('</div>');
-echo ('<div class="do_prawej">Autor: '.$_POST['autor'].'</div>');
+echo ('<div>Autor: </div><div class="do_prawej">'.$_POST['autor'].'</div>');
 
 echo ('<div><input type="submit" class="button_bibl" value="Pokaż Książki"></div>');
 echo ('</form>');
@@ -121,7 +121,7 @@ echo ('</form>');
 echo ('<form action="biblioteka_tab2.php" method="POST">');
 
 echo ('<div>Tytuł Książki: <select name="tytul">');
-$sql = "select (`biblAutor_biblTytul`.id) as ID_TAB, (`biblAutor`.id) as ID_AUTOR, (`biblTytul`.id) as ID_TYTUL, autor, tytul, biblWypoz from biblAutor_biblTytul,biblAutor,biblTytul where biblAutor.id=biblAutor_id and biblTytul.id=biblTytul_id and autor=".$_POST['autor'];
+$sql = "select (`biblAutor_biblTytul`.id) as ID_TAB, (`biblAutor`.id) as ID_AUTOR, (`biblTytul`.id) as ID_TYTUL, autor, tytul, biblWypoz from biblAutor_biblTytul,biblAutor,biblTytul where biblAutor.id=biblAutor_id and biblTytul.id=biblTytul_id and autor=".'"'.$_POST['autor'].'"';
 $result = mysqli_query($conn, $sql);
 if ( $result) {
     } else {
@@ -134,6 +134,7 @@ if ( $result) {
 	};
 echo ('</select>');
 echo ('</div>');
+echo ('<div><input name="autor" value="'.$_POST['autor'].'" hidden></div>')
 echo ('</br>');
 
 echo ('<div><input type="submit" class="button_bibl" value="Wypożycz Książkę"></div>');
