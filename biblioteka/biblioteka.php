@@ -113,6 +113,21 @@ if ( $result) {
 	};
 echo ('</select>');
 echo ('</div>');
+
+echo ('<div><select name="id" class="do_prawej">');
+$sql ="select * from biblAutor";
+$result = mysqli_query($conn, $sql);
+if ( $result) {
+    } else {
+      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    };
+	while($row = mysqli_fetch_assoc($result)) {
+            echo ('<option value="'.$row['id'].'">');
+ 	    echo ("</option>");
+	};
+echo ('</select hidden>');
+echo ('</div>');
+
 echo ('</br>');
 echo ('<div>Autor: <div class="do_prawej">'.$_POST['autor'].'</div></div>');
 echo ('</br>');
@@ -136,7 +151,7 @@ if ( $result) {
 	};
 echo ('</select>');
 echo ('</div>');
-echo ('<div><input name="autor" value="'.$_POST['autor'].'" hidden></div>');
+echo ('<div><input name="autor" value="'.$_POST['id'].'" hidden></div>');
 echo ('</br>');
 
 echo ('<div><input type="submit" class="button_bibl" value="Wypożycz Książkę"></div>');
