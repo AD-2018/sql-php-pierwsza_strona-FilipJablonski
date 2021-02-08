@@ -81,7 +81,7 @@ if ( $result) {
     };
 echo ('<div>Autor: <select name="autor" class="do_prawej">');
 	while($row = mysqli_fetch_assoc($result)) {
-            echo ('<option value="'.$row['id'].'">');
+            echo ('<option value="'.$row['autor'].'">');
 	    echo ($row['autor']);
  	    echo ("</option>");
 	};
@@ -113,7 +113,7 @@ if ( $result) {
 	};
 echo ('</select>');
 echo ('</div>');
-
+echo ('<div>Wybrany Autor: <div class="do_prawej">'.$_POST[autor].'</div></div>');
 echo ('</br>');
 echo ('</br>');
 echo ('<div><input type="submit" class="button_bibl" value="Pokaż Książki"></div>');
