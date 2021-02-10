@@ -129,7 +129,7 @@ if ( $result) {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     };
 	while($row = mysqli_fetch_assoc($result)) {
-            echo ('<option value="'.$row['ID_AUTOR'].'">');
+            echo ('<option value="'.$row['ID_TYTUL'].'">');
 	    echo ($row['tytul']);
  	    echo ("</option>");
 	};
