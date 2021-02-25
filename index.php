@@ -52,7 +52,7 @@ $sql = "SELECT * FROM pracownicy, organizacja WHERE id_org = dzial";
     echo("</table>");
 
     $hostname = $_SERVER['HTTP_HOST'];
-    echo("<li> hostname: ".$hostname);
+    echo("<li> hostname: ".$hostname."</li>");
 ?>
 </body>
 </html>
