@@ -1,8 +1,8 @@
 <?php
-$servername = "mysql-jablonski-filip.alwaysdata.net";
-$username = "217189";
-$password = "4CM@rD.M6Bvc3Bx";
-$dbname = "jablonski-filip_pbd";
+$servername = $_SERVER['servername'];
+$username = $_SERVER['username'];
+$password = $_SERVER['password'];
+$dbname = $_SERVER['dbname']; 
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 

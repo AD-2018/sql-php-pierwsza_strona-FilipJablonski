@@ -50,6 +50,9 @@ $sql = "SELECT * FROM pracownicy, organizacja WHERE id_org = dzial";
             echo("</tr>");
         };
     echo("</table>");
+
+    $hostname = $_SERVER['HTTP_HOST'];
+    echo("<li> hostname: ".$hostname);
 ?>
 </body>
 </html>
