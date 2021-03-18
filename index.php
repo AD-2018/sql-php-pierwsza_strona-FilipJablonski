@@ -25,7 +25,9 @@
 </nav>
     <h1>Filip Jabłoński</h1>
 
-<?php
+<?php    
+$hostname = $_SERVER['HTTP_HOST'];
+echo("<li> hostname: ".$hostname."</li>");
 require_once("connect.php");
 $sql = "SELECT * FROM pracownicy, organizacja WHERE id_org = dzial";
 
@@ -51,8 +53,7 @@ $sql = "SELECT * FROM pracownicy, organizacja WHERE id_org = dzial";
         };
     echo("</table>");
     echo ("<br>");
-    $hostname = $_SERVER['HTTP_HOST'];
-    echo("<li> hostname: ".$hostname."</li>");
+
 ?>
 </body>
 </html>
