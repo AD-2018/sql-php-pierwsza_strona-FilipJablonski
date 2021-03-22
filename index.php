@@ -67,23 +67,7 @@ $sql = "SELECT * FROM pracownicy, organizacja WHERE id_org = dzial";
      } else {
        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
      }
-    echo("<h1>Tabelka Pracownicy</h1>");
-
-    
-    $sql = "INSERT INTO pracownicy (imie,dzial,zarobki) 
-       VALUES ('Filip','1','28')";
-    
-
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-      }
-
-    $result = mysqli_query($conn, $sql);
-    if ( $result) {
-         echo "<br>";
-     } else {
-       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-     }    
+    echo("<h1>Tabelka Pracownicy</h1>"); 
 
     echo("<table border='1'>");
     echo("<th>Imie</th><th>Zarobki</th><th>Dzial</th>");
