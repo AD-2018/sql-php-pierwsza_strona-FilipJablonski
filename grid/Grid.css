@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.str1 {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "a b d" "a c d" "a e d";
+}
+
+.str1A {
+    background-color: red;
+    grid-area: a;
+}
+
+.str1B {
+    background-color: greenyellow;
+    grid-area: b;
+}
+
+.str1C {
+    background-color: lightskyblue;
+    grid-area: c;
+}
+
+.str1D {
+    background-color: yellow;
+    grid-area: d;
+}
+
+.str1E {
+    background-color: orange;
+    grid-area: e;
+}

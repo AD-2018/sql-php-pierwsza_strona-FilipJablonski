@@ -18,7 +18,8 @@
          <li><a href="strona.php">Strona</a></li>
          <li><a href="pracownicy_organizacja_czas/daneDoBazy.php">Dane Do Bazy</a></li>
          <li><a href="gra/testowa_gra.php">Testowa Gra</a></li>
-	 <li><a href="biblioteka/biblioteka.php">Biblioteka | Książki</a></li>
+         <li><a href="biblioteka/biblioteka.php">Biblioteka | Książki</a></li>
+         <li><a href="grid/index.html">Grid</a></li>
     </strong>
     </div>
 	</br></br></br>
