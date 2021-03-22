@@ -26,7 +26,9 @@
 </nav>
     <h1>Filip Jabłoński</h1>
 
-<?php
+<?php    
+$hostname = $_SERVER['HTTP_HOST'];
+echo("<li> hostname: ".$hostname."</li>");
 require_once("connect.php");
 $sql = "SELECT * FROM pracownicy, organizacja WHERE id_org = dzial";
 
@@ -52,8 +54,50 @@ $sql = "SELECT * FROM pracownicy, organizacja WHERE id_org = dzial";
         };
     echo("</table>");
     echo ("<br>");
-    $hostname = $_SERVER['HTTP_HOST'];
-    echo("<li> hostname: ".$hostname."</li>");
+
+    $sql = "SELECT * FROM pracownicy";
+
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+      }
+
+    $result = mysqli_query($conn, $sql);
+    if ( $result) {
+         echo "<br>";
+     } else {
+       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+     }
+    echo("<h1>Tabelka Pracownicy</h1>");
+
+    
+    $sql = "INSERT INTO pracownicy (imie,dzial,zarobki) 
+       VALUES ('Filip','1','28')";
+    
+
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+      }
+
+    $result = mysqli_query($conn, $sql);
+    if ( $result) {
+         echo "<br>";
+     } else {
+       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+     }    
+
+    echo("<table border='1'>");
+    echo("<th>Imie</th><th>Zarobki</th><th>Dzial</th>");
+        while($row = mysqli_fetch_assoc($result)) {
+            echo("<tr>");
+            echo("<td>".$row['imie']."</td><td>".$row['zarobki']."</td><td>".$row['dzial']."</td>");
+            echo("</tr>");
+        };
+    echo("</table>");
+    echo ("<br>");
+
+     echo("<h2>Czas</h2>");
+     echo (date("Y-m-d h:i:sa", $d));
+
 ?>
 </body>
 </html>
