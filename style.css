@@ -81,7 +81,7 @@ tr {
     color: #ffffff;
 }
 
-li a {
+nav div li a {
     float: left;
     display: block;
     color: #ffffff;
@@ -91,7 +91,7 @@ li a {
     background-color: #A9A9A9;
 }
 
-a:hover {
+nav div li a:hover {
     background-color: #ffffff;
     color: #000000;
 }
