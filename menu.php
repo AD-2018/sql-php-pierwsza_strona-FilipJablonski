@@ -1,10 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-<link rel="stylesheet" href="style.css">
-<title>Filip Jabłoński 3Ti</title>
-</head>
-<body>
 <?php
 echo (<nav>);
 echo (    <div class="nav">);
@@ -27,5 +20,3 @@ echo (	</br></br></br>);
 echo (</nav>);
 echo (   <h1>Filip Jabłoński</h1>);
 ?>
-</body>
-</html>
