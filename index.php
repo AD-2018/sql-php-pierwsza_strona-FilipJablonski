@@ -5,28 +5,8 @@
 <title>Filip Jabłoński 3Ti</title>
 </head>
 <body>
-<nav>
-    <div class="nav">
-    <strong>
-    	 <li><a class="GitHub" href="https://github.com/AD-2018/sql-php-pierwsza_strona-FilipJablonski">Github</a></li>
-         <li><a href="index.php">Strona Główna</a></li>
-         <li><a href="pracownicy_organizacja_czas/pracownicy.php">Pracownicy</a></li>
-         <li><a href="pracownicy_organizacja_czas/pracownicy_organizacja.php">Pracownicy i Organizacja</a></li>   
-         <li><a href="pracownicy_organizacja_czas/funkcje_agregujace.php">Funkcje Agregujace</a></li>
-         <li><a href="pracownicy_organizacja_czas/data_czas.php">Data i Czas</a></li>
-         <li><a href="pracownicy_organizacja_czas/nieobecnosci.php">Nieobecności Pracowników</a></li>
-         <li><a href="strona.php">Strona</a></li>
-         <li><a href="pracownicy_organizacja_czas/daneDoBazy.php">Dane Do Bazy</a></li>
-         <li><a href="gra/testowa_gra.php">Testowa Gra</a></li>
-         <li><a href="biblioteka/biblioteka.php">Biblioteka | Książki</a></li>
-         <li><a href="grid/index.html">Grid</a></li>
-    </strong>
-    </div>
-	</br></br></br>
-</nav>
-    <h1>Filip Jabłoński</h1>
-
 <?php    
+require_once(""menu.php");
 $hostname = $_SERVER['HTTP_HOST'];
 echo("<li> hostname: ".$hostname."</li>");
 require_once("connect.php");
