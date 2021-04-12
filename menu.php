@@ -17,4 +17,3 @@
    </div>
 	</br></br></br>
 </nav>
-<h1>Filip Jabłoński</h1>

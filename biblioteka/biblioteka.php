@@ -7,25 +7,7 @@
   <title>Filip Jabłoński 3Ti</title>
 </head>
 <body>
-<nav>
-    <div class="nav">
-    <strong>
-    	 <li><a class="GitHub" href="https://github.com/AD-2018/sql-php-pierwsza_strona-FilipJablonski">Github</a></li>
-         <li><a href="../index.php">Strona Główna</a></li>
-         <li><a href="../pracownicy_organizacja_czas/pracownicy.php">Pracownicy</a></li>
-         <li><a href="../pracownicy_organizacja_czas/pracownicy_organizacja.php">Pracownicy i Organizacja</a></li>   
-         <li><a href="../pracownicy_organizacja_czas/funkcje_agregujace.php">Funkcje Agregujace</a></li>
-         <li><a href="../pracownicy_organizacja_czas/data_czas.php">Data i Czas</a></li>
-         <li><a href="../pracownicy_organizacja_czas/nieobecnosci.php">Nieobecności Pracowników</a></li>
-         <li><a href="../strona.php">Strona</a></li>
-         <li><a href="../pracownicy_organizacja_czas/daneDoBazy.php">Dane Do Bazy</a></li>
-         <li><a href="../gra/testowa_gra.php">Testowa Gra</a></li>
-	 <li><a href="biblioteka.php">Biblioteka | Książki</a></li>
-    </strong>
-    </div>
-	</br>
-</nav>
-</br></br></br>
+<?php include"../menu.php" ?>
 <?php
 // Kradnąc ten kod spisujesz swoją stronę na straty.
 // Spędziłem nad tym dużo czasu i jeśli chcesz mieć coś podobnego to zrób to po swojemu.                                     <-------- Dla tych co chcą coś zabrać C:
