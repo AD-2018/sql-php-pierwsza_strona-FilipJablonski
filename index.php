@@ -6,7 +6,7 @@
 </head>
 <body>
 <?php    
-require_once("menu.php");
+include"menu.php";
 $hostname = $_SERVER['HTTP_HOST'];
 echo("<li> hostname: ".$hostname."</li>");
 require_once("connect.php");
