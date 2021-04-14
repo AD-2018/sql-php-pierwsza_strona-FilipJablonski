@@ -4,6 +4,10 @@
     color: white;
 }
 
+table {
+    border-collapse: collapse;
+}
+
 .str1 {
     height: 100vh;
     display: grid;
