@@ -8,7 +8,7 @@
 </head>
 <body>
 <?php include"../menu.php" ?>
-</br>
+<div class="zawartosc">
 <div class="Dane1">
 <h1 class="zielone">Dodawanie i usuwanie</h1>
 <h3 class="szare">Dodawanie pracownika</h3>
@@ -61,5 +61,6 @@ $sql = "SELECT * FROM pracownicy, organizacja WHERE id_org = dzial";
 
     echo('</table>');
 ?>
+</div>
 </body>
 </html>

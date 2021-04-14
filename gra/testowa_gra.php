@@ -9,6 +9,7 @@
 </head>
 <body>
 <?php include"../menu.php" ?>
+<div class="zawartosc">
 </br>
 <?php
 require_once("../connect.php");
@@ -137,5 +138,6 @@ echo('</div>');
 echo('</ul>');
 echo('</div>');
 ?>
+</div>
 </body>
 </html>

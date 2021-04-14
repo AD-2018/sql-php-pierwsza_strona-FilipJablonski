@@ -7,7 +7,9 @@
 <body>
 
 <?php include"../menu.php" ?>
+<div class="zawartosc">
 <?php
 ?>
+</div>
 </body>
 </html>

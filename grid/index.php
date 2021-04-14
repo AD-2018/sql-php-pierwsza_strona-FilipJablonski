@@ -9,6 +9,7 @@
 
 <body>
     <?php include"../menu.php" ?>
+<div class="zawartosc">
     <div class="gridStrony">
         <strong>
         <li class="gridLinkLi"><a class="gridLink" href="strona1.html">Strona 1</a></li>
@@ -25,6 +26,7 @@
         <li class="gridLinkLi"><a class="gridLink" href="strona12.html">Strona 12</a></li>
         </strong>
     </div>
+</div>
 </body>
 
 </html>

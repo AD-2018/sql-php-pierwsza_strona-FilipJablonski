@@ -15,7 +15,7 @@
         <li><a href="https://jablonski-filip.herokuapp.com/pracownicy_organizacja_czas/daneDoBazy.php">Dane Do Bazy</a></li>
         <li><a href="https://jablonski-filip.herokuapp.com/gra/testowa_gra.php">Testowa Gra</a></li>
         <li><a href="https://jablonski-filip.herokuapp.com/biblioteka/biblioteka.php">Biblioteka | Książki</a></li>
-        <li><a href="https://jablonski-filip.herokuapp.com/grid/index.html">Grid</a></li>
+        <li><a href="https://jablonski-filip.herokuapp.com/grid/index.php">Grid</a></li>
    </strong>
    </div>
 	</br></br></br>

@@ -6,6 +6,7 @@
 </head>
 <body>
 <?php include"../menu.php" ?>
+<div class="zawartosc">
 <?php
 require_once("../connect.php");
 echo("<h2>Data i Czas</h2>");
@@ -400,5 +401,6 @@ while($row=mysqli_fetch_assoc($result)){
 echo('</table>'); 
         
 ?>
+</div>
 </body>
 </html>

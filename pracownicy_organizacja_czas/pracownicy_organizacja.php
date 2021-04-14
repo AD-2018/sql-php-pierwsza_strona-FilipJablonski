@@ -6,6 +6,7 @@
 </head>
 <body>
 <?php include"../menu.php" ?>
+<div class="zawartosc">
 <?php
 
 require_once("../connect.php");
@@ -220,5 +221,6 @@ while($row=mysqli_fetch_assoc($result)){
 echo('</table>'); 
    
 ?>
+</div>
 </body>
 </html>
