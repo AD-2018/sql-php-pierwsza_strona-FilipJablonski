@@ -32,7 +32,7 @@
                     echo("<th>ID</th><th>Rola</th>");
                         while($row = mysqli_fetch_assoc($result)) {
                             echo("<tr>");
-                            echo("<td>".$row['ID']."</td><td>".$row['rola']."</td>");
+                            echo("<td>".$row['id']."</td><td>".$row['rola']."</td>");
                             echo("</tr>");
                         };
                     echo("</table>");

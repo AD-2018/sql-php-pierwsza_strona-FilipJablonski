@@ -32,7 +32,7 @@
                     echo("<th>ID</th><th>Sprawa Sądowa</th>");
                         while($row = mysqli_fetch_assoc($result)) {
                             echo("<tr>");
-                            echo("<td>".$row['ID']."</td><td>".$row['sprawa']."</td>");
+                            echo("<td>".$row['id']."</td><td>".$row['sprawa']."</td>");
                             echo("</tr>");
                         };
                     echo("</table>");
