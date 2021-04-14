@@ -61,7 +61,7 @@
                     echo("<th>ID</th><th>Projekt</th>");
                         while($row = mysqli_fetch_assoc($result)) {
                             echo("<tr>");
-                            echo("<td>".$row['ID']."</td><td>".$row['projekt']."</td>");
+                            echo("<td>".$row['id']."</td><td>".$row['projekt']."</td>");
                             echo("</tr>");
                         };
                     echo("</table>");
