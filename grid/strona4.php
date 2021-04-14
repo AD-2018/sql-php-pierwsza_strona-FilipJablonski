@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>Grid 4</title>
+	<title>Filip Jabłoński 3Ti</title>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="Grid.css">
 </head>
@@ -41,7 +41,7 @@
         </div>
         <div class="str4C">3</div>
         <div class="str4D">4</div>
-        <div class="str4E">5</div>
+        <div class="str4E">Serwis Samochodowy</div>
     </div>
     </strong>
 </body>
