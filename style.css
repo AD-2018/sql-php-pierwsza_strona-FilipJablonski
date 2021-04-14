@@ -5,7 +5,6 @@ html {
 
 body {
     margin: 0;
-    position: relative;
     font-family: sans-serif;
     background-color: #FFB0B0;
     animation: tlo 80s infinite;
@@ -60,7 +59,8 @@ tr {
 
 .zawartosc {
     position: relative;
-    margin-left: 170px;
+    top: 75px;
+    left: 275px;
 }
 
 .baner {
@@ -72,7 +72,7 @@ tr {
     width: 100%;
 }
 
-.baner h1 {
+.banernapis {
     color: #ffffff;
 }
 

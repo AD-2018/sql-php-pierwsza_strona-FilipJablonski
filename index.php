@@ -7,7 +7,7 @@
 <body>
 <?php    
 include"menu.php";
-<div class="zawartosc">
+echo ('<div class="zawartosc">');
 $hostname = $_SERVER['HTTP_HOST'];
 echo("<li> hostname: ".$hostname."</li>");
 require_once("connect.php");
