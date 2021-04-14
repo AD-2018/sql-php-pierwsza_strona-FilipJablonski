@@ -31,7 +31,7 @@
                     echo("<th>ID</th><th>Auta</th>");
                         while($row = mysqli_fetch_assoc($result)) {
                             echo("<tr>");
-                            echo("<td>".$row['ID']."</td><td>".$row['auto']."</td>");
+                            echo("<td>".$row['id']."</td><td>".$row['auto']."</td>");
                             echo("</tr>");
                         };
                     echo("</table>");
