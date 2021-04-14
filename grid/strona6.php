@@ -8,6 +8,7 @@
 </head>
 
 <body>
+    <strong>
     <div class="str6">
         <div class="str6A">1</div>
         <div class="str6B">2</div>
@@ -16,6 +17,7 @@
         <div class="str6E">5</div>
         <div class="str6F">6</div>
     </div>
+    </strong>
 </body>
 
 </html>

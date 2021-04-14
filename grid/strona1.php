@@ -26,7 +26,7 @@
                                echo "Error: " . $sql . "<br>" . mysqli_error($conn);
                              }
                         
-                            echo("<h1>Tytuł</h1>");
+                            echo("<h1>Tytuły</h1>");
                         
                             echo("<table border='1'>");
                             echo("<th>ID</th><th>Tytuł</th>");
@@ -55,7 +55,7 @@
                                echo "Error: " . $sql . "<br>" . mysqli_error($conn);
                              }
                         
-                            echo("<h1>Autor</h1>");
+                            echo("<h1>Autorzy</h1>");
                         
                             echo("<table border='1'>");
                             echo("<th>ID</th><th>Autor</th>");
