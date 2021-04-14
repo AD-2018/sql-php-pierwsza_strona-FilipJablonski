@@ -1,7 +1,7 @@
-<nav>
-    <div class="baner">
+<div class="baner">
         <h1>Filip Jabłoński</h1>
-    </div>
+</div>
+<nav>
     <div class="nav">
     <strong>
     	<li><a class="GitHub" href="https://github.com/AD-2018/sql-php-pierwsza_strona-FilipJablonski">Github</a></li>
