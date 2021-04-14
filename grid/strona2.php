@@ -8,6 +8,7 @@
 </head>
 
 <body>
+    <strong>
     <div class="str2">
         <div class="str2A">
             <?php
@@ -44,6 +45,7 @@
         <div class="str2E">5</div>
         <div class="str2F">6</div>
     </div>
+    </strong>
 </body>
 
 </html>
