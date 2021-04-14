@@ -185,12 +185,12 @@ nav {
 
 .do_lewej {
     float: left;
-    display: inline-block;
+    display: block;
 }
 
 .do_prawej {
     float: right;
-    display: inline-block;
+    display: block;
 }
 
 .margin_left {
