@@ -84,7 +84,7 @@
                             echo("<h1>Wiele do Wielu</h1>");
                         
                             echo("<table border='1'>");
-                            echo("<th>ID</th><th>Fryzjer</th><th>Klient</th>");
+                            echo("<th>ID</th><th>Sprawa Sądowa</th><th>Prawnik</th>");
                                 while($row = mysqli_fetch_assoc($result)) {
                                     echo("<tr>");
                                     echo("<td>".$row['ID_TAB']."</td><td>".$row['sprawa']."</td><td>".$row['Imie-Nazwisko']."</td>");
