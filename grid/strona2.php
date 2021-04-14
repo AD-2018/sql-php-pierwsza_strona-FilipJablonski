@@ -43,7 +43,7 @@
         <div class="str2C">
         <?php
                 require_once("../connect.php");
-                $sql = "SELECT * FROM Osoby";
+                $sql = "SELECT * FROM Klasa";
                 
                     if ($conn->connect_error) {
                         die("Connection failed: " . $conn->connect_error);
@@ -59,7 +59,7 @@
                     echo("<h1>Klasa</h1>");
                 
                     echo("<table border='1'>");
-                    echo("<th>ID</th><th>Imię i Nazwisko</th>");
+                    echo("<th>ID</th><th>Klasa</th>");
                         while($row = mysqli_fetch_assoc($result)) {
                             echo("<tr>");
                             echo("<td>".$row['ID']."</td><td>".$row['Klasa']."</td>");
@@ -88,7 +88,7 @@
                             echo("<th>ID</th><th>Nauczyciel</th><th>Klasa</th>");
                                 while($row = mysqli_fetch_assoc($result)) {
                                     echo("<tr>");
-                                    echo("<td>".$row['ID_TAB']."</td><td>".$row['osoby_id']."</td><td>".$row['klasa_id']."</td>");
+                                    echo("<td>".$row['ID_TAB']."</td><td>".$row['Osoby']."</td><td>".$row['Klasa']."</td>");
                                     echo("</tr>");
                                 };
                             echo("</table>");
