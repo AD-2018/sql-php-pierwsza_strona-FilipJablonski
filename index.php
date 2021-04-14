@@ -7,6 +7,7 @@
 <body>
 <?php    
 include"menu.php";
+<div class="zawartosc">
 $hostname = $_SERVER['HTTP_HOST'];
 echo("<li> hostname: ".$hostname."</li>");
 require_once("connect.php");
@@ -63,5 +64,6 @@ $sql = "SELECT * FROM pracownicy, organizacja WHERE id_org = dzial";
      echo (date("Y-m-d h:i:sa", $d));
 
 ?>
+</div>
 </body>
 </html>

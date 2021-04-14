@@ -6,7 +6,6 @@ html {
 body {
     margin: 0;
     position: relative;
-    margin-left: 170px;
     font-family: sans-serif;
     background-color: #FFB0B0;
     animation: tlo 80s infinite;
@@ -57,6 +56,11 @@ tr {
     background-color: #FFFFFF;
     text-align: center;
     color: #000000;
+}
+
+.zawartosc {
+    position: relative;
+    margin-left: 170px;
 }
 
 .baner {

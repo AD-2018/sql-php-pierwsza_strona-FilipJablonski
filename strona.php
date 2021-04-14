@@ -6,6 +6,7 @@
 </head>
 <body>
 <?php include"menu.php" ?>
+<div class="zawartosc">
 <form action="strona.php" method="POST">
    </br>
 	<tr><th>
@@ -29,5 +30,6 @@
 	echo("<li>".$_POST["poscode"]);
 	echo("<ul>");
 ?>
+</div>
 </body>
 </html>
