@@ -1,5 +1,5 @@
 <div class="baner">
-        <h1>Filip Jabłoński</h1>
+        <h1 class="banernapis">Filip Jabłoński</h1>
 </div>
 <nav>
     <div class="nav">
