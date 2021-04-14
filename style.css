@@ -1,4 +1,5 @@
 body {
+    margin: 0;
     font-family: sans-serif;
     background-color: #FFB0B0;
     animation: tlo 80s infinite;
@@ -51,6 +52,17 @@ tr {
     color: #000000;
 }
 
+.baner {
+    text-align: center;
+    height: 50px;
+    background-color: #ff6565;
+    width: 100%;
+}
+
+.baner h1 {
+    color: #2fff86;
+}
+
 .txt_lewo {
     background-color: #FFFFFF;
     text-align: left;
@@ -73,35 +85,44 @@ tr {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    background-color: #7eff94;
+    background-color: #5eff79;
 }
 
 .gridLink:hover {
-    background-color: #ff7373;
+    background-color: #ff5959;
     color: #ffffff;
 }
 
 nav div li a {
-    float: left;
+    margin-left: 10px;
+    margin-right: 5px;
     display: block;
-    color: #ffffff;
-    text-align: center;
-    padding: 14px 16px;
+    color: #FFF;
+    padding: 8px 16px;
     text-decoration: none;
-    background-color: #A9A9A9;
+    background-color: #ff0000;
+}
+
+nav div li {
+    list-style-type: none;
+    margin-left: 5px;
+    padding: 0;
+    width: 200px;
+    background-color: #910707;
+    margin-top: 10px;
 }
 
 nav div li a:hover {
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #ff0000;
 }
 
 nav {
-    list-style-type: none;
-    margin: 0;
-    padding: 1rem;
-    overflow: hidden;
-    background-color: #333;
+    position: absolute;
+    top: 50px;
+    display: inline-block;
+    background-color: #ffaf37;
+    width: 250px;
+    height: 100%;
 }
 
 .myInput {
