@@ -2,12 +2,12 @@
 <html>
 
 <head>
-    <title>Filip Jabłoński 3Ti</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="Grid.css">
+	<title>Grid 4</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="Grid.css">
 </head>
-
 <body>
+<<<<<<< HEAD
     <strong>
     <div class="str4">
         <div class="str4A">1</div>
@@ -45,6 +45,16 @@
         <div class="str4E">5</div>
     </div>
     </strong>
+=======
+	<div class="str4">
+		<div class="str4A">1</div>
+		<div class="str4B">2</div>
+		<div class="str4C">3</div>
+		<div class="str4D">4</div>
+		<div class="str4E">5</div>
+	</div>
+>>>>>>> 5d45478518e264593692ed2923d425bf4d72d56e
 </body>
 
+</html>
 </html>
