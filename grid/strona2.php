@@ -72,7 +72,7 @@
         <div class="str2D">
         <?php
                         require_once("../connect.php");
-                        $sql = "select (`Klasa-WDW`.ID) as ID_TAB from Klasa-WDW ,Klasa ,Osoby where Osoby.ID=osoby_id and Klasa.ID=klasa_id order by ID_TAB asc";
+                        $sql = "select Klasa, `Imie-Nazwisko`, (`Klasa_WDW`.ID) as ID_TAB from `jablonski-filip_pbd`.Klasa_WDW, `jablonski-filip_pbd`.Klasa, `jablonski-filip_pbd`.Osoby where Osoby.ID=osoby_id and Klasa.ID=klasa_id order by ID_TAB asc";
                             if ($conn->connect_error) {
                                     die("Connection failed: " . $conn->connect_error);
                              }
