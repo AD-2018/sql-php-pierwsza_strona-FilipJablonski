@@ -95,7 +95,7 @@
                             echo ("<br>");
                 ?>
         </div>
-        <div class="str1E">5</div>
+        <div class="str1E">Biblioteka</div>
     </div>
     </strong>
 </body>

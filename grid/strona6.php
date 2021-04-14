@@ -15,7 +15,7 @@
         <div class="str6C">3</div>
         <div class="str6D">4</div>
         <div class="str6E">5</div>
-        <div class="str6F">6</div>
+        <div class="str6F">Sklep</div>
     </div>
     </strong>
 </body>

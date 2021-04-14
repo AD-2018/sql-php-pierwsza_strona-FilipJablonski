@@ -40,7 +40,7 @@
             ?></div>
         <div class="str1C">3</div>
         <div class="str1D">4</div>
-        <div class="str1E">5</div>
+        <div class="str1E">Przychodnia</div>
     </div>
     </strong>
 </body>

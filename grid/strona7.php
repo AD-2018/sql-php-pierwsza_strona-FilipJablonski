@@ -44,7 +44,7 @@
         <div class="str7D">4</div>
         <div class="str7E">5</div>
         <div class="str7F">6</div>
-        <div class="str7G">7</div>
+        <div class="str7G">Kancelaria Prawna</div>
     </div>
     </strong>
 </body>

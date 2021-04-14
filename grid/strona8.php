@@ -43,7 +43,7 @@
             ?>
         </div>
         <div class="str8E">5</div>
-        <div class="str8F">6</div>
+        <div class="str8F">System Informatyczny</div>
     </div>
     </strong>
 </body>
