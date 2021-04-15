@@ -8,6 +8,19 @@ table {
     border-collapse: collapse;
 }
 
+th {
+    background-color: #2AAD00;
+    height: 50px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+tr {
+    background-color: #FFFFFF;
+    text-align: center;
+    color: #000000;
+}
+
 .str1 {
     height: 100vh;
     display: grid;
