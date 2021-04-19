@@ -35,7 +35,7 @@
                             echo("<td>".$row['ID']."</td><td>".$row['firma']."</td>".'<td>
 	    
                             <form action="delete.php" method="POST">
-                             <input name="id" value="'.$row['ID_TAB'].'" hidden>
+                             <input name="id" value="'.$row['ID'].'" hidden>
                              <input name="tabela" value="Firma" hidden>
                              <input name="opcja" value="1" hidden>
                               <input type="submit" class="button_x" value="X">
@@ -73,7 +73,7 @@
                             echo("<td>".$row['id']."</td><td>".$row['artykul']."</td>".'<td>
 	    
                             <form action="delete.php" method="POST">
-                             <input name="id" value="'.$row['ID_TAB'].'" hidden>
+                             <input name="id" value="'.$row['id'].'" hidden>
                              <input name="tabela" value="artykuly" hidden>
                              <input name="opcja" value="2" hidden>
                               <input type="submit" class="button_x" value="X">
