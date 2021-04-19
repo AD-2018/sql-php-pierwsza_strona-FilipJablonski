@@ -31,9 +31,17 @@
                     echo("<th>ID</th><th>Auta</th>");
                         while($row = mysqli_fetch_assoc($result)) {
                             echo("<tr>");
-                            echo("<td>".$row['id']."</td><td>".$row['auto']."</td>");
-                            echo("</tr>");
-                        };
+                            echo("<td>".$row['id']."</td><td>".$row['auto']."</td>".'<td>
+	    
+                            <form action="delete.php" method="POST">
+                             <input name="id" value="'.$row['ID_TAB'].'" hidden>
+                             <input name="tabela" value="auta" hidden>
+                              <input type="submit" class="button_x" value="X">
+                            </form>
+                            
+                            </td>');
+                           echo('</tr>');
+                       }
                     echo("</table>");
                     echo ("<br>");
             ?>
@@ -60,9 +68,17 @@
                     echo("<th>ID</th><th>Imię i Nazwisko</th>");
                         while($row = mysqli_fetch_assoc($result)) {
                             echo("<tr>");
-                            echo("<td>".$row['ID']."</td><td>".$row['Imie-Nazwisko']."</td>");
-                            echo("</tr>");
-                        };
+                            echo("<td>".$row['ID']."</td><td>".$row['Imie-Nazwisko']."</td>".'<td>
+	    
+                            <form action="delete.php" method="POST">
+                             <input name="id" value="'.$row['ID_TAB'].'" hidden>
+                             <input name="tabela" value="Osoby" hidden>
+                              <input type="submit" class="button_x" value="X">
+                            </form>
+                            
+                            </td>');
+                           echo('</tr>');
+                       }
                     echo("</table>");
                     echo ("<br>");
             ?>
@@ -86,9 +102,17 @@
                             echo("<th>ID</th><th>Mechanik</th><th>Auto</th>");
                                 while($row = mysqli_fetch_assoc($result)) {
                                     echo("<tr>");
-                                    echo("<td>".$row['ID_TAB']."</td><td>".$row['Imie-Nazwisko']."</td><td>".$row['auto']."</td>");
-                                    echo("</tr>");
-                                };
+                                    echo("<td>".$row['ID_TAB']."</td><td>".$row['Imie-Nazwisko']."</td><td>".$row['auto']."</td>".'<td>
+	    
+                                    <form action="delete.php" method="POST">
+                                     <input name="id" value="'.$row['ID_TAB'].'" hidden>
+                                     <input name="tabela" value="WDW" hidden>
+                                      <input type="submit" class="button_x" value="X">
+                                    </form>
+                                    
+                                    </td>');
+                                   echo('</tr>');
+                               }
                             echo("</table>");
                             echo ("<br>");
                 ?>

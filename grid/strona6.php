@@ -32,9 +32,17 @@
                     echo("<th>ID</th><th>Firma</th>");
                         while($row = mysqli_fetch_assoc($result)) {
                             echo("<tr>");
-                            echo("<td>".$row['ID']."</td><td>".$row['firma']."</td>");
-                            echo("</tr>");
-                        };
+                            echo("<td>".$row['ID']."</td><td>".$row['firma']."</td>".'<td>
+	    
+                            <form action="delete.php" method="POST">
+                             <input name="id" value="'.$row['ID_TAB'].'" hidden>
+                             <input name="tabela" value="Firma" hidden>
+                              <input type="submit" class="button_x" value="X">
+                            </form>
+                            
+                            </td>');
+                           echo('</tr>');
+                       }
                     echo("</table>");
                     echo ("<br>");
             ?>
@@ -61,9 +69,17 @@
                     echo("<th>ID</th><th>Artykuł</th>");
                         while($row = mysqli_fetch_assoc($result)) {
                             echo("<tr>");
-                            echo("<td>".$row['id']."</td><td>".$row['artykul']."</td>");
-                            echo("</tr>");
-                        };
+                            echo("<td>".$row['id']."</td><td>".$row['artykul']."</td>".'<td>
+	    
+                            <form action="delete.php" method="POST">
+                             <input name="id" value="'.$row['ID_TAB'].'" hidden>
+                             <input name="tabela" value="artykuly" hidden>
+                              <input type="submit" class="button_x" value="X">
+                            </form>
+                            
+                            </td>');
+                           echo('</tr>');
+                       }
                     echo("</table>");
                     echo ("<br>");
             ?>
@@ -87,9 +103,17 @@
                             echo("<th>ID</th><th>Firma</th><th>Artykuł</th>");
                                 while($row = mysqli_fetch_assoc($result)) {
                                     echo("<tr>");
-                                    echo("<td>".$row['ID_TAB']."</td><td>".$row['firma']."</td><td>".$row['artykul']."</td>");
-                                    echo("</tr>");
-                                };
+                                    echo("<td>".$row['ID_TAB']."</td><td>".$row['firma']."</td><td>".$row['artykul']."</td>".'<td>
+	    
+                                    <form action="delete.php" method="POST">
+                                     <input name="id" value="'.$row['ID_TAB'].'" hidden>
+                                     <input name="tabela" value="WDW" hidden>
+                                      <input type="submit" class="button_x" value="X">
+                                    </form>
+                                    
+                                    </td>');
+                                   echo('</tr>');
+                               }
                             echo("</table>");
                             echo ("<br>");
                 ?>
