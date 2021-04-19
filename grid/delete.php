@@ -9,13 +9,13 @@ echo("Delete" . "<br>");
 echo $_POST['id'];
 echo $_POST['tabela'];
 echo $_POST['opcja'];
-if ($_POST['opcja'==1] and $_POST['tabela']=="WDW"){
+if ($_POST['opcja']==1] and $_POST['tabela']=="WDW"){
     $opcja = "osoby_id";
-} elseif ($_POST['opcja'==2] and $_POST['tabela']=="WDW"){
+} elseif ($_POST['opcja']==2] and $_POST['tabela']=="WDW"){
     $opcja = "klasa_id";
-} elseif ($_POST['opcja'==1] and $_POST['tabela']=="biblAutor_biblTytul"){
+} elseif ($_POST['opcja']==1] and $_POST['tabela']=="biblAutor_biblTytul"){
     $opcja = "biblAutor_id";
-} elseif ($_POST['opcja'==2] and $_POST['tabela']=="biblAutor_biblTytul"){
+} elseif ($_POST['opcja']==2] and $_POST['tabela']=="biblAutor_biblTytul"){
     $opcja = "biblTytul_id";
 }
 echo "<br>";
