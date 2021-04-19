@@ -26,6 +26,7 @@ if ($_POST['tabela']=="WDW" or $_POST['tabela']=="biblAutor_biblTytul"){
     $liczenie = mysqli_query($sqlliczba);
     $liczenie2 = mysqli_fetch_assoc($liczenie);
     $liczenie_wynik = $liczenie2['wynik'];
+    echo $sqlliczba."<br>".$liczenie."<br>".$liczenie2."<br>".$liczenie_wynik."<br>";
     if ($liczenie_wynik<1){
         $sql = "DELETE FROM ".$_POST['tabela']." WHERE id=".$_POST['id'];
     }
@@ -33,7 +34,6 @@ if ($_POST['tabela']=="WDW" or $_POST['tabela']=="biblAutor_biblTytul"){
 
 if ($conn->query($sql) === TRUE) {
 
-echo $liczenie2."<br>".$liczenie_wynik."<br>";
 echo $sql;
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
