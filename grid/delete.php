@@ -9,13 +9,13 @@ echo("Delete" . "<br>");
 echo $_POST['id'];
 echo $_POST['tabela'];
 echo $_POST['opcja'];
-if ($_POST['opcja']==1 and $_POST['tabela']=="WDW"){
+if ($_POST['opcja']==1 and $_POST['tabela']=="Osoby" or $_POST['tabela']=="osoby_v2" or $_POST['tabela']=="Firma" or $_POST['tabela']=="Sprawa" or $_POST['tabela']=="rola" or $_POST['tabela']=="projekt"){
     $opcja = "osoby_id";
-} elseif ($_POST['opcja']==2 and $_POST['tabela']=="WDW"){
+} elseif ($_POST['opcja']==2 and $_POST['tabela']=="Klasa" or $_POST['tabela']=="osoby_v2" or $_POST['tabela']=="auta" or $_POST['tabela']=="Osoby" or $_POST['tabela']=="artykuly"){
     $opcja = "klasa_id";
-} elseif ($_POST['opcja']==1 and $_POST['tabela']=="biblAutor_biblTytul"){
+} elseif ($_POST['opcja']==1 and $_POST['tabela']=="biblAutor"){
     $opcja = "biblAutor_id";
-} elseif ($_POST['opcja']==2 and $_POST['tabela']=="biblAutor_biblTytul"){
+} elseif ($_POST['opcja']==2 and $_POST['tabela']=="biblTytul"){
     $opcja = "biblTytul_id";
 }
 echo "<br>";
