@@ -31,6 +31,7 @@ if ($_POST['tabela']=="WDW" or $_POST['tabela'=="biblAutor_biblTytul"]){
 }
 
 if ($conn->query($sql) === TRUE) {
+    
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
