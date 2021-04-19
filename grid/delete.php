@@ -30,9 +30,11 @@ if ($_POST['tabela']=="WDW" or $_POST['tabela']=="biblAutor_biblTytul"){
         $sql = "DELETE FROM ".$_POST['tabela']." WHERE id=".$_POST['id'];
     }
 }
-echo $liczenie_wynik."<br>";
-echo $sql;
+
 if ($conn->query($sql) === TRUE) {
+
+echo $liczenie2."<br>".$liczenie_wynik."<br>";
+echo $sql;
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
