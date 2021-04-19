@@ -28,7 +28,7 @@ if ($_POST['tabela']=="WDW" or $_POST['tabela']=="biblAutor_biblTytul"){
     $liczenie_wynik = $liczenie2['wynik'];
     if ($_POST['tabela']=="WDW" and $liczenie_wynik<1){
         $sql = "DELETE FROM ".$_POST['tabela']." WHERE id=".$_POST['id'];
-    } elseif if ($_POST['tabela']=="biblAutor_biblTytul" and $liczenie<1){
+    } elseif ($_POST['tabela']=="biblAutor_biblTytul" and $liczenie<1){
         $sql = "DELETE FROM ".$_POST['tabela']." WHERE id=".$_POST['id'];
     }
 }
