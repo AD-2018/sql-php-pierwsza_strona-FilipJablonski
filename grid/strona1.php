@@ -37,6 +37,7 @@
                                     <form action="delete.php" method="POST">
                                      <input name="id" value="'.$row['id'].'" hidden>
                                      <input name="tabela" value="biblTytul" hidden>
+                                     <input name="opcja" value="1" hidden>
                                       <input type="submit" class="button_x" value="X">
                                     </form>
                                     
@@ -74,6 +75,7 @@
                                     <form action="delete.php" method="POST">
                                      <input name="id" value="'.$row['id'].'" hidden>
                                      <input name="tabela" value="biblAutor" hidden>
+                                     <input name="opcja" value="2" hidden>
                                       <input type="submit" class="button_x" value="X">
                                     </form>
                                     

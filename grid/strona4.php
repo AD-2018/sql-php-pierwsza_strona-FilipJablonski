@@ -25,7 +25,7 @@
                        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
                      }
                 
-                    echo("<h1>Mechanicy</h1>");
+                    echo("<h1>Auta</h1>");
                 
                     echo("<table border='1'>");
                     echo("<th>ID</th><th>Auta</th>");
@@ -36,6 +36,7 @@
                             <form action="delete.php" method="POST">
                              <input name="id" value="'.$row['ID_TAB'].'" hidden>
                              <input name="tabela" value="auta" hidden>
+                             <input name="opcja" value="2" hidden>
                               <input type="submit" class="button_x" value="X">
                             </form>
                             
@@ -73,6 +74,7 @@
                             <form action="delete.php" method="POST">
                              <input name="id" value="'.$row['ID_TAB'].'" hidden>
                              <input name="tabela" value="Osoby" hidden>
+                             <input name="opcja" value="1" hidden>
                               <input type="submit" class="button_x" value="X">
                             </form>
                             
