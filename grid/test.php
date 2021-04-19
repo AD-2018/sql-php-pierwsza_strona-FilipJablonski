@@ -7,9 +7,9 @@
 require_once("../connect.php");
 $liczenie = "SELECT count(osoby_id) FROM `jablonski-filip_pbd`.WDW where osoby_id=4";
 if (query($liczenie)>1){
-    echo ("więcej");
+    echo ("<h1>więcej</h1>");
 } else {
-    echo ('mniej');
+    echo ('<h1>mniej</h1>');
 }
 ?>
 </body>
