@@ -19,6 +19,16 @@ if ($_POST['opcja']==1 and $_POST['tabela']=="WDW"){
     $opcja = "biblTytul_id";
 }
 echo "<br>";
+if ($_POST['tabela']=="WDW" or $_POST['tabela']=="biblAutor_biblTytul"){
+    $sql = "DELETE FROM ".$_POST['tabela']." WHERE id=".$_POST['id'];
+} else {
+    $liczenie = mysqli_query("SELECT count(".$opcja.") FROM ".$_POST['tabela']." where ".$opcja."=".$_POST['id']);
+    if ($_POST['tabela']=="WDW" and $liczenie<1){
+        $sql = "DELETE FROM ".$_POST['tabela']." WHERE id=".$_POST['id'];
+    } elseif if ($_POST['tabela']=="biblAutor_biblTytul" and $liczenie<1){
+        $sql = "DELETE FROM ".$_POST['tabela']." WHERE id=".$_POST['id'];
+    }
+}
 
 if ($conn->query($sql) === TRUE) {
 
