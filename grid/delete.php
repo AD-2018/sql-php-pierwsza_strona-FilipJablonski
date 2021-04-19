@@ -9,7 +9,7 @@ echo("Delete" . "<br>");
 echo $_POST['id'];
 echo $_POST['tabela'];
 echo $_POST['opcja'];
-if ($_POST['opcja']==1] and $_POST['tabela']=="WDW"){
+if ($_POST['opcja']==1 and $_POST['tabela']=="WDW"){
     $opcja = "osoby_id";
 } elseif ($_POST['opcja']==2 and $_POST['tabela']=="WDW"){
     $opcja = "klasa_id";
