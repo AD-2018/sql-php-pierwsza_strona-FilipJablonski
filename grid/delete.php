@@ -32,7 +32,8 @@ if ($_POST['tabela']=="WDW" or $_POST['tabela']=="biblAutor_biblTytul"){
 }
 
 if ($conn->query($sql) === TRUE) {
-
+echo $liczenie_wynik."<br>";
+echo $sql;
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
