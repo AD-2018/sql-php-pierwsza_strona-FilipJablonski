@@ -22,7 +22,7 @@ echo "<br>";
 if ($_POST['tabela']=="WDW" or $_POST['tabela']=="biblAutor_biblTytul"){
     $sql = "DELETE FROM ".$_POST['tabela']." WHERE id=".$_POST['id'];
 } else {
-    $sqlliczba = "SELECT count(".$opcja.") as wynik FROM ".$_POST['tabela']." where ".$opcja."=".$_POST['id'];
+    $sqlliczba = "SELECT count(".$opcja.") as wynik FROM WDW where ".$opcja."=".$_POST['id'];
     $liczenie = mysqli_query($sqlliczba);
     $liczenie2 = mysqli_fetch_assoc($liczenie);
     $liczenie_wynik = $liczenie2['wynik'];
