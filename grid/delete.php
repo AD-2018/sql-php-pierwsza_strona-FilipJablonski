@@ -22,18 +22,18 @@ echo "<br>";
 if ($_POST['tabela']=="WDW" or $_POST['tabela']=="biblAutor_biblTytul"){
     $sql = "DELETE FROM ".$_POST['tabela']." WHERE id=".$_POST['id'];
 } else {
-    $sqlliczba = "SELECT count(".$opcja.") as wynik FROM `jablonski-filip_pbd`.WDW where ".$opcja."=".$_POST['id'];
-    $liczenie = mysqli_query($sqlliczba);
-    $liczenie2 = mysqli_fetch_assoc($liczenie);
-    $liczenie_wynik = $liczenie2['wynik'];
-    echo $sqlliczba."<br>".$liczenie."<br>".$liczenie2."<br>".$liczenie_wynik."<br>";
+    $sql = "SELECT count(".$opcja.") as wynik FROM `jablonski-filip_pbd`.WDW where ".$opcja."=".$_POST['id'];
+    $res = mysqli_query($sql);
+    $row = mysqli_fetch_assoc($res);
+    $liczenie_wynik = $row['wynik'];
+    echo $sql."<br>".$res."<br>".$row."<br>".$liczenie_wynik."<br>";
     if ($liczenie_wynik<1){
         $sql = "DELETE FROM ".$_POST['tabela']." WHERE id=".$_POST['id'];
     }
 }
 
 if ($conn->query($sql) === TRUE) {
-
+    header('Location: https://jablonski-filip.herokuapp.com/grid/index.php');
 echo $sql;
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;

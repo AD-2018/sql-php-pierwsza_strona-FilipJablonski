@@ -47,6 +47,13 @@
                     echo("</table>");
                     echo ("<br>");
             ?>
+                                                                                        <h3>Usuwanie po ID</h3>
+                <form action="delete.php" method="POST">
+                    <input type="number" name="id">
+                    <input name="tabela" value="rola" hidden>
+                             <input name="opcja" value="1" hidden>
+                    <input type="submit" class="button_x" value="USUŃ">
+                </form>
         </div>
         <div class="str8B">
         <?php
@@ -81,6 +88,12 @@
                             echo("</table>");
                             echo ("<br>");
                 ?>
+                                <h3>Usuwanie po ID</h3>
+                <form action="delete.php" method="POST">
+                    <input type="number" name="id">
+                    <input name="tabela" value="WDW" hidden>
+                    <input type="submit" class="button_x" value="USUŃ">
+                </form>
         </div>
         <div class="str8C">3</div>
         <div class="str8D">
@@ -120,6 +133,13 @@
                     echo("</table>");
                     echo ("<br>");
             ?>
+                                                                            <h3>Usuwanie po ID</h3>
+                <form action="delete.php" method="POST">
+                    <input type="number" name="id">
+                    <input name="tabela" value="Osoby" hidden>
+                             <input name="opcja" value="2" hidden>
+                    <input type="submit" class="button_x" value="USUŃ">
+                </form>
         </div>
         <div class="str8E">5</div>
         <div class="str8F">System Informatyczny</div>
