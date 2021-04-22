@@ -22,8 +22,8 @@
             <h1>Projekty</h1>
             <?php
             require_once("funkcje.php");
-            tab_del_male("projekty", "1", "id", "projekt");
-            id_del_male("projekty", "1");
+            tab_del_male("projekt", "1", "id", "projekt");
+            id_del_male("projekt", "1");
             ?>
         </div>
         <div class="str9C">
