@@ -14,7 +14,7 @@
             <h1>Firma</h1>
             <?php
             require_once("funkcje.php");
-            tab_del_male("Firma", "1", "ID", "firma");
+            tab_del_male("Firma", "1", "id", "firma");
             id_del_male("Firma", "1");
             ?>
         </div>

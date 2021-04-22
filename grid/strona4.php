@@ -21,7 +21,7 @@
             <h1>Mechanicy</h1>
             <?php
             require_once("funkcje.php");
-            tab_del_male("Osoby", "1", "ID", "Imie_Nazwisko");
+            tab_del_male("Osoby", "1", "id", "Imie_Nazwisko");
             id_del_male("Osoby", "1");
             ?>
         </div>

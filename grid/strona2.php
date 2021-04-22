@@ -54,7 +54,7 @@
             <h1>Nauczyciele</h1>
             <?php
             require_once("funkcje.php");
-            tab_del_male("Osoby", "1", "ID", "Imie_Nazwisko");
+            tab_del_male("Osoby", "1", "id", "Imie_Nazwisko");
             id_del_male("Osoby", "1");
             ?>
         </div>
@@ -62,7 +62,7 @@
             <h1>Klasa</h1>
             <?php
             require_once("funkcje.php");
-            tab_del_male("Klasa", "2", "ID", "Klasa");
+            tab_del_male("Klasa", "2", "id", "Klasa");
             id_del_male("Klasa", "2");
             ?>
         </div>

@@ -13,15 +13,15 @@
         <div class="str9A">
             <h1>Pracownicy</h1>
             <?php
-            require("funkcje.php");
-            tab_del_male("Osoby", "2", "ID", "Imie_Nazwisko");
+            require_once("funkcje.php");
+            tab_del_male("Osoby", "2", "id", "Imie_Nazwisko");
             id_del_male("Osoby", "2");
             ?>
         </div>
         <div class="str9B">
             <h1>Projekty</h1>
             <?php
-            require("funkcje.php");
+            require_once("funkcje.php");
             tab_del_male("projekty", "1", "id", "projekt");
             id_del_male("projekty", "1");
             ?>
@@ -58,13 +58,8 @@
                                }
                             echo("</table>");
                             echo ("<br>");
-                ?>
-                                <h3>Usuwanie po ID</h3>
-                <form action="delete.php" method="POST">
-                    <input type="number" name="id">
-                    <input name="tabela" value="WDW" hidden>
-                    <input type="submit" class="button_x" value="USUŃ">
-                </form>
+            id_del_male("WDW");
+            ?>
         </div>
         <div class="str9D">4</div>
         <div class="str9E">Firma</div>
