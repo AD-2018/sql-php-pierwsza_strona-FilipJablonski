@@ -54,7 +54,7 @@
             <h1>Nauczyciele</h1>
             <?php
             require_once("funkcje.php");
-            tab_del_male("Osoby", "1", "ID", "Imie-Nazwisko");
+            tab_del_male("Osoby", "1", "ID", "`Imie-Nazwisko`");
             id_del_male("Osoby", "1");
             ?>
         </div>
