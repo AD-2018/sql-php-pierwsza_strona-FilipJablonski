@@ -1,6 +1,6 @@
 <?php
 function tab_del_male($tab_name, $tab_opcja, $tab_kolumna1, $tab_kolumna2){
-    require_once("../connect.php");
+    require("../connect.php");
     $sql = "Select ".$tab_kolumna1.", ".$tab_kolumna2." from " .$tab_name;
     $result = $conn->query($sql);
     echo("<table border=1>");
@@ -23,7 +23,7 @@ function tab_del_male($tab_name, $tab_opcja, $tab_kolumna1, $tab_kolumna2){
 }
 /*
 function niefajne($name1, $name2, $name3, $kolumna1, $kolumna2, $kolumna3, $kolumna4, $kolumna5){
-    require_once("../connect.php");
+    require("../connect.php");
     $sql = "Select ".$name1.".".$kolumna1.", ".$kolumna4.", ".$kolumna5." from `jablonski-filip_pbd`.".$name1.", `jablonski-filip_pbd`.".$name2", `jablonski-filip_pbd`.".$name3." where ".$name2.".".$kolumna1."=".$kolumna2." and ".$name3.".".$kolumna1."=".$kolumna3." order by id asc";
     $result = $conn->query($sql);
     echo("<h1>".$sql."</h1>");
