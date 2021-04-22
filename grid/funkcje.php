@@ -1,25 +1,16 @@
 <?php
-function tab_del_male($tab_name, $tab_opcja, $tab_kolumny[]){
-    print_r($tab_kolumny);
-    echo ($tab_kolumny[0]);
-    echo ($tab_kolumny[1]);
+function tab_del_male($tab_name, $tab_opcja, $tab_kolumna1, $tab_kolumna2){
     require("../connect.php");
-    $select = implode(', ', $tab_kolumny);
-    $sql = "Select ".$select." from " .$tab_name;
+    $sql = "Select ".$tab_kolumna1.", ".$tab_kolumna2." from " .$tab_name;
     $result = $conn->query($sql);
     echo("<table border=1>");
-    echo("<tr>");
-    for ($i=0; $i<count($tab_kolumny);$i++){
-        echo("<th>".$tab_kolumny."</th>");
-    }
+    echo("<th>".$tab_kolumna1.", ".$tab_kolumna2."</th>");
     while( $row = $result->fetch_assoc()  ){
         echo("<tr>");
-        for($i=0; $i<count($tab_kolumny);$i++){
-            echo("<td>".$row[$tab_kolumny[$i]]."</td>");
-        }
+        echo("<td>".$row[$tab_kolumna1]."</td><td>".$row[$tab_kolumna2]."</td>");
         echo('<td>');
         echo('<form action="delete.php" method="POST">');
-        echo('<input name="id" value="'.$row[$tab_kolumny[0]].'" hidden>');
+        echo('<input name="id" value="'.$row[$tab_kolumna1].'" hidden>');
         echo('<input name="tabela" value="'.$tab_name.'" hidden>');
         echo('<input name="opcja" value="'.$tab_opcja.'" hidden>');
         echo('<input type="submit" class="button_x" value="X">');
