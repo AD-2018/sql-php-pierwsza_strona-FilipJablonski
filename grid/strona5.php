@@ -22,14 +22,14 @@
             <h1>Klienci</h1>
             <?php
             require_once("funkcje.php");
-            tab_del_male("Osoby", "2", "ID", "`Imie-Nazwisko`");
+            tab_del_male("Osoby", "2", "ID", "Imie_Nazwisko");
             id_del_male("Osoby", "2");
             ?>
         </div>
         <div class="str5C">
         <?php
                         require_once("../connect.php");
-                        $sql = "select imiona, `Imie-Nazwisko`, (`WDW`.ID) as ID_TAB from `jablonski-filip_pbd`.WDW, `jablonski-filip_pbd`.osoby_v2, `jablonski-filip_pbd`.Osoby where Osoby.ID=osoby_id and osoby_v2.id=klasa_id order by ID_TAB asc";
+                        $sql = "select imiona, Imie_Nazwisko, (`WDW`.ID) as ID_TAB from `jablonski-filip_pbd`.WDW, `jablonski-filip_pbd`.osoby_v2, `jablonski-filip_pbd`.Osoby where Osoby.ID=osoby_id and osoby_v2.id=klasa_id order by ID_TAB asc";
                             if ($conn->connect_error) {
                                     die("Connection failed: " . $conn->connect_error);
                              }
@@ -45,7 +45,7 @@
                             echo("<th>ID</th><th>Fryzjer</th><th>Klient</th>");
                                 while($row = mysqli_fetch_assoc($result)) {
                                     echo("<tr>");
-                                    echo("<td>".$row['ID_TAB']."</td><td>".$row['imiona']."</td><td>".$row['Imie-Nazwisko']."</td>".'<td>
+                                    echo("<td>".$row['ID_TAB']."</td><td>".$row['imiona']."</td><td>".$row['Imie_Nazwisko']."</td>".'<td>
 	    
                                     <form action="delete.php" method="POST">
                                      <input name="id" value="'.$row['ID_TAB'].'" hidden>

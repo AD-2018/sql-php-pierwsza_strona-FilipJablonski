@@ -14,7 +14,7 @@
             <h1>Pracownicy</h1>
             <?php
             require("funkcje.php");
-            tab_del_male("Osoby", "2", "ID", "`Imie-Nazwisko`");
+            tab_del_male("Osoby", "2", "ID", "Imie_Nazwisko");
             id_del_male("Osoby", "2");
             ?>
         </div>
@@ -29,7 +29,7 @@
         <div class="str9C">
         <?php
                         require_once("../connect.php");
-                        $sql = "select projekt, `Imie-Nazwisko`, (`WDW`.ID) as ID_TAB from `jablonski-filip_pbd`.WDW, `jablonski-filip_pbd`.projekt, `jablonski-filip_pbd`.Osoby where Osoby.ID=osoby_id and projekt.id=klasa_id order by ID_TAB asc";
+                        $sql = "select projekt, Imie_Nazwisko, (`WDW`.ID) as ID_TAB from `jablonski-filip_pbd`.WDW, `jablonski-filip_pbd`.projekt, `jablonski-filip_pbd`.Osoby where Osoby.ID=osoby_id and projekt.id=klasa_id order by ID_TAB asc";
                             if ($conn->connect_error) {
                                     die("Connection failed: " . $conn->connect_error);
                              }
@@ -45,7 +45,7 @@
                             echo("<th>ID</th><th>Projekt</th><th>Pracownik</th>");
                                 while($row = mysqli_fetch_assoc($result)) {
                                     echo("<tr>");
-                                    echo("<td>".$row['ID_TAB']."</td><td>".$row['projekt']."</td><td>".$row['Imie-Nazwisko']."</td>".'<td>
+                                    echo("<td>".$row['ID_TAB']."</td><td>".$row['projekt']."</td><td>".$row['Imie_Nazwisko']."</td>".'<td>
 	    
                                     <form action="delete.php" method="POST">
                                      <input name="id" value="'.$row['ID_TAB'].'" hidden>
