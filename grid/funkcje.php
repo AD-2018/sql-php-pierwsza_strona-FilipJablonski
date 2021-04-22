@@ -21,6 +21,7 @@ function tab_del_male($tab_name, $tab_opcja, $tab_kolumna1, $tab_kolumna2){
     echo("</table>");
     echo ("<br>");
 }
+/*
 function tab_del_duze($tab_name1, $tab_name2, $tab_name3, $tab_kolumna1, $tab_kolumna2, $tab_kolumna3, $tab_kolumna4, $tab_kolumna5){
     require("../connect.php");
     echo("<h1>Wiele do Wielu</h1>");
@@ -43,6 +44,7 @@ function tab_del_duze($tab_name1, $tab_name2, $tab_name3, $tab_kolumna1, $tab_ko
     echo("</table>");
     echo ("<br>");
 }
+*/
 function id_del_male($tabela, $opcja){
     echo('<h3>Usuwanie po ID</h3>');
     echo('<form action="delete.php" method="POST">');
