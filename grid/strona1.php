@@ -31,7 +31,7 @@
             <?php
                 require_once("funkcje.php");
                 tab_del_duze("biblAutor_biblTytul", "biblTytul", "biblAutor", "id", "biblTytul_id", "biblAutor_id");
-                id_del_male("biblAutor_biblTytul");
+                id_del_duze("biblAutor_biblTytul");
             ?>
         </div>
         <div class="str1E">Biblioteka</div>
