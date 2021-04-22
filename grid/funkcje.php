@@ -24,11 +24,11 @@ function tab_del_male($tab_name, $tab_opcja, $tab_kolumna1, $tab_kolumna2){
 
 function tab_del_duze($name1, $name2, $name3, $kolumna1, $kolumna2, $kolumna3, $kolumna4, $kolumna5){
     require("../connect.php");
-    echo("<h1>Wiele do Wielu</h1>");
     $sql = "Select ".$name1.".".$kolumna1.", ".$kolumna4.", ".$kolumna5." from `jablonski-filip_pbd`.".$name1.", `jablonski-filip_pbd`.".$name2", `jablonski-filip_pbd`.".$name3." where ".$name2.".".$kolumna1."=".$kolumna2." and ".$name3.".".$kolumna1."=".$kolumna3." order by id asc";
-    echo("<h1>".$sql."</h1>")
-    /*
     $result = $conn->query($sql);
+    echo("<h1>".$sql."</h1>");
+    echo("<h1>Wiele do Wielu</h1>");
+    /*
     echo("<table border=1>");
     echo("<th>".$kolumna1."</th><th>".$kolumna4."</th><th>".$kolumna5."</th><th>Usuń</th>");
     while( $row = $result->fetch_assoc()  ){
