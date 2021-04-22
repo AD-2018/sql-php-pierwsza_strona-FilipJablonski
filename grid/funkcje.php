@@ -23,21 +23,20 @@ function tab_del_male($tab_name, $tab_opcja, $tab_kolumna1, $tab_kolumna2){
 }
 ?>
 <?php
-/*
-function tab_del_duze($tab_name1, $tab_name2, $tab_name3, $tab_kolumna1, $tab_kolumna2, $tab_kolumna3, $tab_kolumna4, $tab_kolumna5){
+function tab_del_duze($name1, $name2, $name3, $kolumna1, $kolumna2, $kolumna3, $kolumna4, $kolumna5){
     require("../connect.php");
     echo("<h1>Wiele do Wielu</h1>");
-    $sql = "Select ".$tab_name1.".".$tab_kolumna1.", ".$tab_kolumna4.", ".$tab_kolumna5." from `jablonski-filip_pbd`." .$tab_name1.", `jablonski-filip_pbd`.".$tab_name2", `jablonski-filip_pbd`.".$tab_name3." where ".$tab_name2.".".$tab_kolumna1."=".$tab_kolumna2." and ".$tab_name3.".".$tab_kolumna1."=".$tab_kolumna3." order by id asc";
+    $sql = "Select ".$name1.".".$kolumna1.", ".$kolumna4.", ".$kolumna5." from `jablonski-filip_pbd`.".$name1.", `jablonski-filip_pbd`.".$name2", `jablonski-filip_pbd`.".$name3." where ".$name2.".".$kolumna1."=".$kolumna2." and ".$name3.".".$kolumna1."=".$kolumna3." order by id asc";
     $result = $conn->query($sql);
     echo("<table border=1>");
-    echo("<th>".$tab_kolumna1."</th><th>".$tab_kolumna4."</th><th>".$tab_kolumna5."</th><th>Usuń</th>");
+    echo("<th>".$kolumna1."</th><th>".$kolumna4."</th><th>".$kolumna5."</th><th>Usuń</th>");
     while( $row = $result->fetch_assoc()  ){
         echo("<tr>");
-        echo("<td>".$row[$tab_kolumna1]."</td><td>".$row[$tab_kolumna2]."</td><td>".$row[$tab_kolumna3]."</td>");
+        echo("<td>".$row[$kolumna1]."</td><td>".$row[$kolumna4]."</td><td>".$row[$kolumna5]."</td>");
         echo('<td>');
         echo('<form action="delete.php" method="POST">');
-        echo('<input name="id" value="'.$row[$tab_kolumna1].'" hidden>');
-        echo('<input name="tabela" value="'.$tab_name1.'" hidden>');
+        echo('<input name="id" value="'.$row[$kolumna1].'" hidden>');
+        echo('<input name="tabela" value="'.$name1.'" hidden>');
         echo('<input type="submit" class="button_x" value="X">');
         echo('</form>');
         echo('</td>');
@@ -46,7 +45,6 @@ function tab_del_duze($tab_name1, $tab_name2, $tab_name3, $tab_kolumna1, $tab_ko
     echo("</table>");
     echo ("<br>");
 }
-*/
 ?>
 <?php
 function id_del_male($tabela, $opcja){
