@@ -13,7 +13,7 @@
         <div class="str1A">
             <h1>Tytuł</h1>
             <?php
-            require("funkcje.php");
+            require_once("funkcje.php");
             tab_del_male("biblTytul", "1", "id", "tytul");
             ?>
                 <h3>Usuwanie po ID</h3>
@@ -27,7 +27,7 @@
         <div class="str1B">
             <h1>Autor</h1>
             <?php
-                require("funkcje.php");
+                require_once("funkcje.php");
                 tab_del_male("biblAutor", "2", "id", "autor");
             ?>
                 <h3>Usuwanie po ID</h3>
