@@ -21,7 +21,7 @@ function tab_del_male($tab_name, $tab_opcja, $tab_kolumna1, $tab_kolumna2){
     echo("</table>");
     echo ("<br>");
 };
-
+/*
 function niefajne($name1, $name2, $name3, $kolumna1, $kolumna2, $kolumna3, $kolumna4, $kolumna5){
     require("../connect.php");
     $sql = "Select ".$name1.".".$kolumna1.", ".$kolumna4.", ".$kolumna5." from `jablonski-filip_pbd`.".$name1.", `jablonski-filip_pbd`."
@@ -45,7 +45,7 @@ function niefajne($name1, $name2, $name3, $kolumna1, $kolumna2, $kolumna3, $kolu
     echo("</table>");
     echo ("<br>");
 };
-
+*/
 function id_del_male($tabela, $opcja){
     echo('<h3>Usuwanie po ID</h3>');
     echo('<form action="delete.php" method="POST">');
