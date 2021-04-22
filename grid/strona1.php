@@ -30,7 +30,7 @@
         <div class="str1D">
             <?php
                 require_once("funkcje.php");
-                tab_del_duze("biblAutor_biblTytul", "biblTytul", "biblAutor", "id", "biblTytul_id", "biblAutor_id");
+                tab_del_duze("biblAutor_biblTytul", "biblTytul", "biblAutor", "id", "biblTytul_id", "biblAutor_id", "tytul", "autor");
                 id_del_duze("biblAutor_biblTytul");
             ?>
         </div>

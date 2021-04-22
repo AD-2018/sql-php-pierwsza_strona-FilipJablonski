@@ -21,13 +21,13 @@ function tab_del_male($tab_name, $tab_opcja, $tab_kolumna1, $tab_kolumna2){
     echo("</table>");
     echo ("<br>");
 }
-function tab_del_duze($tab_name1, $tab_name2, $tab_name3, $tab_kolumna1, $tab_kolumna2, $tab_kolumna3){
+function tab_del_duze($tab_name1, $tab_name2, $tab_name3, $tab_kolumna1, $tab_kolumna2, $tab_kolumna3, $tab_kolumna4, $tab_kolumna5){
     require("../connect.php");
     echo("<h1>Wiele do Wielu</h1>");
-    $sql = "Select (`".$tab_name1."`.".$tab_kolumna1.") as id_tab, ".$tab_kolumna2.", ".$tab_kolumna3." from " .$tab_name1.", ".$tab_name2", ".$tab_name3." where ".$tab_name2.".".$tab_kolumna1."=".$tab_kolumna2." and ".$tab_name3.".".$tab_kolumna1."=".$tab_kolumna3." order by id_tab asc";
+    $sql = "Select ".$tab_name1.".".$tab_kolumna1.", ".$tab_kolumna4.", ".$tab_kolumna5." from `jablonski-filip_pbd`." .$tab_name1.", `jablonski-filip_pbd`.".$tab_name2", `jablonski-filip_pbd`.".$tab_name3." where ".$tab_name2.".".$tab_kolumna1."=".$tab_kolumna2." and ".$tab_name3.".".$tab_kolumna1."=".$tab_kolumna3." order by id asc";
     $result = $conn->query($sql);
     echo("<table border=1>");
-    echo("<th>".$tab_kolumna1."</th><th>".$tab_kolumna2."</th><th>".$tab_kolumna3."</th><th>Usuń</th>");
+    echo("<th>".$tab_kolumna1."</th><th>".$tab_kolumna4."</th><th>".$tab_kolumna5."</th><th>Usuń</th>");
     while( $row = $result->fetch_assoc()  ){
         echo("<tr>");
         echo("<td>".$row[$tab_kolumna1]."</td><td>".$row[$tab_kolumna2]."</td><td>".$row[$tab_kolumna3]."</td>");
