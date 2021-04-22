@@ -11,41 +11,10 @@
     <strong>
     <div class="str9">
         <div class="str9A">
-        <?php
-                require_once("../connect.php");
-                $sql = "SELECT * FROM Osoby";
-                
-                    if ($conn->connect_error) {
-                        die("Connection failed: " . $conn->connect_error);
-                      }
-                
-                    $result = mysqli_query($conn, $sql);
-                    if ( $result) {
-                         echo "<br>";
-                     } else {
-                       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-                     }
-                
-                    echo("<h1>Pracownicy</h1>");
-                
-                    echo("<table border='1'>");
-                    echo("<th>ID</th><th>Imię i Nazwisko</th>");
-                        while($row = mysqli_fetch_assoc($result)) {
-                            echo("<tr>");
-                            echo("<td>".$row['ID']."</td><td>".$row['Imie-Nazwisko']."</td>".'<td>
-	    
-                            <form action="delete.php" method="POST">
-                             <input name="id" value="'.$row['ID'].'" hidden>
-                             <input name="tabela" value="Osoby" hidden>
-                             <input name="opcja" value="2" hidden>
-                              <input type="submit" class="button_x" value="X">
-                            </form>
-                            
-                            </td>');
-                           echo('</tr>');
-                       }
-                    echo("</table>");
-                    echo ("<br>");
+            <h1>Pracownicy</h1>
+            <?php
+            require("funkcje.php");
+            tab_del_male("Osoby", "2", "ID", "Imie-Nazwisko");
             ?>
                                                                                                                 <h3>Usuwanie po ID</h3>
                 <form action="delete.php" method="POST">
@@ -56,41 +25,10 @@
                 </form>
         </div>
         <div class="str9B">
-        <?php
-                require_once("../connect.php");
-                $sql = "SELECT * FROM projekt";
-                
-                    if ($conn->connect_error) {
-                        die("Connection failed: " . $conn->connect_error);
-                      }
-                
-                    $result = mysqli_query($conn, $sql);
-                    if ( $result) {
-                         echo "<br>";
-                     } else {
-                       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-                     }
-                
-                    echo("<h1>Projekty</h1>");
-                
-                    echo("<table border='1'>");
-                    echo("<th>ID</th><th>Projekt</th>");
-                        while($row = mysqli_fetch_assoc($result)) {
-                            echo("<tr>");
-                            echo("<td>".$row['id']."</td><td>".$row['projekt']."</td>".'<td>
-	    
-                            <form action="delete.php" method="POST">
-                             <input name="id" value="'.$row['id'].'" hidden>
-                             <input name="tabela" value="projekt" hidden>
-                             <input name="opcja" value="1" hidden>
-                              <input type="submit" class="button_x" value="X">
-                            </form>
-                            
-                            </td>');
-                           echo('</tr>');
-                       }
-                    echo("</table>");
-                    echo ("<br>");
+            <h1>Projekty</h1>
+            <?php
+            require("funkcje.php");
+            tab_del_male("projekty", "1", "id", "projekt");
             ?>
                                                                                                     <h3>Usuwanie po ID</h3>
                 <form action="delete.php" method="POST">

@@ -4,7 +4,7 @@ function tab_del_male($tab_name, $tab_opcja, $tab_kolumna1, $tab_kolumna2){
     $sql = "Select ".$tab_kolumna1.", ".$tab_kolumna2." from " .$tab_name;
     $result = $conn->query($sql);
     echo("<table border=1>");
-    echo("<th>".$tab_kolumna1.", ".$tab_kolumna2."</th>");
+    echo("<th>".$tab_kolumna1."</th><th>".$tab_kolumna2."</th><th>Usuń</th>");
     while( $row = $result->fetch_assoc()  ){
         echo("<tr>");
         echo("<td>".$row[$tab_kolumna1]."</td><td>".$row[$tab_kolumna2]."</td>");

@@ -10,41 +10,10 @@
     <strong>
     <div class="str4">
         <div class="str4A">
-        <?php
-                require_once("../connect.php");
-                $sql = "SELECT * FROM auta";
-                
-                    if ($conn->connect_error) {
-                        die("Connection failed: " . $conn->connect_error);
-                      }
-                
-                    $result = mysqli_query($conn, $sql);
-                    if ( $result) {
-                         echo "<br>";
-                     } else {
-                       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-                     }
-                
-                    echo("<h1>Auta</h1>");
-                
-                    echo("<table border='1'>");
-                    echo("<th>ID</th><th>Auta</th>");
-                        while($row = mysqli_fetch_assoc($result)) {
-                            echo("<tr>");
-                            echo("<td>".$row['id']."</td><td>".$row['auto']."</td>".'<td>
-	    
-                            <form action="delete.php" method="POST">
-                             <input name="id" value="'.$row['id'].'" hidden>
-                             <input name="tabela" value="auta" hidden>
-                             <input name="opcja" value="2" hidden>
-                              <input type="submit" class="button_x" value="X">
-                            </form>
-                            
-                            </td>');
-                           echo('</tr>');
-                       }
-                    echo("</table>");
-                    echo ("<br>");
+            <h1>Auta</h1>
+            <?php
+            require("funkcje.php");
+            tab_del_male("auta", "2", "id", "auto");
             ?>
                             <form action="delete.php" method="POST">
                     <input type="number" name="id">
@@ -54,41 +23,10 @@
                 </form>
         </div>
         <div class="str4B">
-        <?php
-                require_once("../connect.php");
-                $sql = "SELECT * FROM Osoby";
-                
-                    if ($conn->connect_error) {
-                        die("Connection failed: " . $conn->connect_error);
-                      }
-                
-                    $result = mysqli_query($conn, $sql);
-                    if ( $result) {
-                         echo "<br>";
-                     } else {
-                       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-                     }
-                
-                    echo("<h1>Mechanicy</h1>");
-                
-                    echo("<table border='1'>");
-                    echo("<th>ID</th><th>Imię i Nazwisko</th>");
-                        while($row = mysqli_fetch_assoc($result)) {
-                            echo("<tr>");
-                            echo("<td>".$row['ID']."</td><td>".$row['Imie-Nazwisko']."</td>".'<td>
-	    
-                            <form action="delete.php" method="POST">
-                             <input name="id" value="'.$row['ID'].'" hidden>
-                             <input name="tabela" value="Osoby" hidden>
-                             <input name="opcja" value="1" hidden>
-                              <input type="submit" class="button_x" value="X">
-                            </form>
-                            
-                            </td>');
-                           echo('</tr>');
-                       }
-                    echo("</table>");
-                    echo ("<br>");
+            <h1>Mechanicy</h1>
+            <?php
+            require("funkcje.php");
+            tab_del_male("Osoby", "1", "ID", "Imie-Nazwisko");
             ?>
                                         <form action="delete.php" method="POST">
                     <input type="number" name="id">
