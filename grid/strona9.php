@@ -13,7 +13,7 @@
         <div class="str9A">
             <h1>Pracownicy</h1>
             <?php
-            require_once("funkcje.php");
+            require("funkcje.php");
             tab_del_male("Osoby", "2", "ID", "Imie-Nazwisko");
             id_del_male("Osoby", "2");
             ?>
@@ -21,7 +21,7 @@
         <div class="str9B">
             <h1>Projekty</h1>
             <?php
-            require_once("funkcje.php");
+            require("funkcje.php");
             tab_del_male("projekty", "1", "id", "projekt");
             id_del_male("projekty", "1");
             ?>
