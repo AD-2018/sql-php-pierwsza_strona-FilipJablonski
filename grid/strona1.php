@@ -15,28 +15,16 @@
             <?php
             require_once("funkcje.php");
             tab_del_male("biblTytul", "1", "id", "tytul");
+            id_del_male("biblTytul", "1");
             ?>
-                <h3>Usuwanie po ID</h3>
-                <form action="delete.php" method="POST">
-                    <input type="number" name="id">
-                    <input name="tabela" value="biblTytul" hidden>
-                    <input name="opcja" value="1" hidden>
-                    <input type="submit" class="button_x" value="USUŃ">
-                </form>
         </div>
         <div class="str1B">
             <h1>Autor</h1>
             <?php
                 require_once("funkcje.php");
                 tab_del_male("biblAutor", "2", "id", "autor");
+                id_del_male("biblAutor", "2");
             ?>
-                <h3>Usuwanie po ID</h3>
-                <form action="delete.php" method="POST">
-                    <input type="number" name="id"> 
-                    <input name="tabela" value="biblAutor" hidden>
-                    <input name="opcja" value="2" hidden>
-                    <input type="submit" class="button_x" value="USUŃ">
-                </form>
         </div>
         <div class="str1C">3</div>
         <div class="str1D">

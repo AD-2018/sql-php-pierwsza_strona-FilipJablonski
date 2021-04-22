@@ -12,28 +12,18 @@
         <div class="str4A">
             <h1>Auta</h1>
             <?php
-            require("funkcje.php");
+            require_once("funkcje.php");
             tab_del_male("auta", "2", "id", "auto");
+            id_del_male("auta", "2");
             ?>
-                            <form action="delete.php" method="POST">
-                    <input type="number" name="id">
-                    <input name="tabela" value="auta" hidden>
-                             <input name="opcja" value="2" hidden>
-                    <input type="submit" class="button_x" value="USUŃ">
-                </form>
         </div>
         <div class="str4B">
             <h1>Mechanicy</h1>
             <?php
-            require("funkcje.php");
+            require_once("funkcje.php");
             tab_del_male("Osoby", "1", "ID", "Imie-Nazwisko");
+            id_del_male("Osoby", "1");
             ?>
-                                        <form action="delete.php" method="POST">
-                    <input type="number" name="id">
-                    <input name="tabela" value="Osoby" hidden>
-                             <input name="opcja" value="1" hidden>
-                    <input type="submit" class="button_x" value="USUŃ">
-                </form>
         </div>
         <div class="str4C">
         <?php

@@ -53,30 +53,18 @@
         <div class="str2B">
             <h1>Nauczyciele</h1>
             <?php
-            require("funkcje.php");
+            require_once("funkcje.php");
             tab_del_male("Osoby", "1", "ID", "Imie-Nazwisko");
+            id_del_male("Osoby", "1");
             ?>
-                            <h3>Usuwanie po ID</h3>
-                <form action="delete.php" method="POST">
-                    <input type="number" name="id">
-                    <input name="tabela" value="Osoby" hidden>
-                             <input name="opcja" value="1" hidden>
-                    <input type="submit" class="button_x" value="USUŃ">
-                </form>
         </div>
         <div class="str2C">
             <h1>Klasa</h1>
             <?php
-            require("funkcje.php");
+            require_once("funkcje.php");
             tab_del_male("Klasa", "2", "ID", "Klasa");
+            id_del_male("Klasa", "2");
             ?>
-                                        <h3>Usuwanie po ID</h3>
-                <form action="delete.php" method="POST">
-                    <input type="number" name="id">
-                    <input name="tabela" value="Klasa" hidden>
-                             <input name="opcja" value="2" hidden>
-                    <input type="submit" class="button_x" value="USUŃ">
-                </form>
         </div>
         <div class="str2D">4</div>
         <div class="str2E">5</div>

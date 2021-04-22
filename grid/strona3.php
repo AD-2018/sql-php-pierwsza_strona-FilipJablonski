@@ -13,30 +13,18 @@
         <div class="str1A">
             <h1>Lekarze</h1>
             <?php
-            require("funkcje.php");
+            require_once("funkcje.php");
             tab_del_male("osoby_v2", "1", "id", "imiona");
+            id_del_male("osoby_v2", "1");
             ?>
-                                                            <h3>Usuwanie po ID</h3>
-                <form action="delete.php" method="POST">
-                    <input type="number" name="id">
-                    <input name="tabela" value="osoby_v2" hidden>
-                             <input name="opcja" value="1" hidden>
-                    <input type="submit" class="button_x" value="USUŃ">
-                </form>
         </div>
         <div class="str1B">
             <h1>Pacjenci</h1>
             <?php
-            require("funkcje.php");
+            require_once("funkcje.php");
             tab_del_male("Osoby", "2", "ID", "Imie-Nazwisko");
+            id_del_male("Osoby", "2");
             ?>
-                                                                        <h3>Usuwanie po ID</h3>
-                <form action="delete.php" method="POST">
-                    <input type="number" name="id">
-                    <input name="tabela" value="Osoby" hidden>
-                             <input name="opcja" value="2" hidden>
-                    <input type="submit" class="button_x" value="USUŃ">
-                </form>
             </div>
         <div class="str1C">
         <?php

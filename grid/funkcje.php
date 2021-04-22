@@ -21,4 +21,13 @@ function tab_del_male($tab_name, $tab_opcja, $tab_kolumna1, $tab_kolumna2){
     echo("</table>");
     echo ("<br>");
 }
+function id_del_male($tabela, $opcja){
+    echo('<h3>Usuwanie po ID</h3>');
+    echo('<form action="delete.php" method="POST">');
+    echo('<input type="number" name="id">');
+    echo('<input name="tabela" value="'.$tabela.'" hidden>');
+    echo('<input name="opcja" value="'.$opcja.'" hidden>');
+    echo('<input type="submit" class="button_x" value="USUŃ">');
+    echo('</form>');
+}
 ?>
