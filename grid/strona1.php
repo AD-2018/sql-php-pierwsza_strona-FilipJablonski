@@ -12,41 +12,9 @@
     <div class="str1">
         <div class="str1A">
         <?php
-                        require_once("../connect.php");
-                        $sql = "SELECT * FROM biblTytul";
-                        
-                            if ($conn->connect_error) {
-                                die("Connection failed: " . $conn->connect_error);
-                              }
-                        
-                            $result = mysqli_query($conn, $sql);
-                            if ( $result) {
-                                 echo "<br>";
-                             } else {
-                               echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-                             }
-                        
-                            echo("<h1>Tytuły</h1>");
-                        
-                            echo("<table border='1'>");
-                            echo("<th>ID</th><th>Tytuł</th>");
-                                while($row = mysqli_fetch_assoc($result)) {
-                                    echo("<tr>");
-                                    echo("<td>".$row['id']."</td><td>".$row['tytul']."</td>".'<td>
-	    
-                                    <form action="delete.php" method="POST">
-                                     <input name="id" value="'.$row['id'].'" hidden>
-                                     <input name="tabela" value="biblTytul" hidden>
-                                     <input name="opcja" value="1" hidden>
-                                      <input type="submit" class="button_x" value="X">
-                                    </form>
-                                    
-                                    </td>');
-                                   echo('</tr>');
-                               }
-                            echo("</table>");
-                            echo ("<br>");
-                ?>
+            require("funkcje.php");
+            tab_del_male("biblTytul", "1", "id", "tytul");
+        ?>
                 <h3>Usuwanie po ID</h3>
                 <form action="delete.php" method="POST">
                     <input type="number" name="id">
@@ -54,8 +22,8 @@
                     <input name="opcja" value="1" hidden>
                     <input type="submit" class="button_x" value="USUŃ">
                 </form>
-        </div>
-        <div class="str1B">
+    </div>
+    <div class="str1B">
         <?php
                         require_once("../connect.php");
                         $sql = "SELECT * FROM biblAutor";
