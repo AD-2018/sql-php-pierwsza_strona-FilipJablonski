@@ -21,12 +21,13 @@ function tab_del_male($tab_name, $tab_opcja, $tab_kolumna1, $tab_kolumna2){
     echo("</table>");
     echo ("<br>");
 }
-?>
-<?php
+
 function tab_del_duze($name1, $name2, $name3, $kolumna1, $kolumna2, $kolumna3, $kolumna4, $kolumna5){
     require("../connect.php");
     echo("<h1>Wiele do Wielu</h1>");
     $sql = "Select ".$name1.".".$kolumna1.", ".$kolumna4.", ".$kolumna5." from `jablonski-filip_pbd`.".$name1.", `jablonski-filip_pbd`.".$name2", `jablonski-filip_pbd`.".$name3." where ".$name2.".".$kolumna1."=".$kolumna2." and ".$name3.".".$kolumna1."=".$kolumna3." order by id asc";
+    echo("<h1>".$sql."</h1>")
+    /*
     $result = $conn->query($sql);
     echo("<table border=1>");
     echo("<th>".$kolumna1."</th><th>".$kolumna4."</th><th>".$kolumna5."</th><th>Usuń</th>");
@@ -44,9 +45,9 @@ function tab_del_duze($name1, $name2, $name3, $kolumna1, $kolumna2, $kolumna3, $
     }
     echo("</table>");
     echo ("<br>");
+    */
 }
-?>
-<?php
+
 function id_del_male($tabela, $opcja){
     echo('<h3>Usuwanie po ID</h3>');
     echo('<form action="delete.php" method="POST">');
@@ -56,8 +57,7 @@ function id_del_male($tabela, $opcja){
     echo('<input type="submit" class="button_x" value="USUŃ">');
     echo('</form>');
 }
-?>
-<?php
+
 function id_del_duze($tabela){
     echo('<h3>Usuwanie po ID</h3>');
     echo('<form action="delete.php" method="POST">');
