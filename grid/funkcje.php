@@ -22,7 +22,7 @@ function tab_del_male($tab_name, $tab_opcja, $tab_kolumna1, $tab_kolumna2){
     echo ("<br>");
 }
 
-function tab_del_duze($name1, $name2, $name3, $kolumna1, $kolumna2, $kolumna3, $kolumna4, $kolumna5){
+function niefajne($name1, $name2, $name3, $kolumna1, $kolumna2, $kolumna3, $kolumna4, $kolumna5){
     require("../connect.php");
     $sql = "Select ".$name1.".".$kolumna1.", ".$kolumna4.", ".$kolumna5." from `jablonski-filip_pbd`.".$name1.", `jablonski-filip_pbd`.".$name2", `jablonski-filip_pbd`.".$name3." where ".$name2.".".$kolumna1."=".$kolumna2." and ".$name3.".".$kolumna1."=".$kolumna3." order by id asc";
     $result = $conn->query($sql);
