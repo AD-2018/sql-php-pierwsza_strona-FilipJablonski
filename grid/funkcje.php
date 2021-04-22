@@ -24,7 +24,7 @@ function tab_del_male($tab_name, $tab_opcja, $tab_kolumna1, $tab_kolumna2){
 function tab_del_duze($tab_name1, $tab_name2, $tab_name3, $tab_kolumna1, $tab_kolumna2, $tab_kolumna3){
     require("../connect.php");
     echo("<h1>Wiele do Wielu</h1>");
-    $sql = "Select (`".$tab_name1."`.".$tab_kolumna1.") as id_tab, ".$tab_kolumna2.", ".$tab_kolumna3." from " .$tab_name1.", ".$tab_name2", ".$tab_name3." where ".$tab_name2.".".$tab_kolumna1."=".$tab_kolumna2." and ".$tab_name3.".".$tab_kolumna1."=".$tab_kolumna3." order by ID_TAB asc";
+    $sql = "Select (`".$tab_name1."`.".$tab_kolumna1.") as id_tab, ".$tab_kolumna2.", ".$tab_kolumna3." from " .$tab_name1.", ".$tab_name2", ".$tab_name3." where ".$tab_name2.".".$tab_kolumna1."=".$tab_kolumna2." and ".$tab_name3.".".$tab_kolumna1."=".$tab_kolumna3." order by id_tab asc";
     $result = $conn->query($sql);
     echo("<table border=1>");
     echo("<th>".$tab_kolumna1."</th><th>".$tab_kolumna2."</th><th>".$tab_kolumna3."</th><th>Usuń</th>");
