@@ -28,37 +28,9 @@
         </div>
         <div class="str9C">
         <?php
-                        require_once("../connect.php");
-                        $sql = "select projekt, Imie_Nazwisko, (`WDW`.ID) as ID_TAB from `jablonski-filip_pbd`.WDW, `jablonski-filip_pbd`.projekt, `jablonski-filip_pbd`.Osoby where Osoby.ID=osoby_id and projekt.id=klasa_id order by ID_TAB asc";
-                            if ($conn->connect_error) {
-                                    die("Connection failed: " . $conn->connect_error);
-                             }
-                                $result = mysqli_query($conn, $sql);
-                            if ( $result) {
-                            } else {
-                                echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-                            }
-                        
-                            echo("<h1>Wiele do Wielu</h1>");
-                        
-                            echo("<table border='1'>");
-                            echo("<th>ID</th><th>Projekt</th><th>Pracownik</th>");
-                                while($row = mysqli_fetch_assoc($result)) {
-                                    echo("<tr>");
-                                    echo("<td>".$row['ID_TAB']."</td><td>".$row['projekt']."</td><td>".$row['Imie_Nazwisko']."</td>".'<td>
-	    
-                                    <form action="delete.php" method="POST">
-                                     <input name="id" value="'.$row['ID_TAB'].'" hidden>
-                                     <input name="tabela" value="WDW" hidden>
-                                      <input type="submit" class="button_x" value="X">
-                                    </form>
-                                    
-                                    </td>');
-                                   echo('</tr>');
-                               }
-                            echo("</table>");
-                            echo ("<br>");
-            id_del_male("WDW");
+                require_once("funkcje.php");
+                niefajne("WDW", "projekt", "Osoby", "id", "dane_1", "dane_2", "projekt", "Imie_Nazwisko");
+                id_del_duze("WDW");
             ?>
         </div>
         <div class="str9D">4</div>
