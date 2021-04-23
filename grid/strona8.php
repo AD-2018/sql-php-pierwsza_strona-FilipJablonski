@@ -35,7 +35,7 @@
                         
                             echo("<table border='1'>");
                             echo("<th>ID</th><th>Rola</th><th>Pracownik</th>");
-                                while($row = mysqli_fetch_assoc($result)) {
+                            while($row = mysqli_fetch_assoc($result)) {
                                     echo("<tr>");
                                     echo("<td>".$row['ID_TAB']."</td><td>".$row['rola']."</td><td>".$row['Imie_Nazwisko']."</td>".'<td>
 	    
