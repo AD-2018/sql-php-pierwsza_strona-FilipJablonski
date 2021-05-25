@@ -16,6 +16,7 @@
         <li><a href="https://jablonski-filip.herokuapp.com/gra/testowa_gra.php">Testowa Gra</a></li>
         <li><a href="https://jablonski-filip.herokuapp.com/biblioteka/biblioteka.php">Biblioteka | Książki</a></li>
         <li><a href="https://jablonski-filip.herokuapp.com/grid/index.php">Grid</a></li>
+        <li><a href="https://jablonski-filip.herokuapp.com/zadanie_test/Strona.php">Test-Zadanie</a></li>
    </strong>
    </div>
 	</br></br></br>
