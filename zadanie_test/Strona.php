@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<title>Filip Jabłoński 3Ti Test</title>
 </head>
-<body>
+<body class="uklad_grida">
 <?php    
 
 include("menu.php");			//łączenie z menu
