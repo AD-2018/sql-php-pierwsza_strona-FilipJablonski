@@ -6,12 +6,11 @@
 	<title>Filip Jabłoński 3Ti Test</title>
 </head>
 <body>
-<div class="grid_c">			// po body dajesz diva z gridem c
 <?php    
 
 include("menu.php");			//łączenie z menu
 require_once("connect.php");		//łączenie z connect
-
+echo (<div class="grid_c">);
 $sql = "SELECT * FROM pracownicy, organizacja WHERE id_org = dzial";
 $result = mysqli_query($conn, $sql);
 
