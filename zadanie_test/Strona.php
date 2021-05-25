@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style-test.css">
 	<meta charset="UTF-8">
 	<title>Filip Jabłoński 3Ti Test</title>
 </head>
