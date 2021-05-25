@@ -7,9 +7,7 @@
     height: 100vh;
     display: grid;
     grid-template-columns: 300px auto 300px;
-    /*szerokość menu w px*/
     grid-template-areas: "a a a" "b c d";
-    /* tu dajesz albo b albo d (zamień na c)*/
     grid-template-rows: 100px;
 }
 
