@@ -10,7 +10,7 @@
 
 include("menu.php");			//łączenie z menu
 require_once("connect.php");		//łączenie z connect
-echo (<div class="grid_c">);
+echo ('<div class="grid_c">');
 $sql = "SELECT * FROM pracownicy, organizacja WHERE id_org = dzial";
 $result = mysqli_query($conn, $sql);
 
